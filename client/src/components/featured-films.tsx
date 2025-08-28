@@ -11,8 +11,15 @@ export function FeaturedFilms() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
 
+  const buildApiUrl = () => {
+    const params = new URLSearchParams();
+    if (searchQuery) params.append('search', searchQuery);
+    if (selectedCategory !== "all") params.append('category', selectedCategory);
+    return `/api/films${params.toString() ? '?' + params.toString() : ''}`;
+  };
+
   const { data: films = [], isLoading } = useQuery<Film[]>({
-    queryKey: ["/api/films", { search: searchQuery || undefined, category: selectedCategory !== "all" ? selectedCategory : undefined }],
+    queryKey: [buildApiUrl()],
   });
 
   const categories = [
