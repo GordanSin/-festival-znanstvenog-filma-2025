@@ -1,4 +1,3 @@
-import { LogoIcon } from "./logo-icon";
 import { Button } from "@/components/ui/button";
 import heroBackgroundImage from "@assets/Gemini_Generated_Image_fivdaifivdaifivd_1756399908522.png";
 
@@ -26,9 +25,6 @@ export function HeroSection() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex items-center min-h-screen">
         <div className="text-center w-full">
-          <div className="mb-8">
-            <LogoIcon className="text-white mx-auto mb-6 drop-shadow-lg" size="lg" />
-          </div>
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg" data-testid="hero-title">
             Festival znanstvenog<br />filma
           </h1>
