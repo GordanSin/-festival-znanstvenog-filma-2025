@@ -1,15 +1,16 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useQuery } from "@tanstack/react-query";
 import { FilmCard } from "./film-card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { Search } from "lucide-react";
+import { Search, ChevronLeft, ChevronRight } from "lucide-react";
 import type { Film } from "@shared/schema";
 
 export function FeaturedFilms() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState<string>("all");
+  const scrollContainerRef = useRef<HTMLDivElement>(null);
 
   const buildApiUrl = () => {
     const params = new URLSearchParams();
@@ -35,6 +36,24 @@ export function FeaturedFilms() {
   const handleViewDetails = (film: Film) => {
     console.log("View film details:", film);
     // TODO: Implement film detail modal or navigation
+  };
+
+  const scrollLeft = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: -320, // Width of one card plus gap
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  const scrollRight = () => {
+    if (scrollContainerRef.current) {
+      scrollContainerRef.current.scrollBy({
+        left: 320, // Width of one card plus gap
+        behavior: 'smooth'
+      });
+    }
   };
 
   if (isLoading) {
@@ -97,33 +116,63 @@ export function FeaturedFilms() {
           </div>
         </div>
 
-        {/* Films Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8" data-testid="films-grid">
+        {/* Films Carousel */}
+        <div className="relative" data-testid="films-carousel">
           {films.length === 0 ? (
-            <div className="col-span-full text-center py-12">
+            <div className="text-center py-12">
               <p className="text-muted-foreground" data-testid="no-films-message">
                 Nema filmova koji odgovaraju vašim kriterijima pretrage.
               </p>
             </div>
           ) : (
-            films.map((film) => (
-              <FilmCard 
-                key={film.id} 
-                film={film} 
-                onViewDetails={handleViewDetails}
-              />
-            ))
-          )}
-        </div>
+            <>
+              {/* Navigation Buttons */}
+              <Button
+                variant="outline"
+                size="icon"
+                className="absolute left-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg"
+                onClick={scrollLeft}
+                data-testid="scroll-left-button"
+              >
+                <ChevronLeft className="h-4 w-4" />
+              </Button>
+              
+              <Button
+                variant="outline"
+                size="icon"
+                className="absolute right-0 top-1/2 transform -translate-y-1/2 z-10 bg-white/90 hover:bg-white shadow-lg"
+                onClick={scrollRight}
+                data-testid="scroll-right-button"
+              >
+                <ChevronRight className="h-4 w-4" />
+              </Button>
 
-        <div className="text-center mt-12">
-          <Button 
-            size="lg"
-            className="bg-primary text-primary-foreground hover:bg-primary/90"
-            data-testid="button-show-all-films"
-          >
-            Prikaži sve filmove
-          </Button>
+              {/* Scrollable Container */}
+              <div 
+                ref={scrollContainerRef}
+                className="overflow-x-auto scrollbar-hide px-12"
+                data-testid="films-scroll-container"
+              >
+                <div className="flex gap-6 pb-4">
+                  {films.map((film) => (
+                    <div key={film.id} className="flex-none w-80">
+                      <FilmCard 
+                        film={film} 
+                        onViewDetails={handleViewDetails}
+                      />
+                    </div>
+                  ))}
+                </div>
+              </div>
+
+              {/* Film Counter */}
+              <div className="text-center mt-6">
+                <p className="text-sm text-muted-foreground">
+                  Prikazuje se {films.length} od ukupno 25 filmova
+                </p>
+              </div>
+            </>
+          )}
         </div>
       </div>
     </section>
