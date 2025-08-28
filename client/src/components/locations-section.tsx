@@ -115,17 +115,6 @@ export function LocationsSection() {
           ))}
         </div>
 
-        {/* Interactive Map Placeholder */}
-        <div className="bg-muted/30 rounded-xl p-8 text-center" data-testid="interactive-map">
-          <h3 className="text-2xl font-bold text-primary mb-4">Interaktivna karta</h3>
-          <p className="text-muted-foreground mb-6">Kliknite na gradove za detaljne informacije o lokacijama i rasporedu</p>
-          <div className="bg-card rounded-lg h-64 flex items-center justify-center border border-border">
-            <div className="text-center">
-              <MapPin className="text-4xl text-muted-foreground mb-3 mx-auto h-16 w-16" />
-              <p className="text-muted-foreground">Interaktivna karta će biti dostupna uskoro</p>
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );
