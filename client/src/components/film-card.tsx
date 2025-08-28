@@ -11,12 +11,12 @@ interface FilmCardProps {
 
 export function FilmCard({ film, onViewDetails }: FilmCardProps) {
   const categoryColors = {
-    "Obnovljiva energija": "bg-accent/20 text-accent",
-    "Održiva poljoprivreda": "bg-secondary/80 text-secondary-foreground",
-    "Zelena tehnologija": "bg-accent/20 text-accent",
-    "Klimatske promjene": "bg-destructive/20 text-destructive",
-    "Ekološki gradovi": "bg-secondary/80 text-secondary-foreground",
-    "Ciklička ekonomija": "bg-accent/20 text-accent",
+    "Obnovljiva energija": "bg-green-100 text-green-800",
+    "Održiva poljoprivreda": "bg-emerald-100 text-emerald-800",
+    "Zelena tehnologija": "bg-teal-100 text-teal-800",
+    "Klimatske promjene": "bg-blue-100 text-blue-800",
+    "Ekološki gradovi": "bg-lime-100 text-lime-800",
+    "Ciklička ekonomija": "bg-cyan-100 text-cyan-800",
   };
 
   return (
