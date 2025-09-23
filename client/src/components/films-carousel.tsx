@@ -232,7 +232,7 @@ export function FilmsCarousel() {
                       data-testid="modal-film-description-container"
                     >
                       <p 
-                        className="text-gray-700 leading-relaxed"
+                        className="text-sm text-gray-700 leading-relaxed"
                         data-testid="modal-film-description"
                       >
                         {selectedFilm.description}
