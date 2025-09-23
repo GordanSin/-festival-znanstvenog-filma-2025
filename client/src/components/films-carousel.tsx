@@ -76,7 +76,11 @@ export function FilmsCarousel() {
         <CarouselContent className="-ml-2 md:-ml-4">
           {sortedFilms.map((film) => (
             <CarouselItem key={film.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3" data-testid={`film-slide-${film.id}`}>
-              <Card className="h-full">
+              <Card 
+                className="h-full cursor-pointer hover:shadow-lg transition-shadow"
+                onClick={() => window.open(`/film/${film.id}`, '_blank')}
+                data-testid={`film-card-${film.id}`}
+              >
                 <CardContent className="p-0">
                   <div className="aspect-[4/3] relative overflow-hidden rounded-t-lg bg-gray-100">
                     {film.imageData ? (
