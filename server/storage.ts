@@ -32,9 +32,6 @@ export class MemStorage implements IStorage {
     this.initializeData();
   }
 
-  private initializeData() {
-
-    const sampleLocations: Location[] = [
       {
         id: "1",
         name: "Rovinj",
