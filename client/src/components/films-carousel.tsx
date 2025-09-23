@@ -227,12 +227,17 @@ export function FilmsCarousel() {
                 {selectedFilm.description && (
                   <div>
                     <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide block mb-2">Kratki opis</span>
-                    <p 
-                      className="text-gray-700 leading-relaxed"
-                      data-testid="modal-film-description"
+                    <div 
+                      className="max-h-40 overflow-y-auto border border-gray-200 rounded-md p-3 bg-gray-50"
+                      data-testid="modal-film-description-container"
                     >
-                      {selectedFilm.description}
-                    </p>
+                      <p 
+                        className="text-gray-700 leading-relaxed"
+                        data-testid="modal-film-description"
+                      >
+                        {selectedFilm.description}
+                      </p>
+                    </div>
                   </div>
                 )}
               </div>
