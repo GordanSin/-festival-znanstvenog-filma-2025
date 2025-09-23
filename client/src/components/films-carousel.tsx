@@ -211,14 +211,14 @@ export function FilmsCarousel() {
                 
                 {selectedFilm.producer && (
                   <div>
-                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Producer</span>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Producent</span>
                     <p className="text-gray-900">{selectedFilm.producer}</p>
                   </div>
                 )}
                 
                 {selectedFilm.country && selectedFilm.year && (
                   <div>
-                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Country & Year</span>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Zemlja i godina</span>
                     <p className="text-gray-900">{selectedFilm.country}, {selectedFilm.year}</p>
                   </div>
                 )}
