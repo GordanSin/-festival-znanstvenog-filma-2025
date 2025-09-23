@@ -228,7 +228,7 @@ export function FilmsCarousel() {
                   <div>
                     <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide block mb-2">Kratki opis</span>
                     <div 
-                      className="max-h-40 overflow-y-auto border border-gray-200 rounded-md p-3 bg-gray-50"
+                      className="max-h-64 overflow-y-auto border border-gray-200 rounded-md p-3 bg-gray-50"
                       data-testid="modal-film-description-container"
                     >
                       <p 
