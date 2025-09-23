@@ -85,6 +85,7 @@ export function FilmsCarousel() {
                         alt={film.title}
                         className="w-full h-full object-cover"
                         data-testid={`film-image-${film.id}`}
+                        loading="lazy"
                       />
                     ) : (
                       <div 
@@ -114,8 +115,14 @@ export function FilmsCarousel() {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious data-testid="carousel-prev-button" />
-        <CarouselNext data-testid="carousel-next-button" />
+        <CarouselPrevious 
+          className="left-4 text-lg" 
+          data-testid="carousel-prev-button"
+        />
+        <CarouselNext 
+          className="right-4 text-lg" 
+          data-testid="carousel-next-button"
+        />
       </Carousel>
       
       <div className="text-center mt-4 text-sm text-gray-500">
