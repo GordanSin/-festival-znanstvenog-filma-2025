@@ -226,7 +226,7 @@ export function FilmsCarousel() {
                 {/* Description */}
                 {selectedFilm.description && (
                   <div>
-                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide block mb-2">Description</span>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide block mb-2">Kratki opis</span>
                     <p 
                       className="text-gray-700 leading-relaxed"
                       data-testid="modal-film-description"
