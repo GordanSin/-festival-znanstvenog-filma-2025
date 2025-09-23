@@ -50,7 +50,7 @@ export class DatabaseStorage implements IStorage {
   async createFilm(insertFilm: InsertFilm): Promise<Film> {
     const [film] = await db
       .insert(films)
-      .values(insertFilm)
+      .values([insertFilm])
       .returning();
     return film;
   }
@@ -68,7 +68,7 @@ export class DatabaseStorage implements IStorage {
   async createLocation(insertLocation: InsertLocation): Promise<Location> {
     const [location] = await db
       .insert(locations)
-      .values(insertLocation)
+      .values([insertLocation])
       .returning();
     return location;
   }
@@ -85,7 +85,7 @@ export class DatabaseStorage implements IStorage {
   async createScheduleEvent(insertEvent: InsertScheduleEvent): Promise<ScheduleEvent> {
     const [event] = await db
       .insert(scheduleEvents)
-      .values(insertEvent)
+      .values([insertEvent])
       .returning();
     return event;
   }
