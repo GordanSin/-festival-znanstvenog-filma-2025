@@ -7,15 +7,20 @@ export const films = pgTable("films", {
   id: varchar("id").primaryKey().default(sql`gen_random_uuid()`),
   title: text("title").notNull(),
   description: text("description").notNull(),
-  duration: integer("duration").notNull(), // in minutes
+  duration: integer("duration"), // in minutes
   category: text("category").notNull(),
-  imageUrl: text("image_url").notNull(),
-  location: text("location").notNull(),
+  imageUrl: text("image_url"),
+  imageData: text("image_data"), // base64 encoded image data from JSON
+  location: text("location"),
   screeningDates: jsonb("screening_dates").$type<string[]>().notNull().default([]),
   director: text("director"),
   year: integer("year"),
   language: text("language"),
+  country: text("country"),
+  producer: text("producer"),
+  runningTime: text("running_time"), // keeping as text since it can be in various formats
   themes: jsonb("themes").$type<string[]>().notNull().default([]),
+  pageNumber: integer("page_number"), // to track which PDF page this came from
   createdAt: timestamp("created_at").defaultNow(),
 });
 

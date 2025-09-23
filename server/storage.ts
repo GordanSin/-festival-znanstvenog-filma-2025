@@ -1,5 +1,6 @@
-import { type Film, type InsertFilm, type Location, type InsertLocation, type ScheduleEvent, type InsertScheduleEvent } from "@shared/schema";
-import { randomUUID } from "crypto";
+import { type Film, type InsertFilm, type Location, type InsertLocation, type ScheduleEvent, type InsertScheduleEvent, films, locations, scheduleEvents } from "@shared/schema";
+import { db } from "./db";
+import { eq, like, or, ilike } from "drizzle-orm";
 
 export interface IStorage {
   // Films
@@ -20,111 +21,74 @@ export interface IStorage {
   createScheduleEvent(event: InsertScheduleEvent): Promise<ScheduleEvent>;
 }
 
-export class MemStorage implements IStorage {
-  private films: Map<string, Film>;
-  private locations: Map<string, Location>;
-  private scheduleEvents: Map<string, ScheduleEvent>;
-
-  constructor() {
-    this.films = new Map();
-    this.locations = new Map();
-    this.scheduleEvents = new Map();
-    this.initializeData();
-  }
-
-      {
-        id: "1",
-        name: "Rovinj",
-        description: "Glavno središte festivala s otvaranjem i zatvaranjem programa",
-        imageUrl: "https://pixabay.com/get/g027932b7ff65e1dcf44758e4d911e88b09614e01bde10cbff5694f923f8af89760d7fecc07974d5428f9cab455f8e3bf9040b59729c96d48f9defbdf1e3cc274_1280.jpg",
-        filmCount: 8,
-        dates: ["3.-5. studenog"],
-        createdAt: new Date(),
-      },
-      {
-        id: "2",
-        name: "Poreč",
-        description: "UNESCO baština s fokusom na održivu turizam",
-        imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-        filmCount: 6,
-        dates: ["4.-6. studenog"],
-        createdAt: new Date(),
-      }
-    ];
-
-    realFilms.forEach(film => this.films.set(film.id, film));
-    sampleLocations.forEach(location => this.locations.set(location.id, location));
-  }
-
+export class DatabaseStorage implements IStorage {
+  // Films
   async getFilms(): Promise<Film[]> {
-    return Array.from(this.films.values());
+    return await db.select().from(films);
   }
 
   async getFilmById(id: string): Promise<Film | undefined> {
-    return this.films.get(id);
+    const [film] = await db.select().from(films).where(eq(films.id, id));
+    return film || undefined;
   }
 
   async getFilmsByCategory(category: string): Promise<Film[]> {
-    return Array.from(this.films.values()).filter(film => film.category === category);
+    return await db.select().from(films).where(eq(films.category, category));
   }
 
   async searchFilms(query: string): Promise<Film[]> {
-    const lowerQuery = query.toLowerCase();
-    return Array.from(this.films.values()).filter(film => 
-      film.title.toLowerCase().includes(lowerQuery) ||
-      film.description.toLowerCase().includes(lowerQuery) ||
-      film.themes.some(theme => theme.toLowerCase().includes(lowerQuery))
+    const lowerQuery = `%${query.toLowerCase()}%`;
+    return await db.select().from(films).where(
+      or(
+        ilike(films.title, lowerQuery),
+        ilike(films.description, lowerQuery),
+        ilike(films.director, lowerQuery)
+      )
     );
   }
 
   async createFilm(insertFilm: InsertFilm): Promise<Film> {
-    const id = randomUUID();
-    const film: Film = { 
-      ...insertFilm, 
-      id, 
-      createdAt: new Date() 
-    };
-    this.films.set(id, film);
+    const [film] = await db
+      .insert(films)
+      .values(insertFilm)
+      .returning();
     return film;
   }
 
+  // Locations
   async getLocations(): Promise<Location[]> {
-    return Array.from(this.locations.values());
+    return await db.select().from(locations);
   }
 
   async getLocationById(id: string): Promise<Location | undefined> {
-    return this.locations.get(id);
+    const [location] = await db.select().from(locations).where(eq(locations.id, id));
+    return location || undefined;
   }
 
   async createLocation(insertLocation: InsertLocation): Promise<Location> {
-    const id = randomUUID();
-    const location: Location = { 
-      ...insertLocation, 
-      id, 
-      createdAt: new Date() 
-    };
-    this.locations.set(id, location);
+    const [location] = await db
+      .insert(locations)
+      .values(insertLocation)
+      .returning();
     return location;
   }
 
+  // Schedule
   async getScheduleEvents(): Promise<ScheduleEvent[]> {
-    return Array.from(this.scheduleEvents.values());
+    return await db.select().from(scheduleEvents);
   }
 
   async getScheduleEventsByWeek(week: number): Promise<ScheduleEvent[]> {
-    return Array.from(this.scheduleEvents.values()).filter(event => event.week === week);
+    return await db.select().from(scheduleEvents).where(eq(scheduleEvents.week, week));
   }
 
   async createScheduleEvent(insertEvent: InsertScheduleEvent): Promise<ScheduleEvent> {
-    const id = randomUUID();
-    const event: ScheduleEvent = { 
-      ...insertEvent, 
-      id, 
-      createdAt: new Date() 
-    };
-    this.scheduleEvents.set(id, event);
+    const [event] = await db
+      .insert(scheduleEvents)
+      .values(insertEvent)
+      .returning();
     return event;
   }
 }
 
-export const storage = new MemStorage();
+export const storage = new DatabaseStorage();
