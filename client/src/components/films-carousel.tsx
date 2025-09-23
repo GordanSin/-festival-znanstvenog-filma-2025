@@ -106,9 +106,6 @@ export function FilmsCarousel() {
                     >
                       {film.title}
                     </h3>
-                    <p className="text-sm text-gray-500 mt-2" data-testid={`film-page-${film.id}`}>
-                      Page {film.pageNumber}
-                    </p>
                   </div>
                 </CardContent>
               </Card>
