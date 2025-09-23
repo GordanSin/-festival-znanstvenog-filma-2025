@@ -63,7 +63,7 @@ export function FilmsCarousel() {
   const sortedFilms = [...films].sort((a, b) => a.pageNumber - b.pageNumber);
 
   return (
-    <section className="w-full max-w-6xl mx-auto px-4 py-12" data-testid="films-carousel">
+    <section id="films" className="w-full max-w-6xl mx-auto px-4 py-12" data-testid="films-carousel">
       <h2 className="text-3xl font-bold text-center mb-8">Croatian Scientific Films</h2>
       
       <Carousel
