@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Navigation } from "@/components/navigation";
 import { HeroSection } from "@/components/hero-section";
-import { FeaturedFilms } from "@/components/featured-films";
+import { FilmsCarousel } from "@/components/films-carousel";
 import { ScheduleSection } from "@/components/schedule-section";
 import { LocationsSection } from "@/components/locations-section";
 import { AboutSection } from "@/components/about-section";
@@ -33,7 +33,7 @@ export default function Home() {
     <div className="min-h-screen scroll-smooth" data-testid="home-page">
       <Navigation />
       <HeroSection />
-      <FeaturedFilms />
+      <FilmsCarousel />
       <ScheduleSection />
       <LocationsSection />
       <AboutSection />
