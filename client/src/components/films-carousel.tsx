@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import {
   Carousel,
@@ -8,18 +9,46 @@ import {
 } from "@/components/ui/carousel";
 import { Card, CardContent } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { X } from "lucide-react";
 
 interface Film {
   id: string;
   title: string;
+  description?: string;
   imageData?: string;
   pageNumber: number;
+  category?: string;
+  director?: string;
+  producer?: string;
+  country?: string;
+  year?: number;
+  duration?: number;
 }
 
 export function FilmsCarousel() {
+  const [selectedFilm, setSelectedFilm] = useState<Film | null>(null);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   const { data: films, isLoading, error } = useQuery<Film[]>({
     queryKey: ['/api/films'],
   });
+
+  const handleFilmClick = (film: Film) => {
+    setSelectedFilm(film);
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+    setSelectedFilm(null);
+  };
 
   if (isLoading) {
     return (
@@ -78,7 +107,7 @@ export function FilmsCarousel() {
             <CarouselItem key={film.id} className="pl-2 md:pl-4 md:basis-1/2 lg:basis-1/3" data-testid={`film-slide-${film.id}`}>
               <Card 
                 className="h-full cursor-pointer hover:shadow-lg transition-shadow"
-                onClick={() => window.open(`/film/${film.id}`, '_blank')}
+                onClick={() => handleFilmClick(film)}
                 data-testid={`film-card-${film.id}`}
               >
                 <CardContent className="p-0">
@@ -129,6 +158,88 @@ export function FilmsCarousel() {
       <div className="text-center mt-4 text-sm text-gray-500">
         {sortedFilms.length} films from Croatian Scientific Film Festival
       </div>
+
+      {/* Film Detail Modal */}
+      <Dialog open={isModalOpen} onOpenChange={setIsModalOpen}>
+        <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto" data-testid="film-detail-modal">
+          <DialogHeader>
+            <DialogTitle className="text-2xl font-bold mb-4" data-testid="modal-film-title">
+              {selectedFilm?.title}
+            </DialogTitle>
+          </DialogHeader>
+          
+          {selectedFilm && (
+            <div className="grid md:grid-cols-2 gap-6">
+              {/* Image Section */}
+              <div className="aspect-[4/3] relative overflow-hidden rounded-lg bg-gray-100">
+                {selectedFilm.imageData ? (
+                  <img
+                    src={`data:image/jpeg;base64,${selectedFilm.imageData}`}
+                    alt={selectedFilm.title}
+                    className="w-full h-full object-cover"
+                    data-testid="modal-film-image"
+                  />
+                ) : (
+                  <div 
+                    className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-100 to-green-100 text-gray-600"
+                    data-testid="modal-film-placeholder"
+                  >
+                    <div className="text-center">
+                      <div className="text-6xl mb-4">🎬</div>
+                      <div className="text-lg">Croatian Scientific Film</div>
+                    </div>
+                  </div>
+                )}
+              </div>
+              
+              {/* Details Section */}
+              <div className="space-y-4">
+                {/* Film Details */}
+                {selectedFilm.category && (
+                  <div>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Category</span>
+                    <p className="text-gray-900">{selectedFilm.category}</p>
+                  </div>
+                )}
+                
+                {selectedFilm.director && (
+                  <div>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Director</span>
+                    <p className="text-gray-900">{selectedFilm.director}</p>
+                  </div>
+                )}
+                
+                {selectedFilm.producer && (
+                  <div>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Producer</span>
+                    <p className="text-gray-900">{selectedFilm.producer}</p>
+                  </div>
+                )}
+                
+                {selectedFilm.country && selectedFilm.year && (
+                  <div>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Country & Year</span>
+                    <p className="text-gray-900">{selectedFilm.country}, {selectedFilm.year}</p>
+                  </div>
+                )}
+                
+                {/* Description */}
+                {selectedFilm.description && (
+                  <div>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide block mb-2">Description</span>
+                    <p 
+                      className="text-gray-700 leading-relaxed"
+                      data-testid="modal-film-description"
+                    >
+                      {selectedFilm.description}
+                    </p>
+                  </div>
+                )}
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
     </section>
   );
 }
