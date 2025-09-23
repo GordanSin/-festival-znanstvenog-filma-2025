@@ -204,7 +204,7 @@ export function FilmsCarousel() {
                 
                 {selectedFilm.director && (
                   <div>
-                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Director</span>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Redatelj</span>
                     <p className="text-gray-900">{selectedFilm.director}</p>
                   </div>
                 )}
