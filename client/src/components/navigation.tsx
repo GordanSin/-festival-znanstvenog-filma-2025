@@ -49,8 +49,8 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-3">
-            <LogoIcon className="text-primary" size="sm" />
-            <span className="text-lg font-bold text-primary">Festival znanstvenog filma</span>
+            <LogoIcon className="text-white" size="sm" />
+            <span className="text-lg font-bold text-white">Festival znanstvenog filma</span>
           </Link>
           
           {/* Desktop Menu */}
@@ -59,7 +59,7 @@ export function Navigation() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-foreground hover:text-primary transition-colors"
+                className="text-white hover:text-white/80 transition-colors"
                 data-testid={`nav-${item.href}`}
               >
                 {item.label}
@@ -98,7 +98,7 @@ export function Navigation() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left py-2 text-foreground hover:text-primary transition-colors"
+                className="block w-full text-left py-2 text-white hover:text-white/80 transition-colors"
                 data-testid={`mobile-nav-${item.href}`}
               >
                 {item.label}
