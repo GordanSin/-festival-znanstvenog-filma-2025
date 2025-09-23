@@ -44,7 +44,7 @@ export function HeroSection() {
             <Button 
               size="lg"
               variant="outline"
-              className="border-2 border-white text-white hover:bg-white hover:text-primary shadow-lg"
+              className="border-2 border-white text-black bg-white hover:bg-white/90 hover:text-black shadow-lg"
               onClick={() => scrollToSection("about")}
               data-testid="button-learn-more"
             >
