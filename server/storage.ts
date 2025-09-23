@@ -24,7 +24,32 @@ export interface IStorage {
 export class DatabaseStorage implements IStorage {
   // Films
   async getFilms(): Promise<Film[]> {
-    return await db.select().from(films);
+    // Get films without large imageData to reduce payload size
+    const filmsData = await db.select({
+      id: films.id,
+      title: films.title,
+      description: films.description,
+      category: films.category,
+      director: films.director,
+      producer: films.producer,
+      runningTime: films.runningTime,
+      country: films.country,
+      year: films.year,
+      duration: films.duration,
+      pageNumber: films.pageNumber,
+      screeningDates: films.screeningDates,
+      themes: films.themes,
+      location: films.location,
+      language: films.language,
+      createdAt: films.createdAt
+    }).from(films);
+    
+    // Add empty imageData and imageUrl to match Film type
+    return filmsData.map(film => ({
+      ...film,
+      imageData: null, // Excluded to reduce payload size  
+      imageUrl: null
+    }));
   }
 
   async getFilmById(id: string): Promise<Film | undefined> {
@@ -50,7 +75,7 @@ export class DatabaseStorage implements IStorage {
   async createFilm(insertFilm: InsertFilm): Promise<Film> {
     const [film] = await db
       .insert(films)
-      .values([insertFilm])
+      .values(insertFilm)
       .returning();
     return film;
   }
@@ -68,7 +93,7 @@ export class DatabaseStorage implements IStorage {
   async createLocation(insertLocation: InsertLocation): Promise<Location> {
     const [location] = await db
       .insert(locations)
-      .values([insertLocation])
+      .values(insertLocation)
       .returning();
     return location;
   }

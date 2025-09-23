@@ -88,10 +88,13 @@ export function FilmsCarousel() {
                       />
                     ) : (
                       <div 
-                        className="w-full h-full flex items-center justify-center bg-gray-200 text-gray-500"
+                        className="w-full h-full flex items-center justify-center bg-gradient-to-br from-blue-100 to-green-100 text-gray-600"
                         data-testid={`film-placeholder-${film.id}`}
                       >
-                        No Image Available
+                        <div className="text-center">
+                          <div className="text-3xl mb-2">🎬</div>
+                          <div className="text-sm">Croatian Scientific Film</div>
+                        </div>
                       </div>
                     )}
                   </div>
