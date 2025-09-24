@@ -78,7 +78,7 @@ export function Navigation() {
           <Button
             variant="ghost"
             size="sm"
-            className="md:hidden"
+            className="md:hidden text-white hover:text-white/80"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             data-testid="mobile-menu-toggle"
           >
@@ -89,7 +89,7 @@ export function Navigation() {
         {/* Mobile Menu */}
         <div 
           className={`md:hidden transition-all duration-300 overflow-hidden ${
-            isMobileMenuOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
+            isMobileMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0"
           }`}
           data-testid="mobile-menu"
         >
@@ -98,7 +98,7 @@ export function Navigation() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="block w-full text-left py-2 text-white hover:text-white/80 transition-colors"
+                className="block w-full text-left py-2 text-gray-900 hover:text-gray-700 transition-colors"
                 data-testid={`mobile-nav-${item.href}`}
               >
                 {item.label}
