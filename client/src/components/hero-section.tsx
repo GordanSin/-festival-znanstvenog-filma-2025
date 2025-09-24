@@ -23,11 +23,16 @@ export function HeroSection() {
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 flex items-end min-h-screen pb-32">
-        <div className="text-center w-full">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 min-h-screen">
+        {/* Main Title - Positioned Higher */}
+        <div className="text-center pt-20">
           <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg" data-testid="hero-title">
             Festival znanstvenog<br />filma
           </h1>
+        </div>
+        
+        {/* Bottom Content */}
+        <div className="text-center w-full absolute bottom-32 left-0 right-0">
           <div className="text-xl md:text-2xl mb-8 text-white/95">
             <p className="mb-2 drop-shadow-md" data-testid="hero-subtitle">Green Jobs - Zeleni poslovi budućnosti</p>
             <p className="text-lg drop-shadow-md" data-testid="hero-dates">Studeni 2025 • Istra & Rijeka</p>
