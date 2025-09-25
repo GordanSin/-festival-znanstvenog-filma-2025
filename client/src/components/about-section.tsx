@@ -18,7 +18,7 @@ export function AboutSection() {
             </h3>
             <p className="text-muted-foreground mb-6 text-lg leading-relaxed" data-testid="green-jobs-description-1">
               Ovogodišnji festival fokusira se na zanimanja i inovacije koje doprinose održivom razvoju i zaštiti okoliša. 
-              Kroz 25 pažljivo odabranih dokumentarnih filmova, istražujemo kako nova zelena radna mjesta mijenjaju našu budućnost.
+              Kroz 21 pažljivo odabranih dokumentarnih filmova, istražujemo kako nova zelena radna mjesta mijenjaju našu budućnost.
             </p>
             <p className="text-muted-foreground mb-6 leading-relaxed" data-testid="green-jobs-description-2">
               Od obnovljivih izvora energije do održive poljoprivrede, od zelene tehnologije do ciklične ekonomije - 
