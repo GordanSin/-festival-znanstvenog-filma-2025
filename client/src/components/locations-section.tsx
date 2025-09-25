@@ -14,7 +14,7 @@ export function LocationsSection() {
     {
       id: "3",
       name: "Pula",
-      description: "Najveći grad Istre s bogatom kinematografskom tradicijom",
+      description: "Zajednica tehničke kulture Istarske županije",
       imageUrl: "https://images.unsplash.com/photo-1609137144813-7d9921338f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
       filmCount: 7,
       dates: ["6.-8. studenog"],
@@ -54,6 +54,24 @@ export function LocationsSection() {
       imageUrl: "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
       filmCount: 9,
       dates: ["14.-16. studenog"],
+      createdAt: new Date(),
+    },
+    {
+      id: "8",
+      name: "Zagreb",
+      description: "Glavni grad s fokusom na zelene tehnologije i inovacije",
+      imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      filmCount: 5,
+      dates: ["17.-18. studenog"],
+      createdAt: new Date(),
+    },
+    {
+      id: "9",
+      name: "Split",
+      description: "Dalmatinski centar održivog turizma i solarne energije",
+      imageUrl: "https://images.unsplash.com/photo-1555990538-c87d4ba0c93e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      filmCount: 6,
+      dates: ["19.-20. studenog"],
       createdAt: new Date(),
     }
   ];
