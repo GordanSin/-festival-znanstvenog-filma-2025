@@ -216,10 +216,21 @@ export function FilmsCarousel() {
                   </div>
                 )}
                 
-                {selectedFilm.country && selectedFilm.year && (
+                {(selectedFilm.country || selectedFilm.year) && (
                   <div>
                     <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Zemlja i godina</span>
-                    <p className="text-gray-900">{selectedFilm.country}, {selectedFilm.year}</p>
+                    <p className="text-gray-900">
+                      {selectedFilm.country && selectedFilm.year 
+                        ? `${selectedFilm.country}, ${selectedFilm.year}`
+                        : selectedFilm.country || selectedFilm.year}
+                    </p>
+                  </div>
+                )}
+                
+                {selectedFilm.duration && (
+                  <div>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Trajanje</span>
+                    <p className="text-gray-900">{selectedFilm.duration} minuta</p>
                   </div>
                 )}
                 
