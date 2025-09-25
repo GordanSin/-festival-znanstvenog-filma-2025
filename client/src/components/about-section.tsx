@@ -146,11 +146,9 @@ export function AboutSection() {
 
         {/* Mission Statement */}
         <div className="text-center bg-primary/5 rounded-2xl p-12 border border-primary/20" data-testid="mission-statement">
-          <h3 className="text-2xl font-bold text-primary mb-4">Naša misija</h3>
+          <h3 className="text-2xl font-bold text-primary mb-4">Tema festivala 2025</h3>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Želimo potaknuti javnu diskusiju o održivom razvoju kroz kvalitetnu znanstvenu kinematografiju, 
-            povezati obrazovne institucije s kulturnim ustanovama te inspirirati mlade ljude da se uključe u 
-            stvaranje zelene budućnosti kroz inovativna zanimanja i tehnologije.
+            Festival znanstvenog filma u središte stavlja Zelena radna mjesta 2025. godine, ističući zanimanja koja su      ključna za promicanje i očuvanje okoliša. Zelena radna mjesta mladima pružaju priliku ne samo da ostave značajan trag u svijetu, već i da izgrade održivu karijeru. S obzirom na to da globalni fokus na održivost i ekološki prihvatljive prakse neprestano raste, važnost zelenih radnih mjesta nalazi se u samom središtu presudnog svjetskog prijelaza prema niskougljičnom gospodarstvu.
           </p>
         </div>
       </div>
