@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, MapPin } from "lucide-react";
 import type { Location } from "@shared/schema";
 import pulaImage from "@assets/pula_1758831240469.jpg";
+import umagImage from "@assets/umag_1758831379550.jfif";
 
 export function LocationsSection() {
   const { data: locations = [], isLoading } = useQuery<Location[]>({
@@ -25,7 +26,7 @@ export function LocationsSection() {
       id: "4", 
       name: "Umag",
       description: "Sportski i kulturni centar s naglaskom na zelenu energiju",
-      imageUrl: "https://images.unsplash.com/photo-1584464491033-06628f3a6b7b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      imageUrl: umagImage,
       filmCount: 4,
       dates: ["10.-11. studenog"],
       createdAt: new Date(),
