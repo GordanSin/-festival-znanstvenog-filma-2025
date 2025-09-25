@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, MapPin } from "lucide-react";
 import type { Location } from "@shared/schema";
+import pulaImage from "@assets/pula_1758831240469.jpg";
 
 export function LocationsSection() {
   const { data: locations = [], isLoading } = useQuery<Location[]>({
@@ -15,7 +16,7 @@ export function LocationsSection() {
       id: "3",
       name: "Pula",
       description: "Zajednica tehničke kulture Istarske županije",
-      imageUrl: "https://images.unsplash.com/photo-1609137144813-7d9921338f24?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      imageUrl: pulaImage,
       filmCount: 7,
       dates: ["6.-8. studenog"],
       createdAt: new Date(),
