@@ -119,18 +119,21 @@ export function AboutSection() {
                 <p className="text-sm text-muted-foreground">Članovi ocjenjivačkog žirija</p>
               </div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3">
               <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Gordan Sinđić prof</h5>
+                <h5 className="font-medium text-sm text-card-foreground">nasl. doc. dr. sc. Vedrana Špada, prof. struč. stud</h5>
               </div>
               <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Aleksandar Žibert</h5>
+                <h5 className="font-medium text-sm text-card-foreground">dr. sc. Mirta Smodlaka Tanković – dr. znanosti o moru</h5>
               </div>
               <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Ina Venier</h5>
+                <h5 className="font-medium text-sm text-card-foreground">Lovro Šverko, mag. paed. et educ. inf.</h5>
               </div>
               <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Davor Marić</h5>
+                <h5 className="font-medium text-sm text-card-foreground">Aleksandar Žibert, dipl. rač. inž</h5>
+              </div>
+              <div className="p-3 bg-muted/30 rounded-lg">
+                <h5 className="font-medium text-sm text-card-foreground">Pero Perović,dr.mcmdm</h5>
               </div>
             </div>
           </div>
