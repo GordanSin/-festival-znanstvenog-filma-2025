@@ -23,9 +23,9 @@ export function ContactSection() {
             </h3>
             <div className="space-y-3 text-muted-foreground">
               <p className="font-semibold text-card-foreground">
-                Udruga tehničke kulture "Galileo Galilei"
+                Udruga tehničke kulture-Societa di cultura tecnica "Galileo Galilei"
               </p>
-              <p data-testid="contact-street">Obala Pina Budicina 12</p>
+              <p data-testid="contact-street">Domenico Pergolis 2</p>
               <p data-testid="contact-city">52210 Rovinj-Rovigno, Hrvatska</p>
               <div className="pt-4">
                 <p className="text-sm text-muted-foreground mb-2">Pratite nas:</p>

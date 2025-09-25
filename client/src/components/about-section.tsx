@@ -61,17 +61,17 @@ export function AboutSection() {
               </div>
               <div>
                 <h4 className="text-xl font-bold text-card-foreground">Organizatori</h4>
-                <p className="text-muted-foreground">Stručno partnerstvo</p>
+                <p className="text-muted-foreground"></p>
               </div>
             </div>
             <div className="space-y-3">
               <div>
-                <h5 className="font-semibold text-card-foreground">Udruga tehničke kulture „Galileo Galilei"</h5>
+                <h5 className="font-semibold text-card-foreground">Udruga tehničke kulture-Societa di cultura tecnica „Galileo Galilei"</h5>
                 <p className="text-sm text-muted-foreground">Rovinj-Rovigno</p>
               </div>
               <div className="border-t border-border pt-3">
                 <h5 className="font-semibold text-card-foreground">Goethe-Institut Kroatien</h5>
-                <p className="text-sm text-muted-foreground">Međunarodni kulturni institut</p>
+                <p className="text-sm text-muted-foreground">Zagreb</p>
               </div>
             </div>
           </div>
@@ -99,7 +99,7 @@ export function AboutSection() {
               </div>
               <div className="flex justify-between">
                 <span className="text-card-foreground">Jezici:</span>
-                <span className="font-semibold text-primary">HR/EN titlovi</span>
+                <span className="font-semibold text-primary">HR titlovi</span>
               </div>
             </div>
           </div>
