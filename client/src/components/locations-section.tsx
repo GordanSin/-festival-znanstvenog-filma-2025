@@ -4,6 +4,7 @@ import { Calendar, MapPin } from "lucide-react";
 import type { Location } from "@shared/schema";
 import pulaImage from "@assets/pula_1758831240469.jpg";
 import umagImage from "@assets/umag_1758831379550.jfif";
+import buzetImage from "@assets/buzet_1758831685132.jfif";
 
 export function LocationsSection() {
   const { data: locations = [], isLoading } = useQuery<Location[]>({
@@ -35,7 +36,7 @@ export function LocationsSection() {
       id: "5",
       name: "Buzet", 
       description: "Grad tartufa s fokusom na održivu poljoprivredu",
-      imageUrl: "https://pixabay.com/get/g440572c709ba7a4f2a57560ba730b2decc548aa16bd159e78ea2b415b432087d37fa0870e132aafe96b61920e17893b5802989d83a1b101e0fedab4fd80f9fe1_1280.jpg",
+      imageUrl: buzetImage,
       filmCount: 3,
       dates: ["12.-13. studenog"],
       createdAt: new Date(),
