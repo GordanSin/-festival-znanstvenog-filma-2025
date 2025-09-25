@@ -50,7 +50,6 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-3">
             <LogoIcon className="text-white" size="sm" />
-            <span className="text-lg font-bold text-white">Festival znanstvenog filma</span>
           </Link>
           
           {/* Desktop Menu */}
