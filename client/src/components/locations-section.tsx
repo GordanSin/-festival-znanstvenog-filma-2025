@@ -25,7 +25,7 @@ export function LocationsSection() {
     {
       id: "4", 
       name: "Umag",
-      description: "Sportski i kulturni centar s naglaskom na zelenu energiju",
+      description: "Ustanova za protokol, odnose s javnošću i manifestacije FESTUM",
       imageUrl: umagImage,
       filmCount: 4,
       dates: ["10.-11. studenog"],
