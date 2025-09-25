@@ -30,7 +30,7 @@ export function HeroSection() {
           src={logoImage} 
           alt="Croatian Scientific Film Festival Logo" 
           className="w-auto filter brightness-0 invert" 
-          style={{ height: '256px' }}
+          style={{ height: '512px' }}
           data-testid="hero-logo"
         />
       </div>
