@@ -13,21 +13,6 @@ export function ContactSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 mb-16">
-
-          {/* Schools */}
-          <div className="bg-card rounded-xl p-8 border border-border text-center" data-testid="contact-education">
-            <div className="w-16 h-16 bg-secondary-foreground/20 text-secondary-foreground rounded-full flex items-center justify-center mx-auto mb-6">
-              <GraduationCap className="h-8 w-8" />
-            </div>
-            <h3 className="text-xl font-bold text-card-foreground mb-4">Škole i obrazovanje</h3>
-            <div className="space-y-2 text-muted-foreground">
-              <p data-testid="contact-education-email">skole@festival-zf.hr</p>
-              <p data-testid="contact-education-phone">+385 52 456 789</p>
-              <p className="text-sm">Besplatne školske projekcije</p>
-            </div>
-          </div>
-        </div>
 
         {/* Address and Social */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
