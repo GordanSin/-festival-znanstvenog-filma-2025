@@ -101,15 +101,6 @@ export function LocationsSection() {
                 <p className="text-sm text-muted-foreground mb-3" data-testid={`location-description-${location.id}`}>
                   {location.description}
                 </p>
-                <div className="flex items-center justify-between">
-                  <span className="text-sm text-primary font-medium" data-testid={`location-film-count-${location.id}`}>
-                    {location.filmCount} {location.filmCount === 1 ? 'film' : 'filmova'}
-                  </span>
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <Calendar className="mr-1 h-4 w-4" />
-                    <span data-testid={`location-dates-${location.id}`}>{location.dates[0]}</span>
-                  </div>
-                </div>
               </CardContent>
             </Card>
           ))}
