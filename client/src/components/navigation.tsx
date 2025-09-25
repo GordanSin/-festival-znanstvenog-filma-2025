@@ -53,7 +53,7 @@ export function Navigation() {
             <img 
               src={logoImage} 
               alt="Croatian Scientific Film Festival Logo" 
-              className="h-8 w-auto filter brightness-0 invert" 
+              className="h-12 w-auto filter brightness-0 invert" 
               data-testid="nav-logo"
             />
           </Link>
