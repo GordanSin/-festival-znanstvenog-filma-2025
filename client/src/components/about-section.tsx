@@ -133,7 +133,7 @@ export function AboutSection() {
                 <h5 className="font-medium text-sm text-card-foreground">Aleksandar Žibert, dipl. rač. inž</h5>
               </div>
               <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Pero Perović,dr.mcmdm</h5>
+                <h5 className="font-medium text-sm text-card-foreground">Eric Ušić,dr. sc.</h5>
               </div>
             </div>
           </div>
