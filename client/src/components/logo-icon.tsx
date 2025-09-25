@@ -1,4 +1,3 @@
-import logoImage from "@assets/Logo-festival_1756313019903.jpg";
 
 interface LogoIconProps {
   className?: string;
@@ -12,12 +11,5 @@ export function LogoIcon({ className = "", size = "md" }: LogoIconProps) {
     lg: "w-16 h-16"
   };
 
-  return (
-    <img 
-      src={logoImage}
-      alt="Festival znanstvenog filma"
-      className={`${sizeClasses[size]} ${className} object-contain`}
-      data-testid="festival-logo"
-    />
-  );
+  return null;
 }
