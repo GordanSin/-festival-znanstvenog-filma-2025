@@ -7,7 +7,7 @@ export function AboutSection() {
             O festivalu
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto" data-testid="about-subtitle">
-            Prvi Festival znanstvenog filma u Hrvatskoj koji spaja kulturu, znanost i održivi razvoj
+            Prvi Festival znanstvenog filma u hrvatskoj koji spaja kulturu, znanost i održivi razvoj
           </p>
         </div>
 
@@ -121,19 +121,24 @@ export function AboutSection() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3">
               <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Vedrana Špada, nasl. doc. dr. sc.</h5>
+                <h5 className="font-medium text-sm text-card-foreground">Vedrana Špada</h5>
+                <p className="text-xs text-muted-foreground mt-1">nasl. doc. dr. sc.</p>
               </div>
               <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Mirta Smodlaka Tanković, dr. sc. </h5>
+                <h5 className="font-medium text-sm text-card-foreground">Mirta Smodlaka Tanković</h5>
+                <p className="text-xs text-muted-foreground mt-1">dr. sc.</p>
               </div>
               <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Lovro Šverko, mag. paed. et educ. inf.</h5>
+                <h5 className="font-medium text-sm text-card-foreground">Lovro Šverko</h5>
+                <p className="text-xs text-muted-foreground mt-1">mag. paed. et educ. inf.</p>
               </div>
               <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Aleksandar Žibert, dipl. rač. inž</h5>
+                <h5 className="font-medium text-sm text-card-foreground">Aleksandar Žibert</h5>
+                <p className="text-xs text-muted-foreground mt-1">dipl. rač. inž</p>
               </div>
               <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Eric Ušić, dr. sc.</h5>
+                <h5 className="font-medium text-sm text-card-foreground">Eric Ušić</h5>
+                <p className="text-xs text-muted-foreground mt-1">dr. sc.</p>
               </div>
             </div>
           </div>
