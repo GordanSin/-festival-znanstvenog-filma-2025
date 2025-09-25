@@ -68,7 +68,7 @@ export function Navigation() {
               size="sm"
               data-testid="language-toggle"
             >
-              EN
+              HR
             </Button>
           </div>
           
@@ -108,7 +108,7 @@ export function Navigation() {
               className="w-full mt-3"
               data-testid="mobile-language-toggle"
             >
-              English
+              Hrvatski
             </Button>
           </div>
         </div>
