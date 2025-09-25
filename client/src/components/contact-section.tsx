@@ -65,14 +65,6 @@ export function ContactSection() {
                   <p className="text-sm text-muted-foreground">Glavni partner programa</p>
                 </div>
               </div>
-              <div className="border-t border-border pt-4">
-                <p className="text-muted-foreground text-sm">
-                  Za informacije o partnerstvu i sponzorstvu kontaktirajte nas na{" "}
-                  <a href="mailto:partneri@festival-zf.hr" className="text-primary hover:text-primary/80" data-testid="partnership-email">
-                    partneri@festival-zf.hr
-                  </a>
-                </p>
-              </div>
             </div>
           </div>
         </div>
