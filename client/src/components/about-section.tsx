@@ -1,3 +1,5 @@
+import sustainabilityImage from "@assets/d98d187f-f737-4191-98a5-00aa3a88211b_1758830615469.png";
+
 export function AboutSection() {
   return (
     <section id="about" className="py-20 bg-secondary/20" data-testid="about-section">
@@ -31,7 +33,7 @@ export function AboutSection() {
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-secondary-foreground rounded-full"></div>
-                <span className="text-card-foreground font-medium">Obrazovni program</span>
+                <span className="text-card-foreground font-medium"></span>
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-primary rounded-full"></div>
@@ -41,8 +43,8 @@ export function AboutSection() {
           </div>
           <div className="relative">
             <img 
-              src="https://images.unsplash.com/photo-1497435334941-8c899ee9e8e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-              alt="Sustainable urban development" 
+              src={sustainabilityImage} 
+              alt="Green jobs illustration showing renewable energy, solar panels, wind turbines and sustainable practices" 
               className="rounded-xl shadow-lg"
               data-testid="sustainability-image"
             />
