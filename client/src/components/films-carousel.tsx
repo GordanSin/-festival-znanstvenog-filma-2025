@@ -156,7 +156,7 @@ export function FilmsCarousel() {
       </Carousel>
       
       <div className="text-center mt-4 text-sm text-gray-500">
-        {sortedFilms.length} films from Croatian Scientific Film Festival
+        21 film Festivala znanstvenog filma
       </div>
 
       {/* Film Detail Modal */}
