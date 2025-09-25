@@ -25,12 +25,12 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
       
       {/* Logo in left corner */}
-      <div className="absolute top-0 left-0 z-20">
+      <div className="absolute z-20" style={{ top: '-20px', left: '-20px' }}>
         <img 
           src={logoImage} 
           alt="Croatian Scientific Film Festival Logo" 
           className="w-auto filter brightness-0 invert" 
-          style={{ height: '512px' }}
+          style={{ height: '256px' }}
           data-testid="hero-logo"
         />
       </div>
