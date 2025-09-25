@@ -5,6 +5,7 @@ import type { Location } from "@shared/schema";
 import pulaImage from "@assets/pula_1758831240469.jpg";
 import umagImage from "@assets/umag_1758831379550.jfif";
 import buzetImage from "@assets/buzet_1758831685132.jfif";
+import pazinImage from "@assets/pazin_1758831958515.jfif";
 
 export function LocationsSection() {
   const { data: locations = [], isLoading } = useQuery<Location[]>({
@@ -45,7 +46,7 @@ export function LocationsSection() {
       id: "6",
       name: "Pazin",
       description: "Administrativni centar Istre s naglaskom na obrazovanje", 
-      imageUrl: "https://pixabay.com/get/g57308e99442b1c62c69be6324a2fc052956e4256d7257a71fbd245dc9b80517136a2d201897351601a44683b8cecd9fac1c97e963fb13d8080b8a5f82e27a152_1280.jpg",
+      imageUrl: pazinImage,
       filmCount: 3,
       dates: ["13.-14. studenog"],
       createdAt: new Date(),
