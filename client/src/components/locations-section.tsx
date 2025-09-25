@@ -111,7 +111,7 @@ export function LocationsSection() {
               <img 
                 src={location.imageUrl} 
                 alt={`${location.name} waterfront`}
-                className={`w-full object-cover ${location.name === 'Umag' ? 'h-20' : 'h-32'}`}
+                className="w-full h-48 object-cover"
                 data-testid={`location-image-${location.id}`}
               />
               <CardContent className="p-4">
