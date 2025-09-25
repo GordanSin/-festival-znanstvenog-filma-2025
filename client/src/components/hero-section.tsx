@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroBackgroundImage from "@assets/Gemini_Generated_Image_bt1631bt1631bt16_1758657110533.png";
+import logoImage from "@assets/Untitled design (1)_1758821244066.png";
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -22,6 +23,16 @@ export function HeroSection() {
     >
       {/* Overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
+      
+      {/* Logo in left corner */}
+      <div className="absolute top-6 left-6 z-20">
+        <img 
+          src={logoImage} 
+          alt="Croatian Scientific Film Festival Logo" 
+          className="h-16 w-auto filter brightness-0 invert" 
+          data-testid="hero-logo"
+        />
+      </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 min-h-screen">
         {/* Main Title - Positioned Higher */}
