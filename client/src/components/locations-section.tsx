@@ -17,7 +17,7 @@ export function LocationsSection() {
     {
       id: "3",
       name: "Pula",
-      description: "Zajednica tehničke kulture Istarske županije",
+      description: "Najveći grad Istre s bogatom kinematografskom tradicijom",
       imageUrl: pulaImage,
       filmCount: 7,
       dates: ["6.-8. studenog"],
@@ -26,7 +26,7 @@ export function LocationsSection() {
     {
       id: "4", 
       name: "Umag",
-      description: "Ustanova za protokol, odnose s javnošću i manifestacije FESTUM",
+      description: "Sportski i kulturni centar s naglaskom na zelenu energiju",
       imageUrl: umagImage,
       filmCount: 4,
       dates: ["10.-11. studenog"],
@@ -35,7 +35,7 @@ export function LocationsSection() {
     {
       id: "5",
       name: "Buzet", 
-      description: "Pučko otvoreno učilište “Augustin Vivoda",
+      description: "Grad tartufa s fokusom na održivu poljoprivredu",
       imageUrl: buzetImage,
       filmCount: 3,
       dates: ["12.-13. studenog"],
@@ -44,7 +44,7 @@ export function LocationsSection() {
     {
       id: "6",
       name: "Pazin",
-      description: "e", 
+      description: "Administrativni centar Istre s naglaskom na obrazovanje", 
       imageUrl: "https://pixabay.com/get/g57308e99442b1c62c69be6324a2fc052956e4256d7257a71fbd245dc9b80517136a2d201897351601a44683b8cecd9fac1c97e963fb13d8080b8a5f82e27a152_1280.jpg",
       filmCount: 3,
       dates: ["13.-14. studenog"],
