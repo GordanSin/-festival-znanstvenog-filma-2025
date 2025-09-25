@@ -35,7 +35,7 @@ export function AboutSection() {
               </div>
               <div className="flex items-center space-x-2">
                 <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <span className="text-card-foreground font-medium">Stručne diskusije</span>
+                <span className="text-card-foreground font-medium"></span>
               </div>
             </div>
           </div>
@@ -91,7 +91,7 @@ export function AboutSection() {
             <div className="space-y-3">
               <div className="flex justify-between">
                 <span className="text-card-foreground">Broj filmova:</span>
-                <span className="font-semibold text-primary">25</span>
+                <span className="font-semibold text-primary">21</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-card-foreground">Ukupno trajanje:</span>
@@ -100,6 +100,37 @@ export function AboutSection() {
               <div className="flex justify-between">
                 <span className="text-card-foreground">Jezici:</span>
                 <span className="font-semibold text-primary">HR titlovi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Jury Section */}
+        <div className="mb-16">
+          <div className="bg-card rounded-xl p-8 border border-border" data-testid="jury-info">
+            <div className="flex items-center space-x-3 mb-6">
+              <div className="w-12 h-12 bg-secondary-foreground/20 text-secondary-foreground rounded-lg flex items-center justify-center">
+                <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM16 14C16 13.4 15.6 13 15 13H9C8.4 13 8 13.4 8 14V19H10V23H14V19H16V14ZM20.5 8.5C20.5 7.67 19.83 7 19 7S17.5 7.67 17.5 8.5 18.17 10 19 10 20.5 9.33 20.5 8.5ZM6.5 8.5C6.5 7.67 5.83 7 5 7S3.5 7.67 3.5 8.5 4.17 10 5 10 6.5 9.33 6.5 8.5Z"/>
+                </svg>
+              </div>
+              <div>
+                <h4 className="text-xl font-bold text-card-foreground">Žiri</h4>
+                <p className="text-muted-foreground">Članovi ocjenjivačkog žirija</p>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              <div className="p-4 bg-muted/30 rounded-lg">
+                <h5 className="font-semibold text-card-foreground">Gordan Sinđić prof</h5>
+              </div>
+              <div className="p-4 bg-muted/30 rounded-lg">
+                <h5 className="font-semibold text-card-foreground">Aleksandar Žibert</h5>
+              </div>
+              <div className="p-4 bg-muted/30 rounded-lg">
+                <h5 className="font-semibold text-card-foreground">Ina Venier</h5>
+              </div>
+              <div className="p-4 bg-muted/30 rounded-lg">
+                <h5 className="font-semibold text-card-foreground">Davor Marić</h5>
               </div>
             </div>
           </div>
