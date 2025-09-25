@@ -53,7 +53,7 @@ export function FilmsCarousel() {
   if (isLoading) {
     return (
       <div className="w-full max-w-6xl mx-auto px-4" data-testid="films-carousel-loading">
-        <h2 className="text-3xl font-bold text-center mb-8">Croatian Scientific Films</h2>
+        <h2 className="text-3xl font-bold text-center mb-8">Festival znanstvenog filma</h2>
         <div className="flex gap-4 overflow-hidden">
           {Array.from({ length: 3 }).map((_, i) => (
             <Card key={i} className="flex-shrink-0 w-80">
@@ -73,7 +73,7 @@ export function FilmsCarousel() {
   if (error) {
     return (
       <div className="w-full max-w-6xl mx-auto px-4 text-center" data-testid="films-carousel-error">
-        <h2 className="text-3xl font-bold mb-8">Croatian Scientific Films</h2>
+        <h2 className="text-3xl font-bold mb-8">Festival znanstvenog filma</h2>
         <p className="text-red-500">Failed to load films. Please try again later.</p>
       </div>
     );
@@ -82,7 +82,7 @@ export function FilmsCarousel() {
   if (!films || films.length === 0) {
     return (
       <div className="w-full max-w-6xl mx-auto px-4 text-center" data-testid="films-carousel-empty">
-        <h2 className="text-3xl font-bold mb-8">Croatian Scientific Films</h2>
+        <h2 className="text-3xl font-bold mb-8">Festival znanstvenog filma</h2>
         <p className="text-gray-500">No films available.</p>
       </div>
     );
@@ -93,7 +93,7 @@ export function FilmsCarousel() {
 
   return (
     <section id="films" className="w-full max-w-6xl mx-auto px-4 py-12" data-testid="films-carousel">
-      <h2 className="text-3xl font-bold text-center mb-8">Croatian Scientific Films</h2>
+      <h2 className="text-3xl font-bold text-center mb-8">Festival znanstvenog filma</h2>
       
       <Carousel
         opts={{
@@ -127,7 +127,7 @@ export function FilmsCarousel() {
                       >
                         <div className="text-center">
                           <div className="text-3xl mb-2">🎬</div>
-                          <div className="text-sm">Croatian Scientific Film</div>
+                          <div className="text-sm">Festival znanstvenog filma</div>
                         </div>
                       </div>
                     )}

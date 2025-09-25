@@ -168,7 +168,7 @@ export function FeaturedFilms() {
               {/* Film Counter */}
               <div className="text-center mt-6">
                 <p className="text-sm text-muted-foreground">
-                  Prikazuje se {films.length} od ukupno 25 filmova
+                  Prikazuje se {films.length} od ukupno 21 filma
                 </p>
               </div>
             </>

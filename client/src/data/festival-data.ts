@@ -5,13 +5,13 @@ export const festivalData = {
   month: "Studeni",
   locations: ["Rovinj", "Poreč", "Pula", "Umag", "Buzet", "Pazin", "Rijeka"],
   stats: {
-    films: 25,
+    films: 21,
     cities: 7,
     days: 14,
-    price: "FREE"
+    price: "BESPLATAN"
   },
   organizers: {
-    main: "Udruga tehničke kulture „Galileo Galilei"",
+    main: "Udruga tehničke kulture-Societa di cultura tecnica „Galileo Galilei"",
     location: "Rovinj-Rovigno",
     partner: "Goethe-Institut Kroatien"
   },
@@ -31,8 +31,8 @@ export const festivalData = {
     partnership: "partneri@festival-zf.hr"
   },
   address: {
-    organization: "Udruga tehničke kulture \"Galileo Galilei\"",
-    street: "Obala Pina Budicina 12",
+    organization: "Udruga tehničke kulture-Societa di cultura tecnica \"Galileo Galilei\"",
+    street: "Domenico Pergolis 2",
     city: "52210 Rovinj-Rovigno, Hrvatska"
   }
 };

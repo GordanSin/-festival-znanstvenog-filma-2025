@@ -76,8 +76,8 @@ export function HeroSection() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div data-testid="stat-films">
-              <div className="text-3xl font-bold text-primary">25</div>
-              <div className="text-sm text-muted-foreground">Filmova</div>
+              <div className="text-3xl font-bold text-primary">21</div>
+              <div className="text-sm text-muted-foreground">Film</div>
             </div>
             <div data-testid="stat-cities">
               <div className="text-3xl font-bold text-primary">7</div>
@@ -88,7 +88,7 @@ export function HeroSection() {
               <div className="text-sm text-muted-foreground">Dana</div>
             </div>
             <div data-testid="stat-price">
-              <div className="text-3xl font-bold text-accent">FREE</div>
+              <div className="text-3xl font-bold text-accent">BEPLATAN</div>
               <div className="text-sm text-muted-foreground">Ulaz</div>
             </div>
           </div>
