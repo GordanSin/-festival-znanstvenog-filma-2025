@@ -3,6 +3,7 @@ import { Link, useLocation } from "wouter";
 import { LogoIcon } from "./logo-icon";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logoImage from "@assets/Untitled design (1)_1758821244066.png";
 
 export function Navigation() {
   const [location] = useLocation();
@@ -49,7 +50,12 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="flex items-center space-x-3">
-            <LogoIcon className="text-white" size="sm" />
+            <img 
+              src={logoImage} 
+              alt="Croatian Scientific Film Festival Logo" 
+              className="h-8 w-auto filter brightness-0 invert" 
+              data-testid="nav-logo"
+            />
           </Link>
           
           {/* Desktop Menu */}
