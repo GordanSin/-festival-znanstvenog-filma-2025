@@ -107,7 +107,7 @@ export function AboutSection() {
 
         {/* Jury Section */}
         <div className="mb-12">
-          <div className="bg-card rounded-xl p-6 border border-border" data-testid="jury-info">
+          <div className="bg-accent/10 rounded-xl p-6 border border-accent/30" data-testid="jury-info">
             <div className="flex items-center space-x-3 mb-4">
               <div className="w-8 h-8 bg-secondary-foreground/20 text-secondary-foreground rounded-lg flex items-center justify-center">
                 <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -121,10 +121,10 @@ export function AboutSection() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3">
               <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">nasl. doc. dr. sc. Vedrana Špada, prof. struč. stud</h5>
+                <h5 className="font-medium text-sm text-card-foreground">Vedrana Špada, nasl. doc. dr. sc.</h5>
               </div>
               <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">dr. sc. Mirta Smodlaka Tanković – dr. znanosti o moru</h5>
+                <h5 className="font-medium text-sm text-card-foreground">Mirta Smodlaka Tanković, dr. sc. </h5>
               </div>
               <div className="p-3 bg-muted/30 rounded-lg">
                 <h5 className="font-medium text-sm text-card-foreground">Lovro Šverko, mag. paed. et educ. inf.</h5>
@@ -133,7 +133,7 @@ export function AboutSection() {
                 <h5 className="font-medium text-sm text-card-foreground">Aleksandar Žibert, dipl. rač. inž</h5>
               </div>
               <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Eric Ušić,dr. sc.</h5>
+                <h5 className="font-medium text-sm text-card-foreground">Eric Ušić, dr. sc.</h5>
               </div>
             </div>
           </div>
