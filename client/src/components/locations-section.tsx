@@ -7,6 +7,7 @@ import umagImage from "@assets/umag_1758831379550.jfif";
 import buzetImage from "@assets/buzet_1758831685132.jfif";
 import pazinImage from "@assets/pazin_1758831958515.jfif";
 import porecImage from "@assets/porec_1758910010592.jfif";
+import rovinjImage from "@assets/rovinj-xx_1758910058028.jpg";
 
 export function LocationsSection() {
   const { data: locations = [], isLoading } = useQuery<Location[]>({
@@ -74,7 +75,7 @@ export function LocationsSection() {
       id: "9",
       name: "Rovinj-Rovigno",
       description: "Pučko otvoreno učilište-Universita popolare aperta",
-      imageUrl: "https://images.unsplash.com/photo-1555990538-c87d4ba0c93e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      imageUrl: rovinjImage,
       filmCount: 6,
       dates: ["19.-20. studenog"],
       createdAt: new Date(),
