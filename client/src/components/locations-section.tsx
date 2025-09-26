@@ -7,7 +7,7 @@ import umagImage from "@assets/umag_1758831379550.jfif";
 import buzetImage from "@assets/buzet_1758831685132.jfif";
 import pazinImage from "@assets/pazin_1758831958515.jfif";
 import porecImage from "@assets/porec_1758910010592.jfif";
-import rovinjImage from "@assets/rovinj-xx_1758910058028.jpg";
+import rovinjImage from "@assets/rovinj-xx_1758910212100.jpg";
 import rijekaImage from "@assets/rijeka_1758910125510.webp";
 
 export function LocationsSection() {
