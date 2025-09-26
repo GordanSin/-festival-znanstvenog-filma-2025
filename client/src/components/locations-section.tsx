@@ -6,6 +6,7 @@ import pulaImage from "@assets/pula_1758831240469.jpg";
 import umagImage from "@assets/umag_1758831379550.jfif";
 import buzetImage from "@assets/buzet_1758831685132.jfif";
 import pazinImage from "@assets/pazin_1758831958515.jfif";
+import porecImage from "@assets/porec_1758910010592.jfif";
 
 export function LocationsSection() {
   const { data: locations = [], isLoading } = useQuery<Location[]>({
@@ -54,7 +55,7 @@ export function LocationsSection() {
     {
       id: "7",
       name: "Rijeka",
-      description: "Kulturna prijestolnica s velikim finalom festivala",
+      description: "Centar tehničke kulture",
       imageUrl: "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
       filmCount: 9,
       dates: ["14.-16. studenog"],
@@ -62,17 +63,17 @@ export function LocationsSection() {
     },
     {
       id: "8",
-      name: "Zagreb",
-      description: "Glavni grad s fokusom na zelene tehnologije i inovacije",
-      imageUrl: "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      name: "Poreč",
+      description: "Pučko otvoreno učilište",
+      imageUrl: porecImage,
       filmCount: 5,
       dates: ["17.-18. studenog"],
       createdAt: new Date(),
     },
     {
       id: "9",
-      name: "Split",
-      description: "Dalmatinski centar održivog turizma i solarne energije",
+      name: "Rovinj-Rovigno",
+      description: "Pučko otvoreno učilište-Universita popolare aperta",
       imageUrl: "https://images.unsplash.com/photo-1555990538-c87d4ba0c93e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
       filmCount: 6,
       dates: ["19.-20. studenog"],
@@ -103,7 +104,7 @@ export function LocationsSection() {
             Lokacije festivala
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto" data-testid="locations-description">
-            Festival će se održavati u sedam prekrasnih istarskih gradova i Rijeci, povezujući kulturu i znanost kroz cijelu regiju
+            Festival će se održavati u šest prekrasnih istarskih gradova i Rijeci, povezujući kulturu i znanost kroz cijelu regiju
           </p>
         </div>
 
