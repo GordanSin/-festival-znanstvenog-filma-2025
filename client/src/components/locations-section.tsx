@@ -8,6 +8,7 @@ import buzetImage from "@assets/buzet_1758831685132.jfif";
 import pazinImage from "@assets/pazin_1758831958515.jfif";
 import porecImage from "@assets/porec_1758910010592.jfif";
 import rovinjImage from "@assets/rovinj-xx_1758910058028.jpg";
+import rijekaImage from "@assets/rijeka_1758910125510.webp";
 
 export function LocationsSection() {
   const { data: locations = [], isLoading } = useQuery<Location[]>({
@@ -57,7 +58,7 @@ export function LocationsSection() {
       id: "7",
       name: "Rijeka",
       description: "Centar tehničke kulture",
-      imageUrl: "https://images.unsplash.com/photo-1591825729269-caeb344f6df2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+      imageUrl: rijekaImage,
       filmCount: 9,
       dates: ["14.-16. studenog"],
       createdAt: new Date(),
