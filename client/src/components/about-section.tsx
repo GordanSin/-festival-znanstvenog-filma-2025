@@ -107,40 +107,73 @@ export function AboutSection() {
           </div>
         </div>
 
-        {/* Jury Section */}
-        <div className="mb-12">
-          <div className="bg-accent/10 rounded-xl p-6 border border-accent/30" data-testid="jury-info">
-            <div className="flex items-center space-x-3 mb-4">
-              <div className="w-8 h-8 bg-secondary-foreground/20 text-secondary-foreground rounded-lg flex items-center justify-center">
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM16 14C16 13.4 15.6 13 15 13H9C8.4 13 8 13.4 8 14V19H10V23H14V19H16V14ZM20.5 8.5C20.5 7.67 19.83 7 19 7S17.5 7.67 17.5 8.5 18.17 10 19 10 20.5 9.33 20.5 8.5ZM6.5 8.5C6.5 7.67 5.83 7 5 7S3.5 7.67 3.5 8.5 4.17 10 5 10 6.5 9.33 6.5 8.5Z"/>
-                </svg>
-              </div>
-              <div>
-                <h4 className="text-lg font-bold text-card-foreground">Žiri</h4>
-                <p className="text-sm text-muted-foreground">Članovi ocjenjivačkog žirija</p>
+        {/* Jury Section - Modern Design */}
+        <div className="mb-16">
+          <div className="text-center mb-12">
+            <div className="inline-flex items-center justify-center w-16 h-16 bg-gradient-to-br from-primary to-primary/70 text-white rounded-2xl shadow-lg mb-4">
+              <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM16 14C16 13.4 15.6 13 15 13H9C8.4 13 8 13.4 8 14V19H10V23H14V19H16V14ZM20.5 8.5C20.5 7.67 19.83 7 19 7S17.5 7.67 17.5 8.5 18.17 10 19 10 20.5 9.33 20.5 8.5ZM6.5 8.5C6.5 7.67 5.83 7 5 7S3.5 7.67 3.5 8.5 4.17 10 5 10 6.5 9.33 6.5 8.5Z"/>
+              </svg>
+            </div>
+            <h4 className="text-3xl font-bold text-card-foreground mb-3">Stručni žiri</h4>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+              Pet renomiranih stručnjaka koji će ocijeniti filmove na ovogodišnjem festivalu
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6" data-testid="jury-info">
+            <div className="group relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative">
+                <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/70 text-white rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                  <span className="font-bold text-lg">V</span>
+                </div>
+                <h5 className="font-bold text-base text-card-foreground mb-2">Vedrana Špada</h5>
+                <p className="text-sm text-muted-foreground leading-relaxed">nasl. doc. dr. sc.</p>
               </div>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-3">
-              <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Vedrana Špada</h5>
-                <p className="text-xs text-muted-foreground mt-1">nasl. doc. dr. sc.</p>
+            
+            <div className="group relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-accent/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative">
+                <div className="w-12 h-12 bg-gradient-to-br from-accent to-accent/70 text-white rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                  <span className="font-bold text-lg">M</span>
+                </div>
+                <h5 className="font-bold text-base text-card-foreground mb-2">Mirta Smodlaka Tanković</h5>
+                <p className="text-sm text-muted-foreground leading-relaxed">dr. sc.</p>
               </div>
-              <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Mirta Smodlaka Tanković</h5>
-                <p className="text-xs text-muted-foreground mt-1">dr. sc.</p>
+            </div>
+            
+            <div className="group relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-secondary/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative">
+                <div className="w-12 h-12 bg-gradient-to-br from-secondary to-secondary/70 text-white rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                  <span className="font-bold text-lg">L</span>
+                </div>
+                <h5 className="font-bold text-base text-card-foreground mb-2">Lovro Šverko</h5>
+                <p className="text-sm text-muted-foreground leading-relaxed">mag. paed. et educ. inf.</p>
               </div>
-              <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Lovro Šverko</h5>
-                <p className="text-xs text-muted-foreground mt-1">mag. paed. et educ. inf.</p>
+            </div>
+            
+            <div className="group relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative">
+                <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/70 text-white rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                  <span className="font-bold text-lg">A</span>
+                </div>
+                <h5 className="font-bold text-base text-card-foreground mb-2">Aleksandar Žibert</h5>
+                <p className="text-sm text-muted-foreground leading-relaxed">dipl. rač. inž</p>
               </div>
-              <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Aleksandar Žibert</h5>
-                <p className="text-xs text-muted-foreground mt-1">dipl. rač. inž</p>
-              </div>
-              <div className="p-3 bg-muted/30 rounded-lg">
-                <h5 className="font-medium text-sm text-card-foreground">Eric Ušić</h5>
-                <p className="text-xs text-muted-foreground mt-1">dr. sc.</p>
+            </div>
+            
+            <div className="group relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 p-6 rounded-2xl shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 md:col-span-2 lg:col-span-1">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-accent/10 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+              <div className="relative">
+                <div className="w-12 h-12 bg-gradient-to-br from-accent to-accent/70 text-white rounded-xl flex items-center justify-center mb-4 shadow-lg">
+                  <span className="font-bold text-lg">E</span>
+                </div>
+                <h5 className="font-bold text-base text-card-foreground mb-2">Eric Ušić</h5>
+                <p className="text-sm text-muted-foreground leading-relaxed">dr. sc.</p>
               </div>
             </div>
           </div>
