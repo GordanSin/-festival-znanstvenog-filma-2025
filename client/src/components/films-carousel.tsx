@@ -99,8 +99,11 @@ export function FilmsCarousel() {
         opts={{
           align: "start",
           loop: true,
+          dragFree: true,
+          containScroll: "trimSnaps",
+          duration: 20,
         }}
-        className="w-full"
+        className="w-full relative"
       >
         <CarouselContent className="-ml-2 md:-ml-4">
           {sortedFilms.map((film) => (

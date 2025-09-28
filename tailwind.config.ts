@@ -3,6 +3,53 @@ import type { Config } from "tailwindcss";
 export default {
   darkMode: ["class"],
   content: ["./client/index.html", "./client/src/**/*.{js,jsx,ts,tsx}"],
+  safelist: [
+    // Carousel responsive classes that might be purged in production
+    'pl-2',
+    'pl-4', 
+    'md:pl-4',
+    'md:basis-1/2',
+    'lg:basis-1/3',
+    'xl:basis-1/4',
+    'basis-1/2',
+    'basis-1/3', 
+    'basis-1/4',
+    'left-4',
+    'right-4',
+    // Grid and flex classes for carousel
+    'grid-cols-1',
+    'md:grid-cols-2', 
+    'lg:grid-cols-3',
+    'xl:grid-cols-4',
+    'xl:grid-cols-5',
+    // Animation and transform classes
+    'transition-all',
+    'duration-300',
+    'hover:-translate-y-1',
+    'hover:shadow-lg',
+    // Responsive padding classes specifically needed
+    'md:pl-4',
+    'lg:pl-4',
+    'xl:pl-4',
+    // Basis classes for responsive layout
+    'md:basis-1/2',
+    'lg:basis-1/3',
+    'xl:basis-1/4',
+    // Carousel positioning
+    'absolute',
+    'relative',
+    'inset-0',
+    // Flex layout for carousel
+    'flex',
+    'flex-shrink-0',
+    'w-full',
+    'overflow-hidden',
+    // Mobile-first responsive classes
+    'block',
+    'hidden',
+    'md:block',
+    'lg:block'
+  ],
   theme: {
     extend: {
       borderRadius: {
