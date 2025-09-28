@@ -1,6 +1,6 @@
 export const festivalData = {
   name: "Festival znanstvenog filma",
-  subtitle: "Green Jobs - Zeleni poslovi budućnosti",
+  subtitle: "Ekologija i zeleni poslovi budućnosti",
   year: 2025,
   month: "Studeni",
   locations: ["Rovinj", "Poreč", "Pula", "Umag", "Buzet", "Pazin", "Rijeka"],

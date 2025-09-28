@@ -46,7 +46,7 @@ export function HeroSection() {
         {/* Bottom Content */}
         <div className="text-center w-full absolute bottom-32 left-0 right-0">
           <div className="text-xl md:text-2xl mb-8 text-white/95">
-            <p className="mb-2 drop-shadow-md" data-testid="hero-subtitle">Green Jobs - Zeleni poslovi budućnosti</p>
+            <p className="mb-2 drop-shadow-md" data-testid="hero-subtitle">Ekologija i zeleni poslovi budućnosti</p>
             <p className="text-lg drop-shadow-md" data-testid="hero-dates">Studeni 2025 • Istra & Rijeka</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
