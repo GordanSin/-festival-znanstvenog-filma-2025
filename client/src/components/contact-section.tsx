@@ -27,6 +27,12 @@ export function ContactSection() {
               </p>
               <p data-testid="contact-street">Domenico Pergolis 2</p>
               <p data-testid="contact-city">52210 Rovinj-Rovigno, Hrvatska</p>
+              <div className="flex items-center space-x-2 text-card-foreground">
+                <Mail className="text-primary h-4 w-4" />
+                <a href="mailto:utkgalileo@gmail.com" className="hover:text-primary transition-colors" data-testid="contact-email">
+                  utkgalileo@gmail.com
+                </a>
+              </div>
               <div className="pt-4">
                 <p className="text-sm text-muted-foreground mb-2">Pratite nas:</p>
                 <div className="flex space-x-4">
