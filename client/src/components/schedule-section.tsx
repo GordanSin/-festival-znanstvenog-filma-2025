@@ -25,7 +25,7 @@ export function ScheduleSection() {
             Raspored festivala
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto" data-testid="schedule-description">
-            Festival će se održavati kroz dva tjedna u studenome 2025. u sedam istarskih gradova i Rijeci
+            Festival će se održavati kroz dva tjedna u studenome 2025. u šest istarskih gradova i Rijeci
           </p>
         </div>
 

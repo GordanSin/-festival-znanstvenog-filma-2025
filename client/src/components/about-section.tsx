@@ -117,7 +117,7 @@ export function AboutSection() {
             </div>
             <h4 className="text-3xl font-bold text-card-foreground mb-3">Stručni žiri</h4>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Pet renomiranih stručnjaka koji će ocijeniti filmove na ovogodišnjem festivalu
+              Pet renomiranih stručnjaka i znanstvenika koji su ocijenili 145 ponuđenih filmova na ovogodišnjem festivalu
             </p>
           </div>
           
