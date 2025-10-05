@@ -21,8 +21,8 @@ export function HeroSection() {
       style={{ backgroundImage: `url(${heroBackgroundImage})` }}
       data-testid="hero-section"
     >
-      {/* Overlay for better text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50"></div>
+      {/* Light overlay for text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20"></div>
       
       {/* Logo in left corner */}
       <div className="absolute z-20" style={{ top: '-20px', left: '-20px' }}>
@@ -38,16 +38,16 @@ export function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 min-h-screen">
         {/* Main Title - Positioned Higher */}
         <div className="text-center" style={{ paddingTop: '264px' }}>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg" data-testid="hero-title">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary drop-shadow-2xl" data-testid="hero-title">
             Festival znanstvenog<br />filma
           </h1>
         </div>
         
         {/* Bottom Content */}
         <div className="text-center w-full absolute bottom-32 left-0 right-0">
-          <div className="text-xl md:text-2xl mb-8 text-white/95">
-            <p className="mb-2 drop-shadow-md" data-testid="hero-subtitle">Ekologija i zeleni poslovi budućnosti</p>
-            <p className="text-lg drop-shadow-md" data-testid="hero-dates">Studeni 2025 • Istra & Rijeka</p>
+          <div className="text-xl md:text-2xl mb-8 text-foreground">
+            <p className="mb-2 drop-shadow-xl font-semibold" data-testid="hero-subtitle">Ekologija i zeleni poslovi budućnosti</p>
+            <p className="text-lg drop-shadow-lg font-medium" data-testid="hero-dates">Studeni 2025 • Istra & Rijeka</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
