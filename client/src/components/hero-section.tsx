@@ -27,30 +27,30 @@ export function HeroSection() {
       ></div>
       {/* Mobile Background */}
       <div 
-        className="absolute inset-0 block md:hidden bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 block md:hidden bg-contain bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackgroundMobile})` }}
       ></div>
       {/* Light overlay for text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20"></div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 min-h-screen">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-20 min-h-screen flex flex-col justify-between">
         {/* Main Title - Near Menu */}
-        <div className="text-right pr-8 md:pr-16" style={{ paddingTop: '20px' }}>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-black drop-shadow-lg" data-testid="hero-title">
+        <div className="text-center md:text-right md:pr-8 lg:pr-16 pt-4 md:pt-5">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 text-black drop-shadow-lg" data-testid="hero-title">
             Festival znanstvenog<br />filma
           </h1>
         </div>
         
         {/* Bottom Content */}
-        <div className="text-center w-full absolute bottom-32 left-0 right-0">
-          <div className="text-xl md:text-2xl mb-8 text-foreground">
+        <div className="text-center w-full pb-8 md:pb-16">
+          <div className="text-lg md:text-xl lg:text-2xl mb-6 md:mb-8 text-foreground">
             <p className="mb-2 drop-shadow-xl font-semibold" data-testid="hero-subtitle">Ekologija i zeleni poslovi budućnosti</p>
-            <p className="text-lg drop-shadow-lg font-medium" data-testid="hero-dates">Studeni 2025 • Istra & Rijeka</p>
+            <p className="text-base md:text-lg drop-shadow-lg font-medium" data-testid="hero-dates">Studeni 2025 • Istra & Rijeka</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg w-full sm:w-auto"
               onClick={() => scrollToSection("films")}
               data-testid="button-view-program"
             >
@@ -59,7 +59,7 @@ export function HeroSection() {
             <Button 
               size="lg"
               variant="outline"
-              className="border-2 border-white text-black bg-white hover:bg-white/90 hover:text-black shadow-lg"
+              className="border-2 border-white text-black bg-white hover:bg-white/90 hover:text-black shadow-lg w-full sm:w-auto"
               onClick={() => scrollToSection("about")}
               data-testid="button-learn-more"
             >
