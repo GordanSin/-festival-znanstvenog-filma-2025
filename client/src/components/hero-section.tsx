@@ -24,17 +24,6 @@ export function HeroSection() {
       {/* Light overlay for text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20"></div>
       
-      {/* Logo in left corner */}
-      <div className="absolute z-20" style={{ top: '-20px', left: '-20px' }}>
-        <img 
-          src={logoImage} 
-          alt="Croatian Scientific Film Festival Logo" 
-          className="w-auto filter brightness-0 invert" 
-          style={{ height: '512px' }}
-          data-testid="hero-logo"
-        />
-      </div>
-      
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 min-h-screen">
         {/* Main Title - Near Menu */}
         <div className="text-right pr-8 md:pr-16" style={{ paddingTop: '20px' }}>
