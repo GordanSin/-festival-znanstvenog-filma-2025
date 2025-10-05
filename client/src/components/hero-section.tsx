@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBackgroundImage from "@assets/hero-str_1759680101905.png";
-import logoImage from "@assets/Untitled design (1)_1758821244066.png";
+import heroBackgroundImage from "@assets/Gemini_Generated_Image_97rt1a97rt1a97rt_1759682257025.webp";
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
