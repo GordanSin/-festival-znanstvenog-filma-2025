@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBackgroundDesktop from "@assets/Gemini_Generated_Image_97rt1a97rt1a97rt_1759682257025.webp";
-import heroBackgroundMobile from "@assets/generated_images/Green_jobs_mobile_hero_8b7aff82.png";
+import heroBackgroundImage from "@assets/Gemini_Generated_Image_97rt1a97rt1a97rt_1759682257025.webp";
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -17,18 +16,10 @@ export function HeroSection() {
   return (
     <section 
       id="home" 
-      className="relative text-primary-foreground pt-16 min-h-screen overflow-hidden" 
+      className="relative text-primary-foreground pt-16 min-h-screen bg-cover bg-center bg-no-repeat" 
+      style={{ backgroundImage: `url(${heroBackgroundImage})` }}
       data-testid="hero-section"
     >
-      {/* Responsive Background Image */}
-      <picture className="absolute inset-0 w-full h-full">
-        <source media="(min-width: 768px)" srcSet={heroBackgroundDesktop} />
-        <img 
-          src={heroBackgroundMobile} 
-          alt="Festival znanstvenog filma - Green Jobs" 
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-      </picture>
       {/* Light overlay for text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20"></div>
       
