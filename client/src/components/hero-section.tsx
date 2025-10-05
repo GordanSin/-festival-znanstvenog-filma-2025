@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBackgroundImage from "@assets/Gemini_Generated_Image_bt1631bt1631bt16_1758657110533.png";
+import heroBackgroundImage from "@assets/hero-str_1759680101905.png";
 import logoImage from "@assets/Untitled design (1)_1758821244066.png";
 
 export function HeroSection() {
