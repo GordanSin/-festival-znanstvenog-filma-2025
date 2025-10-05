@@ -36,9 +36,9 @@ export function HeroSection() {
       </div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 min-h-screen">
-        {/* Main Title - Positioned Higher */}
-        <div className="text-center" style={{ paddingTop: '264px' }}>
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-primary drop-shadow-2xl" data-testid="hero-title">
+        {/* Main Title - Below Menu */}
+        <div className="text-center" style={{ paddingTop: '40px' }}>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-black drop-shadow-lg" data-testid="hero-title">
             Festival znanstvenog<br />filma
           </h1>
         </div>
