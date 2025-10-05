@@ -57,7 +57,7 @@ export function Navigation() {
               <button
                 key={item.href}
                 onClick={() => scrollToSection(item.href)}
-                className="text-white hover:text-white/80 transition-colors"
+                className="text-black hover:text-black/70 transition-colors font-medium"
                 data-testid={`nav-${item.href}`}
               >
                 {item.label}
@@ -76,7 +76,7 @@ export function Navigation() {
           <Button
             variant="ghost"
             size="sm"
-            className="md:hidden text-white hover:text-white/80"
+            className="md:hidden text-black hover:text-black/70"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             data-testid="mobile-menu-toggle"
           >
