@@ -17,7 +17,7 @@ export function HeroSection() {
   return (
     <section 
       id="home" 
-      className="relative text-primary-foreground pt-16 min-h-screen bg-cover bg-center bg-no-repeat" 
+      className="relative text-primary-foreground pt-16 min-h-screen" 
       data-testid="hero-section"
     >
       {/* Desktop Background */}
