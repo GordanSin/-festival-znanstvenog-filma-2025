@@ -35,9 +35,9 @@ export function HeroSection() {
         
         {/* Bottom Content */}
         <div className="text-center w-full pb-8 md:pb-16">
-          <div className="inline-block px-6 py-4 bg-white/80 backdrop-blur-md rounded-2xl shadow-2xl mb-6 md:mb-8">
-            <p className="text-lg md:text-xl lg:text-2xl mb-2 font-bold text-black" data-testid="hero-subtitle">Ekologija i zeleni poslovi budućnosti</p>
-            <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-primary" data-testid="hero-dates">Studeni 2025 • Istra & Rijeka</p>
+          <div className="mb-6 md:mb-8">
+            <p className="text-lg md:text-xl lg:text-2xl mb-2 font-bold text-white drop-shadow-2xl" data-testid="hero-subtitle">Ekologija i zeleni poslovi budućnosti</p>
+            <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-white drop-shadow-2xl" data-testid="hero-dates">Studeni 2025 • Istra & Rijeka</p>
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
