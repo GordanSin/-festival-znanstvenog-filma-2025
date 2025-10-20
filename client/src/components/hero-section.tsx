@@ -27,7 +27,7 @@ export function HeroSection() {
       ></div>
       {/* Mobile Background */}
       <div 
-        className="absolute inset-0 block md:hidden bg-contain bg-center bg-no-repeat"
+        className="absolute inset-0 block md:hidden bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackgroundMobile})` }}
       ></div>
       
