@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import heroBackgroundImage from "@assets/Gemini_Generated_Image_bt1631bt1631bt16_1760961177316.png";
+import heroBackgroundDesktop from "@assets/Gemini_Generated_Image_bt1631bt1631bt16_1760961177316.png";
+import heroBackgroundMobile from "@assets/mobile-hero_1760961851977.png";
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -19,10 +20,15 @@ export function HeroSection() {
       className="relative text-primary-foreground pt-16 min-h-screen" 
       data-testid="hero-section"
     >
-      {/* Background Image */}
+      {/* Desktop Background */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackgroundImage})` }}
+        className="absolute inset-0 hidden md:block bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackgroundDesktop})` }}
+      ></div>
+      {/* Mobile Background */}
+      <div 
+        className="absolute inset-0 block md:hidden bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackgroundMobile})` }}
       ></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-20 min-h-screen flex flex-col justify-between">
