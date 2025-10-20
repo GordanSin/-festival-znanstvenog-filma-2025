@@ -27,7 +27,7 @@ export function HeroSection() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-20 min-h-screen flex flex-col justify-between">
         {/* Main Title - Near Menu */}
-        <div className="text-center md:text-right md:pr-8 lg:pr-16 pt-16 md:pt-24 lg:pt-32">
+        <div className="text-center md:text-right md:pr-8 lg:pr-16 pt-0">
           <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 text-white drop-shadow-2xl" data-testid="hero-title">
             Festival znanstvenog<br />filma
           </h1>
