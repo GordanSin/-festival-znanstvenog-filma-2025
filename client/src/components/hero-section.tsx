@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBackgroundDesktop from "@assets/Gemini_Generated_Image_97rt1a97rt1a97rt_1759682257025.webp";
-import heroBackgroundMobile from "@assets/Gemini_Generated_Image_97rt1a97rt1a97rt_1759682519799.webp";
+import heroBackgroundImage from "@assets/Gemini_Generated_Image_bt1631bt1631bt16_1760961177316.png";
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -20,23 +19,16 @@ export function HeroSection() {
       className="relative text-primary-foreground pt-16 min-h-screen" 
       data-testid="hero-section"
     >
-      {/* Desktop Background */}
+      {/* Background Image */}
       <div 
-        className="absolute inset-0 hidden md:block bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackgroundDesktop})` }}
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroBackgroundImage})` }}
       ></div>
-      {/* Mobile Background */}
-      <div 
-        className="absolute inset-0 block md:hidden bg-contain bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackgroundMobile})` }}
-      ></div>
-      {/* Light overlay for text readability */}
-      <div className="absolute inset-0 bg-gradient-to-b from-black/10 via-transparent to-black/20"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-20 min-h-screen flex flex-col justify-between">
         {/* Main Title - Near Menu */}
         <div className="text-center md:text-right md:pr-8 lg:pr-16 pt-4 md:pt-5">
-          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 text-black drop-shadow-lg" data-testid="hero-title">
+          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 text-white drop-shadow-2xl" data-testid="hero-title">
             Festival znanstvenog<br />filma
           </h1>
         </div>
