@@ -108,10 +108,8 @@ export function Footer() {
           <div>
             <h5 className="font-semibold text-primary-foreground mb-4">{t("contact.organizers")}</h5>
             <ul className="space-y-2 text-sm">
-              <li className="text-primary-foreground/80">UTK-SCT "Galileo Galilei"</li>
-              <li className="text-primary-foreground/80">Rovinj-Rovigno</li>
-              <li className="text-primary-foreground/80 mt-3">Goethe-Institut</li>
-              <li className="text-primary-foreground/80">Kroatien</li>
+              <li className="text-primary-foreground/80">UTK-SCT "Galileo Galilei", Rovinj-Rovigno</li>
+              <li className="text-primary-foreground/80">Goethe-Institut Kroatien</li>
             </ul>
           </div>
         </div>
