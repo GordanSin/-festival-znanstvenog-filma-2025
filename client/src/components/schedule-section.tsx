@@ -63,14 +63,14 @@ export function ScheduleSection() {
                 </div>
               ))}
             </div>
+            
+            {/* Note */}
+            <div className="text-center mt-6">
+              <p className="text-sm text-muted-foreground italic" data-testid="schedule-note">
+                * detaljan program, clik na Grad
+              </p>
+            </div>
           </div>
-        </div>
-        
-        {/* Note */}
-        <div className="text-center mt-8">
-          <p className="text-sm text-muted-foreground italic" data-testid="schedule-note">
-            * detaljan program, clik na Grad
-          </p>
         </div>
       </div>
     </section>
