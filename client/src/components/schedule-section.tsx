@@ -1,7 +1,7 @@
 export function ScheduleSection() {
   const weekOneEvents = [
     { title: "Predavanje: Pametni gradovi, pametni planet", details: "Predavač: Goran Zaharija, dr.sc. PMF Split" },
-    { title: "Filmski blok 1", details: "4.-5. studenog - Poreč-Parenzo" },
+    { title: "Projekcija filma: Genova Lab", details: "4.-5. studenog - Poreč-Parenzo" },
     { title: "Diskusije s ekspertima", details: "6.-7. studenog - Pula-Pola" },
   ];
 
