@@ -118,11 +118,13 @@ async function importToProduction() {
           INSERT INTO films (
             id, title, description, director, producer, 
             country, year, duration, category, themes, 
-            screening_date, screening_location, "imageData"
+            screening_dates, location, image_url, image_data,
+            language, running_time, page_number
           ) VALUES (
             ${film.id}, ${film.title}, ${film.description}, ${film.director}, ${film.producer},
             ${film.country}, ${film.year}, ${film.duration}, ${film.category}, ${film.themes},
-            ${film.screening_date}, ${film.screening_location}, ${film.imageData}
+            ${JSON.stringify(film.screening_dates)}, ${film.location}, ${film.image_url}, ${film.image_data},
+            ${film.language}, ${film.running_time}, ${film.page_number}
           )
         `;
         
