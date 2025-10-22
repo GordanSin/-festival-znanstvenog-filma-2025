@@ -1,6 +1,7 @@
 export function ScheduleSection() {
   const weekOneEvents = [
     { title: "Svečano otvaranje", details: "3. studenog, 19:00 - Rovinj-Rovigno" },
+    { title: "Predavanje: Pametni gradovi, pametni planet", details: "Predavač: Goran Zaharija, dr.sc. PMF Split" },
     { title: "Filmski blok 1", details: "4.-5. studenog - Poreč-Parenzo" },
     { title: "Diskusije s ekspertima", details: "6.-7. studenog - Pula-Pola" },
   ];
@@ -28,7 +29,7 @@ export function ScheduleSection() {
           <div className="bg-card rounded-xl p-8 border border-border" data-testid="week-one-schedule">
             <div className="text-center mb-6">
               <div className="inline-block px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-semibold">
-                Svečano otvaranje festivala
+                
               </div>
               <h3 className="text-xl font-bold text-card-foreground mt-4 mb-2">4. studenog 2025. 18h</h3>
               <p className="text-muted-foreground">Kino / Cinema Gandusio, Rovinj-Rovigno</p>
