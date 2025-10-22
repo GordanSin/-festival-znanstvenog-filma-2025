@@ -16,7 +16,7 @@ export const translations = {
     },
     films: {
       title: "Filmski program",
-      description: "Otkrij 20 vrhunskih znanstvenih dokumentarnih filmova koji istražuju teme održivog razvoja, zelene energije i ekologije",
+      description: "Otkrij 21 vrhunskih znanstvenih dokumentarnih filmova koji istražuju teme održivog razvoja, zelene energije i ekologije",
       learnMore: "Opširnije"
     },
     locations: {
