@@ -1,5 +1,13 @@
 export const translations = {
   hr: {
+    nav: {
+      home: "Početna",
+      films: "Filmovi",
+      schedule: "Raspored",
+      locations: "Lokacije",
+      about: "O festivalu",
+      contact: "Kontakt"
+    },
     hero: {
       subtitle: "Ekologija i zeleni poslovi budućnosti",
       dates: "Studeni 2025",
@@ -99,6 +107,14 @@ export const translations = {
     }
   },
   en: {
+    nav: {
+      home: "Home",
+      films: "Films",
+      schedule: "Schedule",
+      locations: "Locations",
+      about: "About",
+      contact: "Contact"
+    },
     hero: {
       subtitle: "Ecology and green jobs of the future",
       dates: "November 2025",
@@ -198,6 +214,14 @@ export const translations = {
     }
   },
   it: {
+    nav: {
+      home: "Home",
+      films: "Film",
+      schedule: "Programma",
+      locations: "Località",
+      about: "Chi Siamo",
+      contact: "Contatto"
+    },
     hero: {
       subtitle: "Ecologia e lavori verdi del futuro",
       dates: "Novembre 2025",

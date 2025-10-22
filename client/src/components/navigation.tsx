@@ -3,11 +3,14 @@ import { Link, useLocation } from "wouter";
 import { LogoIcon } from "./logo-icon";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
+import { LanguageSwitcher } from "./language-switcher";
 
 export function Navigation() {
   const [location] = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const { t } = useLanguage();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -31,12 +34,12 @@ export function Navigation() {
   };
 
   const navItems = [
-    { label: "Početna", href: "home" },
-    { label: "Filmovi", href: "films" },
-    { label: "Raspored", href: "schedule" },
-    { label: "Lokacije", href: "locations" },
-    { label: "O festivalu", href: "about" },
-    { label: "Kontakt", href: "contact" },
+    { key: "home", href: "home" },
+    { key: "films", href: "films" },
+    { key: "schedule", href: "schedule" },
+    { key: "locations", href: "locations" },
+    { key: "about", href: "about" },
+    { key: "contact", href: "contact" },
   ];
 
   return (
@@ -60,16 +63,10 @@ export function Navigation() {
                 className="text-black hover:text-black/70 transition-colors font-medium"
                 data-testid={`nav-${item.href}`}
               >
-                {item.label}
+                {t(`nav.${item.key}`)}
               </button>
             ))}
-            <Button 
-              variant="secondary" 
-              size="sm"
-              data-testid="language-toggle"
-            >
-              HR
-            </Button>
+            <LanguageSwitcher />
           </div>
           
           {/* Mobile Menu Button */}
@@ -99,17 +96,12 @@ export function Navigation() {
                 className="block w-full text-left py-2 text-gray-900 hover:text-gray-700 transition-colors"
                 data-testid={`mobile-nav-${item.href}`}
               >
-                {item.label}
+                {t(`nav.${item.key}`)}
               </button>
             ))}
-            <Button 
-              variant="secondary" 
-              size="sm" 
-              className="w-full mt-3"
-              data-testid="mobile-language-toggle"
-            >
-              Hrvatski
-            </Button>
+            <div className="mt-3">
+              <LanguageSwitcher />
+            </div>
           </div>
         </div>
       </div>
