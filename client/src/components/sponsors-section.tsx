@@ -1,5 +1,6 @@
 import goetheLogo from "@assets/goethe_1761145871362.png";
 import galileoLogo from "@assets/PNG - 1_1761146035389.png";
+import lcStudioLogo from "@assets/Untitled design (5)_1761146704138.png";
 
 export function SponsorsSection() {
   return (
@@ -26,6 +27,15 @@ export function SponsorsSection() {
             <img 
               src={galileoLogo} 
               alt="Galileo Galilei Udruga logo" 
+              className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+            />
+          </div>
+
+          {/* LC Studio */}
+          <div className="flex items-center justify-center" data-testid="sponsor-lcstudio">
+            <img 
+              src={lcStudioLogo} 
+              alt="LC Studio logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
             />
           </div>
