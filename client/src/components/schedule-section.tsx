@@ -49,11 +49,8 @@ export function ScheduleSection() {
           {/* Week 2 */}
           <div className="bg-card rounded-xl p-8 border border-border" data-testid="week-two-schedule">
             <div className="text-center mb-6">
-              <div className="inline-block px-4 py-2 bg-primary/20 text-primary rounded-full text-sm font-semibold">
-                Drugi tjedan
-              </div>
-              <h3 className="text-xl font-bold text-card-foreground mt-4 mb-2">10. - 16. studenog</h3>
-              <p className="text-muted-foreground">Umag-Umago, Buzet, Pazin, Rijeka</p>
+              <h3 className="text-xl font-bold text-card-foreground mb-2">01. - 15. studenog 2025.</h3>
+              <p className="text-muted-foreground">Rovinj-Rovigno,Poreč-Parenzo,Pula-PolaUmag-Umago, Buzet, Pazin, Rijeka</p>
             </div>
             <div className="space-y-4">
               {weekTwoEvents.map((event, index) => (
