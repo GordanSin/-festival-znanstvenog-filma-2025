@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import heroBackground from "@assets/hero-background.png";
+import festivalLogo from "@assets/FESTIVAL ZNANSTVENOG FILMA - dvojezicni logo-01_1761145259249.png";
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -31,11 +32,14 @@ export function HeroSection() {
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 py-4 md:py-20 min-h-screen flex flex-col justify-center">
         {/* Mobile-First Content - Centered */}
         <div className="text-center flex flex-col justify-center flex-1 space-y-8">
-          {/* Main Title */}
-          <div>
-            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white drop-shadow-2xl leading-tight" data-testid="hero-title">
-              Festival<br />znanstvenog filma
-            </h1>
+          {/* Festival Logo */}
+          <div className="flex justify-center">
+            <img 
+              src={festivalLogo} 
+              alt="Festival znanstvenog filma logo" 
+              className="w-64 sm:w-80 md:w-96 lg:w-[28rem] h-auto drop-shadow-2xl"
+              data-testid="festival-logo"
+            />
           </div>
           
           {/* Subtitle and Dates */}
