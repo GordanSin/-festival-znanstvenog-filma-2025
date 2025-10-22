@@ -114,14 +114,9 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <div className="text-sm text-primary-foreground/80 mb-4 md:mb-0">
+        <div className="border-t border-primary-foreground/20 pt-8 flex justify-center items-center">
+          <div className="text-sm text-primary-foreground/80">
             <p>&copy; 2025 {t("footer.copyright")}</p>
-          </div>
-          <div className="flex space-x-6 text-sm">
-            <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors" data-testid="footer-link-terms">
-              {t("footer.terms")}
-            </a>
           </div>
         </div>
       </div>
