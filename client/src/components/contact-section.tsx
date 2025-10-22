@@ -1,5 +1,6 @@
 import { Mail, Phone, GraduationCap, Newspaper, MapPin, Handshake } from "lucide-react";
 import goetheLogo from "@assets/goethe_1761145871362.png";
+import galileoLogo from "@assets/PNG - 1_1761146035389.png";
 
 export function ContactSection() {
   return (
@@ -23,9 +24,18 @@ export function ContactSection() {
               Adresa organizatora
             </h3>
             <div className="space-y-3 text-muted-foreground">
-              <p className="font-semibold text-card-foreground">
-                Udruga tehničke kulture-Societa di cultura tecnica "Galileo Galilei"
-              </p>
+              <div className="flex items-center space-x-4 mb-4">
+                <div className="w-16 h-16 flex items-center justify-center flex-shrink-0">
+                  <img 
+                    src={galileoLogo} 
+                    alt="Galileo Galilei logo" 
+                    className="w-full h-full object-contain"
+                  />
+                </div>
+                <p className="font-semibold text-card-foreground">
+                  Udruga tehničke kulture-Societa di cultura tecnica "Galileo Galilei"
+                </p>
+              </div>
               <p data-testid="contact-street">Domenico Pergolis 2</p>
               <p data-testid="contact-city">52210 Rovinj-Rovigno, Hrvatska</p>
               <div className="flex items-center space-x-2 text-card-foreground">
