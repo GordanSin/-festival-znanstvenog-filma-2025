@@ -1,6 +1,4 @@
 import { Button } from "@/components/ui/button";
-import heroBackgroundDesktop from "@assets/Gemini_Generated_Image_bt1631bt1631bt16_1760961177316.png";
-import heroBackgroundMobile from "@assets/mobile-hero_1760961851977.png";
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -20,15 +18,19 @@ export function HeroSection() {
       className="relative text-primary-foreground pt-16 min-h-screen" 
       data-testid="hero-section"
     >
-      {/* Desktop Background */}
+      {/* Modern Gradient Background - Ecology & Green Jobs Theme */}
       <div 
-        className="absolute inset-0 hidden md:block bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackgroundDesktop})` }}
+        className="absolute inset-0 bg-gradient-to-br from-emerald-600 via-teal-500 to-cyan-600"
       ></div>
-      {/* Mobile Background */}
+      
+      {/* Animated Overlay Pattern */}
       <div 
-        className="absolute inset-0 block md:hidden bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url(${heroBackgroundMobile})` }}
+        className="absolute inset-0 opacity-10"
+        style={{
+          backgroundImage: `radial-gradient(circle at 20% 50%, rgba(255,255,255,0.2) 0%, transparent 50%),
+                           radial-gradient(circle at 80% 80%, rgba(255,255,255,0.2) 0%, transparent 50%),
+                           radial-gradient(circle at 40% 20%, rgba(255,255,255,0.15) 0%, transparent 50%)`
+        }}
       ></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-20 min-h-screen flex flex-col justify-between">
