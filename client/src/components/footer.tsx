@@ -121,9 +121,6 @@ export function Footer() {
             <p>&copy; 2025 {t("footer.copyright")}</p>
           </div>
           <div className="flex space-x-6 text-sm">
-            <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors" data-testid="footer-link-privacy">
-              {t("footer.privacy")}
-            </a>
             <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors" data-testid="footer-link-terms">
               {t("footer.terms")}
             </a>
