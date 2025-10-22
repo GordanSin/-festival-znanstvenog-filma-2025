@@ -167,8 +167,8 @@ export function FilmsCarousel() {
         />
       </Carousel>
       
-      <div className="text-center mt-4 text-sm text-gray-500">
-        21 film Festivala znanstvenog filma
+      <div className="text-center mt-6 text-lg font-medium text-gray-700">
+        {t("films.totalFilms")}
       </div>
 
       {/* Film Detail Modal */}

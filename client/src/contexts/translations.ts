@@ -25,7 +25,8 @@ export const translations = {
     films: {
       title: "Filmski program",
       description: "Otkrij 21 vrhunskih znanstvenih dokumentarnih filmova koji istražuju teme održivog razvoja, zelene energije i ekologije",
-      learnMore: "Opširnije"
+      learnMore: "Opširnije",
+      totalFilms: "21 film Festivala znanstvenog filma"
     },
     locations: {
       title: "Lokacije festivala",
@@ -132,7 +133,8 @@ export const translations = {
     films: {
       title: "Film Program",
       description: "Discover 20 excellent scientific documentary films exploring topics of sustainable development, green energy and ecology",
-      learnMore: "Learn More"
+      learnMore: "Learn More",
+      totalFilms: "21 films of the Science Film Festival"
     },
     locations: {
       title: "Festival Locations",
@@ -239,7 +241,8 @@ export const translations = {
     films: {
       title: "Programma Cinematografico",
       description: "Scopri 20 eccellenti documentari scientifici che esplorano temi di sviluppo sostenibile, energia verde ed ecologia",
-      learnMore: "Scopri di più"
+      learnMore: "Scopri di più",
+      totalFilms: "21 film del Festival del Cinema Scientifico"
     },
     locations: {
       title: "Località del Festival",
