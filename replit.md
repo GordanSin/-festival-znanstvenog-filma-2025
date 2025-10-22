@@ -38,6 +38,24 @@ Preferred communication style: Simple, everyday language.
 - **Responsive Design**: Mobile-first approach with Tailwind breakpoints
 - **Accessibility**: Semantic HTML with proper ARIA labels and test IDs
 
+### Multi-Language Translation System
+- **Supported Languages**: Croatian (hr), English (en), Italian (it)
+- **Architecture**: React Context API with centralized translation management
+- **Translation Data**: Separate translations.ts file containing all localized content
+- **Persistence**: Language selection stored in localStorage for cross-session persistence
+- **Translation Function**: Dot-notation key lookup (e.g., `t("hero.subtitle")`) with fallback support
+- **Coverage**: Complete translation of all UI elements across all major sections
+  - Hero section (subtitle, dates, stats)
+  - Films carousel and location cards
+  - Schedule (dates, venues, events)
+  - About section (program info, jury, mission statement)
+  - Contact section (organizers, partnership info)
+  - Footer (festival info, quick links, legal)
+- **Components**:
+  - `LanguageContext.tsx`: Context provider managing language state
+  - `LanguageSwitcher.tsx`: Dropdown component with flag icons for language selection
+  - `translations.ts`: Centralized translation dictionary for all three languages
+
 ### Development Workflow
 - **Type Safety**: Full TypeScript coverage across frontend, backend, and shared schemas
 - **Code Organization**: Monorepo structure with shared types between client and server
