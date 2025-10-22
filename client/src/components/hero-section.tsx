@@ -48,7 +48,7 @@ export function HeroSection() {
             <p className="text-xl sm:text-2xl md:text-3xl font-bold text-white drop-shadow-2xl px-4" data-testid="hero-subtitle">
               Ekologija i zeleni poslovi budućnosti
             </p>
-            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-2xl" data-testid="hero-dates">
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-black drop-shadow-2xl" data-testid="hero-dates">
               Studeni 2025
             </p>
             <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-white/90 drop-shadow-2xl">
