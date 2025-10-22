@@ -16,7 +16,7 @@ import {
   DialogTitle,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { X } from "lucide-react";
+import { X, ArrowRight } from "lucide-react";
 
 interface Film {
   id: string;
@@ -135,13 +135,17 @@ export function FilmsCarousel() {
                       </div>
                     )}
                   </div>
-                  <div className="p-4">
+                  <div className="p-4 space-y-3">
                     <h3 
                       className="font-semibold text-lg leading-tight line-clamp-2"
                       data-testid={`film-title-${film.id}`}
                     >
                       {film.title}
                     </h3>
+                    <div className="flex items-center text-primary text-sm font-medium group-hover:text-primary/80 transition-colors">
+                      <span>Opširnije</span>
+                      <ArrowRight className="ml-1 h-4 w-4" />
+                    </div>
                   </div>
                 </CardContent>
               </Card>
