@@ -33,6 +33,11 @@ export function ContactSection() {
                   utkgalileo@gmail.com
                 </a>
               </div>
+              <div className="pt-4 border-t border-border/50">
+                <p className="text-sm font-semibold text-card-foreground" data-testid="contact-director">
+                  Direktor festivala : Gordan Sinđić, prof.
+                </p>
+              </div>
               <div className="pt-4">
                 <p className="text-sm text-muted-foreground mb-2">Pratite nas:</p>
                 <div className="flex space-x-4">
