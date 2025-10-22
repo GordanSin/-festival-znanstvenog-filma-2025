@@ -10,9 +10,9 @@ export function ScheduleSection() {
   ];
 
   const weekTwoEvents = [
-    { title: t("schedule.events.schoolPrimary"), details: "01.-14. studenog" },
-    { title: t("schedule.events.schoolSecondary"), details: "01.-14. studenog" },
-    { title: t("schedule.events.citizens"), details: "01.-14. studenog" },
+    { title: t("schedule.events.schoolPrimary"), details: t("schedule.events.dates") },
+    { title: t("schedule.events.schoolSecondary"), details: t("schedule.events.dates") },
+    { title: t("schedule.events.citizens"), details: t("schedule.events.dates") },
   ];
 
   return (
@@ -34,8 +34,8 @@ export function ScheduleSection() {
               <div className="inline-block px-4 py-2 bg-green-500/20 text-green-600 dark:text-green-400 rounded-full text-sm font-semibold">
                 {t("schedule.openingCeremony")}
               </div>
-              <h3 className="text-xl font-bold text-card-foreground mt-4 mb-2">4. studenog 2025. 18h</h3>
-              <p className="text-muted-foreground">Kino / Cinema Gandusio, Rovinj-Rovigno</p>
+              <h3 className="text-xl font-bold text-card-foreground mt-4 mb-2">{t("schedule.openingDate")}</h3>
+              <p className="text-muted-foreground">{t("schedule.openingVenue")}</p>
             </div>
             <div className="space-y-4">
               {weekOneEvents.map((event, index) => (
@@ -53,8 +53,8 @@ export function ScheduleSection() {
           {/* Week 2 */}
           <div className="bg-card rounded-xl p-8 border border-border" data-testid="week-two-schedule">
             <div className="text-center mb-6">
-              <h3 className="text-xl font-bold text-card-foreground mb-2">01. - 15. studenog 2025.</h3>
-              <p className="text-muted-foreground">Rovinj-Rovigno,Poreč-Parenzo,Pula-PolaUmag-Umago, Buzet, Pazin, Rijeka</p>
+              <h3 className="text-xl font-bold text-card-foreground mb-2">{t("schedule.secondPeriod")}</h3>
+              <p className="text-muted-foreground">{t("schedule.secondVenue")}</p>
             </div>
             <div className="space-y-4">
               {weekTwoEvents.map((event, index) => (
