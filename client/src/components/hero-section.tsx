@@ -29,18 +29,19 @@ export function HeroSection() {
       {/* Subtle Overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30"></div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 py-4 md:py-20 min-h-screen flex flex-col justify-start pt-16 md:pt-24">
+      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 py-4 md:py-20 min-h-screen flex flex-col justify-between">
+        {/* Festival Logo - Top */}
+        <div className="flex justify-center pt-8 md:pt-12">
+          <img 
+            src={festivalLogo} 
+            alt="Festival znanstvenog filma logo" 
+            className="w-80 sm:w-96 md:w-[32rem] lg:w-[40rem] h-auto drop-shadow-2xl brightness-0 invert"
+            data-testid="festival-logo"
+          />
+        </div>
+        
         {/* Mobile-First Content - Centered */}
-        <div className="text-center flex flex-col space-y-8">
-          {/* Festival Logo */}
-          <div className="flex justify-center">
-            <img 
-              src={festivalLogo} 
-              alt="Festival znanstvenog filma logo" 
-              className="w-80 sm:w-96 md:w-[32rem] lg:w-[40rem] h-auto drop-shadow-2xl brightness-0 invert"
-              data-testid="festival-logo"
-            />
-          </div>
+        <div className="text-center flex flex-col justify-center flex-1 space-y-8">
           
           {/* Subtitle and Dates */}
           <div className="space-y-4">
