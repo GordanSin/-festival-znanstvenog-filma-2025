@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBackground from "@assets/stock_images/wind_turbines_solar__c9ef5c9b.jpg";
+import heroBackground from "@assets/generated_images/Green_energy_ecology_festival_hero_e39dc6a4.png";
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
