@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import { X, ArrowRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 interface Film {
   id: string;
@@ -33,6 +34,7 @@ interface Film {
 }
 
 export function FilmsCarousel() {
+  const { t } = useLanguage();
   const [selectedFilm, setSelectedFilm] = useState<Film | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
@@ -93,7 +95,10 @@ export function FilmsCarousel() {
 
   return (
     <section id="films" className="w-full max-w-6xl mx-auto px-4 py-12" data-testid="films-carousel">
-      <h2 className="text-3xl font-bold text-center mb-8">Festival znanstvenog filma</h2>
+      <div className="text-center mb-8">
+        <h2 className="text-3xl font-bold text-primary mb-4">{t("films.title")}</h2>
+        <p className="text-lg text-muted-foreground max-w-3xl mx-auto">{t("films.description")}</p>
+      </div>
       
       <Carousel
         opts={{

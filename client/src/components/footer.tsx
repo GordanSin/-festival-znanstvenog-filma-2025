@@ -1,6 +1,9 @@
 import { LogoIcon } from "./logo-icon";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export function Footer() {
+  const { t } = useLanguage();
+  
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -53,7 +56,7 @@ export function Footer() {
           </div>
 
           <div>
-            <h5 className="font-semibold text-primary-foreground mb-4">Brzi linkovi</h5>
+            <h5 className="font-semibold text-primary-foreground mb-4">{t("footer.quickLinks")}</h5>
             <ul className="space-y-2 text-sm">
               <li>
                 <button 
@@ -61,7 +64,7 @@ export function Footer() {
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   data-testid="footer-link-films"
                 >
-                  Program filmova
+                  {t("footer.program")}
                 </button>
               </li>
               <li>
@@ -70,7 +73,7 @@ export function Footer() {
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   data-testid="footer-link-schedule"
                 >
-                  Raspored
+                  {t("footer.schedule")}
                 </button>
               </li>
               <li>
@@ -79,7 +82,7 @@ export function Footer() {
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   data-testid="footer-link-locations"
                 >
-                  Lokacije
+                  {t("footer.locations")}
                 </button>
               </li>
               <li>
@@ -88,7 +91,7 @@ export function Footer() {
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   data-testid="footer-link-about"
                 >
-                  O festivalu
+                  {t("footer.about")}
                 </button>
               </li>
               <li>
@@ -97,14 +100,14 @@ export function Footer() {
                   className="text-primary-foreground/80 hover:text-primary-foreground transition-colors"
                   data-testid="footer-link-contact"
                 >
-                  Kontakt
+                  {t("footer.contact")}
                 </button>
               </li>
             </ul>
           </div>
 
           <div>
-            <h5 className="font-semibold text-primary-foreground mb-4">Organizatori</h5>
+            <h5 className="font-semibold text-primary-foreground mb-4">{t("contact.organizers")}</h5>
             <ul className="space-y-2 text-sm">
               <li className="text-primary-foreground/80">UTK-SCT "Galileo Galilei"</li>
               <li className="text-primary-foreground/80">Rovinj-Rovigno</li>
@@ -116,18 +119,15 @@ export function Footer() {
 
         <div className="border-t border-primary-foreground/20 pt-8 flex flex-col md:flex-row justify-between items-center">
           <div className="text-sm text-primary-foreground/80 mb-4 md:mb-0">
-            <p>&copy; 2025 Festival znanstvenog filma. Sva prava zadržana.</p>
+            <p>&copy; 2025 {t("footer.copyright")}</p>
           </div>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors" data-testid="footer-link-privacy">
-              Pravila privatnosti
+              {t("footer.privacy")}
             </a>
             <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors" data-testid="footer-link-terms">
-              Uvjeti korištenja
+              {t("footer.terms")}
             </a>
-            <button className="text-primary-foreground/80 hover:text-primary-foreground transition-colors" data-testid="footer-language-toggle">
-              English
-            </button>
           </div>
         </div>
       </div>

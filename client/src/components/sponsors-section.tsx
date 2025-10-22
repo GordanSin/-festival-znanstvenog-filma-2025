@@ -1,3 +1,4 @@
+import { useLanguage } from "@/contexts/LanguageContext";
 import goetheLogo from "@assets/goethe_1761145871362.png";
 import galileoLogo from "@assets/PNG - 1_1761146035389.png";
 import lcStudioLogo from "@assets/Untitled design (5)_1761146704138.png";
@@ -12,12 +13,13 @@ import ztkPulaLogo from "@assets/logo-ztk-3 (1)_1761147214758.png";
 import zuficLogo from "@assets/download (4)_1761147255440.png";
 
 export function SponsorsSection() {
+  const { t } = useLanguage();
   return (
     <section id="sponsors" className="py-12 bg-muted/10" data-testid="sponsors-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <h3 className="text-xl font-semibold text-card-foreground mb-4" data-testid="sponsors-title">
-            Organizatori i partneri
+            {t("sponsors.title")}
           </h3>
         </div>
 

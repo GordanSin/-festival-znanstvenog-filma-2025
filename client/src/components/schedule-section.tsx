@@ -1,14 +1,18 @@
+import { useLanguage } from "@/contexts/LanguageContext";
+
 export function ScheduleSection() {
+  const { t } = useLanguage();
+  
   const weekOneEvents = [
-    { title: "Predavanje: Pametni gradovi, pametni planet", details: "Predavač: Goran Zaharija, dr.sc. PMF Split" },
-    { title: "Projekcija filma: Genova Lab", details: "Predviđanje ekstremnih vremenskih pojava pomoću podataka građana" },
-    { title: "Filmsko druženje", details: "" },
+    { title: t("schedule.events.lecture"), details: t("schedule.events.lecturerDetails") },
+    { title: t("schedule.events.filmProjection"), details: t("schedule.events.filmDescription") },
+    { title: t("schedule.events.filmGathering"), details: "" },
   ];
 
   const weekTwoEvents = [
-    { title: "Školske projekcije - osnovna škola", details: "01.-14. studenog" },
-    { title: "Školske projekcije - srednja škola", details: "01.-14. studenog" },
-    { title: "Građanke i građani", details: "01.-14. studenog" },
+    { title: t("schedule.events.schoolPrimary"), details: "01.-14. studenog" },
+    { title: t("schedule.events.schoolSecondary"), details: "01.-14. studenog" },
+    { title: t("schedule.events.citizens"), details: "01.-14. studenog" },
   ];
 
   return (
@@ -16,10 +20,10 @@ export function ScheduleSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-primary mb-4" data-testid="schedule-title">
-            Raspored festivala
+            {t("schedule.title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto" data-testid="schedule-description">
-            Festival će se održavati kroz dva tjedna u studenome 2025. u šest istarskih gradova i Rijeci
+            {t("schedule.description")}
           </p>
         </div>
 
@@ -28,7 +32,7 @@ export function ScheduleSection() {
           <div className="bg-card rounded-xl p-8 border border-border" data-testid="week-one-schedule">
             <div className="text-center mb-6">
               <div className="inline-block px-4 py-2 bg-green-500/20 text-green-600 dark:text-green-400 rounded-full text-sm font-semibold">
-                Svečano otvaranje festivala
+                {t("schedule.openingCeremony")}
               </div>
               <h3 className="text-xl font-bold text-card-foreground mt-4 mb-2">4. studenog 2025. 18h</h3>
               <p className="text-muted-foreground">Kino / Cinema Gandusio, Rovinj-Rovigno</p>
@@ -67,7 +71,7 @@ export function ScheduleSection() {
             {/* Note */}
             <div className="text-center mt-6">
               <p className="text-sm text-muted-foreground italic" data-testid="schedule-note">
-                * detaljan program, click na Grad program oznaku
+                {t("schedule.note")}
               </p>
             </div>
           </div>

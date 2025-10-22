@@ -1,30 +1,27 @@
+import { useLanguage } from "@/contexts/LanguageContext";
 import sustainabilityImage from "@assets/d98d187f-f737-4191-98a5-00aa3a88211b_1758830615469.png";
 
 export function AboutSection() {
+  const { t } = useLanguage();
   return (
     <section id="about" className="py-20 bg-secondary/20" data-testid="about-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-primary mb-4" data-testid="about-title">
-            O festivalu
+            {t("about.title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto" data-testid="about-subtitle">
-            Prvi Festival znanstvenog filma u hrvatskoj koji spaja kulturu, znanost i održivi razvoj
+            {t("about.description")}
           </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
           <div>
             <h3 className="text-3xl font-bold text-card-foreground mb-6" data-testid="green-jobs-title">
-              Ekologija i zeleni poslovi budućnosti
+              {t("about.themeSubtitle")}
             </h3>
             <p className="text-muted-foreground mb-6 text-lg leading-relaxed" data-testid="green-jobs-description-1">
-              Ovogodišnji festival fokusira se na zanimanja i inovacije koje doprinose održivom razvoju i zaštiti okoliša. 
-              Kroz 21 pažljivo odabranih dokumentarnih filmova, istražujemo kako nova ekologija i zelena radna mjesta mijenjaju našu budućnost.
-            </p>
-            <p className="text-muted-foreground mb-6 leading-relaxed" data-testid="green-jobs-description-2">
-              Od obnovljivih izvora energije do održive poljoprivrede, od zelene tehnologije do ciklične ekonomije - 
-              filmovi prikazuju najnovije inovacije i prilike koje će definirati sljedeće desetljeće.
+              {t("about.themeDescription")}
             </p>
           </div>
           <div className="relative">
@@ -48,7 +45,7 @@ export function AboutSection() {
                 </svg>
               </div>
               <div>
-                <h4 className="text-xl font-bold text-card-foreground">Organizatori</h4>
+                <h4 className="text-xl font-bold text-card-foreground">{t("contact.organizers")}</h4>
                 <p className="text-muted-foreground"></p>
               </div>
             </div>

@@ -1,6 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent } from "@/components/ui/card";
 import { Calendar, MapPin, ArrowRight } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import type { Location } from "@shared/schema";
 import pulaImage from "@assets/pula_1758831240469.jpg";
 import umagImage from "@assets/umag_1758831379550.jfif";
@@ -11,6 +12,7 @@ import rovinjImage from "@assets/rovinj-xx_1758910212100.jpg";
 import rijekaImage from "@assets/rijeka_1758910125510.webp";
 
 export function LocationsSection() {
+  const { t } = useLanguage();
   const { data: locations = [], isLoading } = useQuery<Location[]>({
     queryKey: ["/api/locations"],
   });
@@ -103,10 +105,10 @@ export function LocationsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-primary mb-4" data-testid="locations-title">
-            Lokacije festivala
+            {t("locations.title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto" data-testid="locations-description">
-            Festival će se održavati u šest prekrasnih istarskih gradova i Rijeci, povezujući kulturu i znanost kroz cijelu regiju
+            {t("locations.description")}
           </p>
         </div>
 
@@ -127,7 +129,7 @@ export function LocationsSection() {
                   {location.description}
                 </p>
                 <div className="flex items-center text-primary text-sm font-medium mt-2" data-testid={`location-program-${location.id}`}>
-                  <span>Program</span>
+                  <span>{t("locations.program")}</span>
                   <ArrowRight className="ml-1 h-4 w-4" />
                 </div>
               </CardContent>

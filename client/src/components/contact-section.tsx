@@ -1,17 +1,19 @@
 import { Mail, Phone, GraduationCap, Newspaper, MapPin, Handshake } from "lucide-react";
+import { useLanguage } from "@/contexts/LanguageContext";
 import goetheLogo from "@assets/goethe_1761145871362.png";
 import galileoLogo from "@assets/PNG - 1_1761146035389.png";
 
 export function ContactSection() {
+  const { t } = useLanguage();
   return (
     <section id="contact" className="py-20 bg-muted/20" data-testid="contact-section">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-primary mb-4" data-testid="contact-title">
-            Kontakt
+            {t("contact.title")}
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto" data-testid="contact-description">
-            Za sve informacije o festivalu, medijskim partnerstvima i suradnji
+            {t("contact.description")}
           </p>
         </div>
 
@@ -21,7 +23,7 @@ export function ContactSection() {
           <div className="bg-card rounded-xl p-8 border border-border" data-testid="contact-address">
             <h3 className="text-xl font-bold text-card-foreground mb-6 flex items-center">
               <MapPin className="text-primary mr-3 h-6 w-6" />
-              Adresa organizatora
+              {t("contact.organizers")}
             </h3>
             <div className="space-y-3 text-muted-foreground">
               <div className="flex items-center space-x-4 mb-4">
@@ -46,7 +48,7 @@ export function ContactSection() {
               </div>
               <div className="pt-4 border-t border-border/50">
                 <p className="text-sm font-semibold text-card-foreground" data-testid="contact-director">
-                  Direktor festivala : Gordan Sinđić, prof.
+                  {t("contact.directorTitle")} : {t("contact.director")}
                 </p>
               </div>
               <div className="pt-4">
@@ -75,7 +77,7 @@ export function ContactSection() {
           <div className="bg-card rounded-xl p-8 border border-border" data-testid="contact-partnership">
             <h3 className="text-xl font-bold text-card-foreground mb-6 flex items-center">
               <Handshake className="text-primary mr-3 h-6 w-6" />
-              Partnerstvo
+              {t("contact.supporters")}
             </h3>
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
