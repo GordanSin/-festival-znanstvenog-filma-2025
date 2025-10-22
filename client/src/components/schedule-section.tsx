@@ -1,12 +1,12 @@
 export function ScheduleSection() {
   const weekOneEvents = [
-    { title: "Svečano otvaranje", details: "3. studenog, 19:00 - Rovinj" },
-    { title: "Filmski blok 1", details: "4.-5. studenog - Poreč" },
-    { title: "Diskusije s ekspertima", details: "6.-7. studenog - Pula" },
+    { title: "Svečano otvaranje", details: "3. studenog, 19:00 - Rovinj-Rovigno" },
+    { title: "Filmski blok 1", details: "4.-5. studenog - Poreč-Parenzo" },
+    { title: "Diskusije s ekspertima", details: "6.-7. studenog - Pula-Pola" },
   ];
 
   const weekTwoEvents = [
-    { title: "Filmski maraton", details: "10.-11. studenog - Umag" },
+    { title: "Filmski maraton", details: "10.-11. studenog - Umag-Umago" },
     { title: "Školske projekcije", details: "12.-13. studenog - Buzet, Pazin" },
     { title: "Zatvaranje festivala", details: "16. studenog, 20:00 - Rijeka" },
   ];
@@ -59,7 +59,7 @@ export function ScheduleSection() {
                 Drugi tjedan
               </div>
               <h3 className="text-xl font-bold text-card-foreground mt-4 mb-2">10. - 16. studenog</h3>
-              <p className="text-muted-foreground">Umag, Buzet, Pazin, Rijeka</p>
+              <p className="text-muted-foreground">Umag-Umago, Buzet, Pazin, Rijeka</p>
             </div>
             <div className="space-y-4">
               {weekTwoEvents.map((event, index) => (

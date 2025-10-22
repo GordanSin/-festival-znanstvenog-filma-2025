@@ -20,7 +20,7 @@ export function LocationsSection() {
     ...locations,
     {
       id: "3",
-      name: "Pula",
+      name: "Pula-Pola",
       description: "Zajednica tehničke kulture Istarske županije",
       imageUrl: pulaImage,
       filmCount: 7,
@@ -29,7 +29,7 @@ export function LocationsSection() {
     },
     {
       id: "4", 
-      name: "Umag",
+      name: "Umag-Umago",
       description: "Ustanova za protokol, odnose s javnošću i manifestacije FESTUM",
       imageUrl: umagImage,
       filmCount: 4,
@@ -65,7 +65,7 @@ export function LocationsSection() {
     },
     {
       id: "8",
-      name: "Poreč",
+      name: "Poreč-Parenzo",
       description: "Pučko otvoreno učilište",
       imageUrl: porecImage,
       filmCount: 5,

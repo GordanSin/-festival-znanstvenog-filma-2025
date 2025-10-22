@@ -3,7 +3,7 @@ export const festivalData = {
   subtitle: "Ekologija i zeleni poslovi budućnosti",
   year: 2025,
   month: "Studeni",
-  locations: ["Rovinj", "Poreč", "Pula", "Umag", "Buzet", "Pazin", "Rijeka"],
+  locations: ["Rovinj-Rovigno", "Poreč-Parenzo", "Pula-Pola", "Umag-Umago", "Buzet", "Pazin", "Rijeka"],
   stats: {
     films: 21,
     cities: 7,
