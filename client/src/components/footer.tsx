@@ -26,7 +26,7 @@ export function Footer() {
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed mb-6" data-testid="footer-description">
               Prvi Festival znanstvenog filma u Hrvatskoj koji spaja kulturu, znanost i održivi razvoj kroz 
-              25 međunarodnih dokumentarnih filmova o zelenoj budućnosti.
+              21 međunarodnih dokumentarnih filmova o zelenoj budućnosti.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors" data-testid="footer-social-facebook">
