@@ -76,7 +76,7 @@ export const translations = {
       organizers: "Organizatori",
       supporters: "Partnerstvo",
       followUs: "Pratite nas:",
-      mainPartner: "Glavni partner programa"
+      mainPartner: "Glavni partner festivala"
     },
     sponsors: {
       title: "Organizatori i partneri"
