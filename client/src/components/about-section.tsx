@@ -69,22 +69,22 @@ export function AboutSection() {
                 </svg>
               </div>
               <div>
-                <h4 className="text-xl font-bold text-card-foreground">Program</h4>
-                <p className="text-muted-foreground">Međunarodna selekcija</p>
+                <h4 className="text-xl font-bold text-card-foreground">{t("about.programTitle")}</h4>
+                <p className="text-muted-foreground">{t("about.programSubtitle")}</p>
               </div>
             </div>
             <div className="space-y-3">
               <div className="flex justify-between">
-                <span className="text-card-foreground">Broj filmova:</span>
+                <span className="text-card-foreground">{t("about.filmCount")}</span>
                 <span className="font-semibold text-primary">21</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-card-foreground">Ukupno trajanje:</span>
+                <span className="text-card-foreground">{t("about.totalDuration")}</span>
                 <span className="font-semibold text-primary">18+ sati</span>
               </div>
               <div className="flex justify-between">
-                <span className="text-card-foreground">Jezici:</span>
-                <span className="font-semibold text-primary">HR titlovi</span>
+                <span className="text-card-foreground">{t("about.languages")}</span>
+                <span className="font-semibold text-primary">{t("about.languagesValue")}</span>
               </div>
             </div>
           </div>
@@ -98,9 +98,9 @@ export function AboutSection() {
                 <path d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM16 14C16 13.4 15.6 13 15 13H9C8.4 13 8 13.4 8 14V19H10V23H14V19H16V14ZM20.5 8.5C20.5 7.67 19.83 7 19 7S17.5 7.67 17.5 8.5 18.17 10 19 10 20.5 9.33 20.5 8.5ZM6.5 8.5C6.5 7.67 5.83 7 5 7S3.5 7.67 3.5 8.5 4.17 10 5 10 6.5 9.33 6.5 8.5Z"/>
               </svg>
             </div>
-            <h4 className="text-3xl font-bold text-card-foreground mb-3">Stručni žiri</h4>
+            <h4 className="text-3xl font-bold text-card-foreground mb-3">{t("about.juryTitle")}</h4>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Pet renomiranih stručnjaka i znanstvenika koji su ocijenili 145 ponuđenih filmova na ovogodišnjem festivalu
+              {t("about.juryDescription")}
             </p>
           </div>
           
@@ -149,9 +149,9 @@ export function AboutSection() {
 
         {/* Mission Statement */}
         <div className="text-center bg-primary/5 rounded-2xl p-12 border border-primary/20" data-testid="mission-statement">
-          <h3 className="text-2xl font-bold text-primary mb-4">Tema festivala 2025</h3>
+          <h3 className="text-2xl font-bold text-primary mb-4">{t("about.missionTitle")}</h3>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Festival znanstvenog filma u središte stavlja Ekologiju i zelena radna mjesta, ističući zanimanja koja su      ključna za promicanje i očuvanje okoliša. Zelena radna mjesta mladima pružaju priliku ne samo da ostave značajan trag u svijetu, već i da izgrade održivu karijeru. S obzirom na to da globalni fokus na održivost i ekološki prihvatljive prakse neprestano raste, važnost zelenih radnih mjesta nalazi se u samom središtu presudnog svjetskog prijelaza prema niskougljičnom gospodarstvu.
+            {t("about.missionDescription")}
           </p>
         </div>
       </div>

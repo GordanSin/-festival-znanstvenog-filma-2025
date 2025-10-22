@@ -52,7 +52,7 @@ export function ContactSection() {
                 </p>
               </div>
               <div className="pt-4">
-                <p className="text-sm text-muted-foreground mb-2">Pratite nas:</p>
+                <p className="text-sm text-muted-foreground mb-2">{t("contact.followUs")}</p>
                 <div className="flex space-x-4">
                   <a href="#" className="text-primary hover:text-primary/80 transition-colors" data-testid="social-facebook">
                     <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
