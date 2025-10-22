@@ -17,7 +17,7 @@ export function SponsorsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <h3 className="text-xl font-semibold text-card-foreground mb-4" data-testid="sponsors-title">
-            Partneri i organizatori
+            Organizatori i partneri
           </h3>
         </div>
 
