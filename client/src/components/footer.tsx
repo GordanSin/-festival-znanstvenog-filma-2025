@@ -23,13 +23,12 @@ export function Footer() {
             <div className="flex items-center space-x-3 mb-6">
               <LogoIcon className="text-primary-foreground" size="md" />
               <div>
-                <h4 className="text-xl font-bold">Festival znanstvenog filma</h4>
-                <p className="text-primary-foreground/80">Green Jobs 2025</p>
+                <h4 className="text-xl font-bold">{t("footer.festivalName")}</h4>
+                <p className="text-primary-foreground/80">{t("footer.tagline")}</p>
               </div>
             </div>
             <p className="text-primary-foreground/80 text-sm leading-relaxed mb-6" data-testid="footer-description">
-              Prvi Festival znanstvenog filma u Hrvatskoj koji spaja kulturu, znanost i održivi razvoj kroz 
-              21 međunarodnih dokumentarnih filmova o zelenoj budućnosti.
+              {t("footer.description")}
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-primary-foreground/80 hover:text-primary-foreground transition-colors" data-testid="footer-social-facebook">
