@@ -11,6 +11,7 @@ import ctkLogo from "@assets/download (2)_1761147051949.png";
 import buzetLogo from "@assets/download (3)_1761147110558.png";
 import ztkPulaLogo from "@assets/logo-ztk-3 (1)_1761147214758.png";
 import zuficLogo from "@assets/download (4)_1761147255440.png";
+import porecLogo from "@assets/porec-logo.png";
 
 export function SponsorsSection() {
   const { t } = useLanguage();
@@ -139,6 +140,16 @@ export function SponsorsSection() {
             <img 
               src={zuficLogo} 
               alt="Zufic Studio logo" 
+              className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
+            />
+          </div>
+
+          {/* Pučko otvoreno učilište Poreč */}
+          <div className="flex items-center justify-center" data-testid="sponsor-porec">
+            <img 
+              src={porecLogo} 
+              alt="Pučko otvoreno učilište Poreč logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
               loading="lazy"
             />
