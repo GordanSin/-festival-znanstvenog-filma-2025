@@ -1,4 +1,5 @@
 import { Mail, Phone, GraduationCap, Newspaper, MapPin, Handshake } from "lucide-react";
+import goetheLogo from "@assets/goethe_1761145871362.png";
 
 export function ContactSection() {
   return (
@@ -68,8 +69,12 @@ export function ContactSection() {
             </h3>
             <div className="space-y-4">
               <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-muted rounded-lg flex items-center justify-center flex-shrink-0">
-                  <span className="text-xs font-bold text-muted-foreground">GI</span>
+                <div className="w-16 h-16 flex items-center justify-center flex-shrink-0">
+                  <img 
+                    src={goetheLogo} 
+                    alt="Goethe-Institut logo" 
+                    className="w-full h-full object-contain"
+                  />
                 </div>
                 <div>
                   <p className="font-semibold text-card-foreground">Goethe-Institut Kroatien</p>
