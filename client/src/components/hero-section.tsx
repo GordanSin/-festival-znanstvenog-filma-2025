@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { useLanguage } from "@/contexts/LanguageContext";
-import heroBackground from "@assets/hero-background.png";
+import heroBackground from "@assets/hero-page_1761153184395.webp";
 import festivalLogo from "@assets/FESTIVAL ZNANSTVENOG FILMA - dvojezicni logo-01_1761145259249.png";
 
 export function HeroSection() {

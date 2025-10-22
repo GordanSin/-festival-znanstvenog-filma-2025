@@ -22,7 +22,7 @@ export function FilmCard({ film, onViewDetails }: FilmCardProps) {
   return (
     <Card className="film-card overflow-hidden shadow-lg border border-border" data-testid={`film-card-${film.id}`}>
       <img 
-        src={film.imageUrl} 
+        src={film.imageUrl || ''} 
         alt={film.title}
         className="w-full h-48 object-cover"
         loading="lazy"
