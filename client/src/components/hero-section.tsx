@@ -37,7 +37,7 @@ export function HeroSection() {
             <img 
               src={festivalLogo} 
               alt="Festival znanstvenog filma logo" 
-              className="w-64 sm:w-80 md:w-96 lg:w-[28rem] h-auto drop-shadow-2xl"
+              className="w-80 sm:w-96 md:w-[32rem] lg:w-[40rem] h-auto drop-shadow-2xl brightness-0 invert"
               data-testid="festival-logo"
             />
           </div>
