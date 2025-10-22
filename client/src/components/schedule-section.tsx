@@ -27,8 +27,8 @@ export function ScheduleSection() {
           {/* Week 1 */}
           <div className="bg-card rounded-xl p-8 border border-border" data-testid="week-one-schedule">
             <div className="text-center mb-6">
-              <div className="inline-block px-4 py-2 bg-accent/20 text-accent rounded-full text-sm font-semibold">
-                
+              <div className="inline-block px-4 py-2 bg-green-500/20 text-green-600 dark:text-green-400 rounded-full text-sm font-semibold">
+                Svečano otvaranje festivala
               </div>
               <h3 className="text-xl font-bold text-card-foreground mt-4 mb-2">4. studenog 2025. 18h</h3>
               <p className="text-muted-foreground">Kino / Cinema Gandusio, Rovinj-Rovigno</p>
