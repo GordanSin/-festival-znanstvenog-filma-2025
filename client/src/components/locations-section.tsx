@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent } from "@/components/ui/card";
-import { Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin, ArrowRight } from "lucide-react";
 import type { Location } from "@shared/schema";
 import pulaImage from "@assets/pula_1758831240469.jpg";
 import umagImage from "@assets/umag_1758831379550.jfif";
@@ -126,6 +126,10 @@ export function LocationsSection() {
                 <p className="text-sm text-muted-foreground mb-3" data-testid={`location-description-${location.id}`}>
                   {location.description}
                 </p>
+                <div className="flex items-center text-primary text-sm font-medium mt-2" data-testid={`location-program-${location.id}`}>
+                  <span>Program</span>
+                  <ArrowRight className="ml-1 h-4 w-4" />
+                </div>
               </CardContent>
             </Card>
           ))}
