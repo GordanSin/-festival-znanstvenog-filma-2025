@@ -28,24 +28,34 @@ export function HeroSection() {
       {/* Dark Overlay for better text readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
       
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-20 min-h-screen flex flex-col justify-between">
-        {/* Main Title - Near Menu */}
-        <div className="text-center md:text-right md:pr-4 lg:pr-8 -mt-6 md:-mt-12 lg:-mt-16">
-          <h1 className="text-3xl md:text-4xl lg:text-6xl font-bold mb-4 md:mb-6 text-white drop-shadow-2xl" data-testid="hero-title">
-            Festival znanstvenog<br />filma
-          </h1>
-        </div>
-        
-        {/* Bottom Content */}
-        <div className="text-center w-full pb-8 md:pb-16">
-          <div className="mb-6 md:mb-8">
-            <p className="text-lg md:text-xl lg:text-2xl mb-2 font-bold text-white drop-shadow-2xl" data-testid="hero-subtitle">Ekologija i zeleni poslovi budućnosti</p>
-            <p className="text-xl md:text-2xl lg:text-3xl font-semibold text-white drop-shadow-2xl" data-testid="hero-dates">Studeni 2025 • Istra & Rijeka</p>
+      <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 py-4 md:py-20 min-h-screen flex flex-col justify-center">
+        {/* Mobile-First Content - Centered */}
+        <div className="text-center flex flex-col justify-center flex-1 space-y-8">
+          {/* Main Title */}
+          <div>
+            <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-white drop-shadow-2xl leading-tight" data-testid="hero-title">
+              Festival<br />znanstvenog filma
+            </h1>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          
+          {/* Subtitle and Dates */}
+          <div className="space-y-4">
+            <p className="text-xl sm:text-2xl md:text-3xl font-bold text-white drop-shadow-2xl px-4" data-testid="hero-subtitle">
+              Ekologija i zeleni poslovi budućnosti
+            </p>
+            <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-white drop-shadow-2xl" data-testid="hero-dates">
+              Studeni 2025
+            </p>
+            <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-white/90 drop-shadow-2xl">
+              Istra & Rijeka
+            </p>
+          </div>
+          
+          {/* Buttons */}
+          <div className="flex flex-col gap-4 px-4 pt-4">
             <Button 
               size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-lg w-full sm:w-auto"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-2xl w-full h-14 text-lg font-semibold"
               onClick={() => scrollToSection("films")}
               data-testid="button-view-program"
             >
@@ -54,7 +64,7 @@ export function HeroSection() {
             <Button 
               size="lg"
               variant="outline"
-              className="border-2 border-white text-black bg-white hover:bg-white/90 hover:text-black shadow-lg w-full sm:w-auto"
+              className="border-2 border-white text-black bg-white hover:bg-white/90 hover:text-black shadow-2xl w-full h-14 text-lg font-semibold"
               onClick={() => scrollToSection("about")}
               data-testid="button-learn-more"
             >
