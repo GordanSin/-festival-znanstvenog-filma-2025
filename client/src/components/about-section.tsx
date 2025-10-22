@@ -26,20 +26,6 @@ export function AboutSection() {
               Od obnovljivih izvora energije do održive poljoprivrede, od zelene tehnologije do ciklične ekonomije - 
               filmovi prikazuju najnovije inovacije i prilike koje će definirati sljedeće desetljeće.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-accent rounded-full"></div>
-                <span className="text-card-foreground font-medium">Besplatne projekcije</span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-secondary-foreground rounded-full"></div>
-                <span className="text-card-foreground font-medium"></span>
-              </div>
-              <div className="flex items-center space-x-2">
-                <div className="w-3 h-3 bg-primary rounded-full"></div>
-                <span className="text-card-foreground font-medium"></span>
-              </div>
-            </div>
           </div>
           <div className="relative">
             <img 
