@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button";
+import { LanguageSwitcher } from "@/components/language-switcher";
+import { useLanguage } from "@/contexts/LanguageContext";
 import heroBackground from "@assets/hero-background.png";
 import festivalLogo from "@assets/FESTIVAL ZNANSTVENOG FILMA - dvojezicni logo-01_1761145259249.png";
 
 export function HeroSection() {
+  const { t } = useLanguage();
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -30,6 +33,11 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/30"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 py-4 md:py-20 min-h-screen flex flex-col justify-between">
+        {/* Language Switcher - Top Right */}
+        <div className="absolute top-4 right-4 md:top-8 md:right-8 z-20">
+          <LanguageSwitcher />
+        </div>
+        
         {/* Festival Logo - Top */}
         <div className="flex justify-center pt-32 md:pt-28">
           <img 
@@ -46,13 +54,13 @@ export function HeroSection() {
           {/* Subtitle and Dates */}
           <div className="space-y-4">
             <p className="text-xl sm:text-2xl md:text-3xl font-bold text-white drop-shadow-2xl px-4" data-testid="hero-subtitle">
-              Ekologija i zeleni poslovi budućnosti
+              {t("hero.subtitle")}
             </p>
             <p className="text-2xl sm:text-3xl md:text-4xl font-bold text-black drop-shadow-2xl" data-testid="hero-dates">
-              Studeni 2025
+              {t("hero.dates")}
             </p>
             <p className="text-xl sm:text-2xl md:text-3xl font-semibold text-white/90 drop-shadow-2xl">
-              Istra & Rijeka
+              {t("hero.location")}
             </p>
           </div>
           
@@ -64,7 +72,7 @@ export function HeroSection() {
               onClick={() => scrollToSection("films")}
               data-testid="button-view-program"
             >
-              Pogledaj program
+              {t("hero.viewProgram")}
             </Button>
             <Button 
               size="lg"
@@ -73,7 +81,7 @@ export function HeroSection() {
               onClick={() => scrollToSection("about")}
               data-testid="button-learn-more"
             >
-              Saznaj više
+              {t("hero.learnMore")}
             </Button>
           </div>
         </div>
@@ -85,19 +93,19 @@ export function HeroSection() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div data-testid="stat-films">
               <div className="text-3xl font-bold text-primary">21</div>
-              <div className="text-sm text-muted-foreground">Film</div>
+              <div className="text-sm text-muted-foreground">{t("hero.stats.films")}</div>
             </div>
             <div data-testid="stat-cities">
               <div className="text-3xl font-bold text-primary">7</div>
-              <div className="text-sm text-muted-foreground">Gradova</div>
+              <div className="text-sm text-muted-foreground">{t("hero.stats.cities")}</div>
             </div>
             <div data-testid="stat-days">
               <div className="text-3xl font-bold text-primary">14</div>
-              <div className="text-sm text-muted-foreground">Dana</div>
+              <div className="text-sm text-muted-foreground">{t("hero.stats.days")}</div>
             </div>
             <div data-testid="stat-price">
-              <div className="text-3xl font-bold text-accent">BEPLATAN</div>
-              <div className="text-sm text-muted-foreground">Ulaz</div>
+              <div className="text-3xl font-bold text-accent">{t("hero.stats.free")}</div>
+              <div className="text-sm text-muted-foreground">{t("hero.stats.entrance")}</div>
             </div>
           </div>
         </div>
