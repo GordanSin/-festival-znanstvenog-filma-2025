@@ -56,6 +56,7 @@ export const translations = {
       programSubtitle: "Međunarodna selekcija",
       filmCount: "Broj filmova:",
       totalDuration: "Ukupno trajanje:",
+      totalDurationValue: "18+ sati",
       languages: "Jezici:",
       languagesValue: "HR titlovi",
       juryTitle: "Stručni žiri",
@@ -74,7 +75,8 @@ export const translations = {
       directorTitle: "Direktor festivala",
       organizers: "Organizatori",
       supporters: "Partnerstvo",
-      followUs: "Pratite nas:"
+      followUs: "Pratite nas:",
+      mainPartner: "Glavni partner programa"
     },
     sponsors: {
       title: "Organizatori i partneri"
@@ -153,6 +155,7 @@ export const translations = {
       programSubtitle: "International Selection",
       filmCount: "Number of films:",
       totalDuration: "Total duration:",
+      totalDurationValue: "18+ hours",
       languages: "Languages:",
       languagesValue: "HR subtitles",
       juryTitle: "Expert Jury",
@@ -171,7 +174,8 @@ export const translations = {
       directorTitle: "Festival Director",
       organizers: "Organizers",
       supporters: "Partnership",
-      followUs: "Follow us:"
+      followUs: "Follow us:",
+      mainPartner: "Main program partner"
     },
     sponsors: {
       title: "Partners and Organizers"
@@ -250,6 +254,7 @@ export const translations = {
       programSubtitle: "Selezione Internazionale",
       filmCount: "Numero di film:",
       totalDuration: "Durata totale:",
+      totalDurationValue: "18+ ore",
       languages: "Lingue:",
       languagesValue: "Sottotitoli HR",
       juryTitle: "Giuria di Esperti",
@@ -268,7 +273,8 @@ export const translations = {
       directorTitle: "Direttore del Festival",
       organizers: "Organizzatori",
       supporters: "Partnership",
-      followUs: "Seguici:"
+      followUs: "Seguici:",
+      mainPartner: "Partner principale del programma"
     },
     sponsors: {
       title: "Partner e Organizzatori"

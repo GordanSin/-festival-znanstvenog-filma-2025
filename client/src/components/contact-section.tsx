@@ -90,7 +90,7 @@ export function ContactSection() {
                 </div>
                 <div>
                   <p className="font-semibold text-card-foreground">Goethe-Institut Kroatien</p>
-                  <p className="text-sm text-muted-foreground">Glavni partner programa</p>
+                  <p className="text-sm text-muted-foreground">{t("contact.mainPartner")}</p>
                 </div>
               </div>
             </div>

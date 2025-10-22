@@ -80,7 +80,7 @@ export function AboutSection() {
               </div>
               <div className="flex justify-between">
                 <span className="text-card-foreground">{t("about.totalDuration")}</span>
-                <span className="font-semibold text-primary">18+ sati</span>
+                <span className="font-semibold text-primary">{t("about.totalDurationValue")}</span>
               </div>
               <div className="flex justify-between">
                 <span className="text-card-foreground">{t("about.languages")}</span>
