@@ -57,10 +57,10 @@ export function HeroSection() {
           </div>
           
           {/* Buttons */}
-          <div className="flex flex-col md:flex-row gap-3 px-4 pt-4 justify-center">
+          <div className="flex flex-col md:flex-row gap-3 px-4 pt-4 justify-center items-center">
             <Button 
               size="lg"
-              className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-2xl w-full md:w-auto md:px-8 h-12 md:h-14 text-base md:text-lg font-semibold"
+              className="bg-accent text-accent-foreground hover:bg-accent/90 shadow-2xl w-auto px-6 md:px-8 h-12 md:h-14 text-base md:text-lg font-semibold"
               onClick={() => scrollToSection("films")}
               data-testid="button-view-program"
             >
@@ -69,7 +69,7 @@ export function HeroSection() {
             <Button 
               size="lg"
               variant="outline"
-              className="border-2 border-white text-black bg-white hover:bg-white/90 hover:text-black shadow-2xl w-full md:w-auto md:px-8 h-12 md:h-14 text-base md:text-lg font-semibold"
+              className="border-2 border-white text-black bg-white hover:bg-white/90 hover:text-black shadow-2xl w-auto px-6 md:px-8 h-12 md:h-14 text-base md:text-lg font-semibold"
               onClick={() => scrollToSection("about")}
               data-testid="button-learn-more"
             >
