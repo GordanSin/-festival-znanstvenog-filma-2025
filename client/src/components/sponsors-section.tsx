@@ -65,6 +65,16 @@ export function SponsorsSection() {
             />
           </div>
 
+          {/* Pučko otvoreno učilište Poreč */}
+          <div className="flex items-center justify-center" data-testid="sponsor-porec">
+            <img 
+              src={porecLogo} 
+              alt="Pučko otvoreno učilište Poreč logo" 
+              className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
+            />
+          </div>
+
           {/* Istarska Županija */}
           <div className="flex items-center justify-center" data-testid="sponsor-istarska">
             <img 
@@ -140,16 +150,6 @@ export function SponsorsSection() {
             <img 
               src={zuficLogo} 
               alt="Zufic Studio logo" 
-              className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
-              loading="lazy"
-            />
-          </div>
-
-          {/* Pučko otvoreno učilište Poreč */}
-          <div className="flex items-center justify-center" data-testid="sponsor-porec">
-            <img 
-              src={porecLogo} 
-              alt="Pučko otvoreno učilište Poreč logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
               loading="lazy"
             />
