@@ -189,6 +189,7 @@ export function FilmsCarousel() {
                     src={`data:image/jpeg;base64,${selectedFilm.imageData}`}
                     alt={selectedFilm.title}
                     className="w-full h-full object-cover"
+                    loading="lazy"
                     data-testid="modal-film-image"
                   />
                 ) : (

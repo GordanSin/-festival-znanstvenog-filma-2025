@@ -119,6 +119,7 @@ export function LocationsSection() {
                 src={location.imageUrl} 
                 alt={`${location.name} waterfront`}
                 className="w-full h-48 object-cover"
+                loading="lazy"
                 data-testid={`location-image-${location.id}`}
               />
               <CardContent className="p-4">

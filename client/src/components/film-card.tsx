@@ -25,6 +25,7 @@ export function FilmCard({ film, onViewDetails }: FilmCardProps) {
         src={film.imageUrl} 
         alt={film.title}
         className="w-full h-48 object-cover"
+        loading="lazy"
         data-testid={`film-image-${film.id}`}
       />
       <CardContent className="p-6">

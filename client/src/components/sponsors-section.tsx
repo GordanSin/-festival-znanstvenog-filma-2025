@@ -30,6 +30,7 @@ export function SponsorsSection() {
               src={goetheLogo} 
               alt="Goethe-Institut Kroatien logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
             />
           </div>
 
@@ -39,6 +40,7 @@ export function SponsorsSection() {
               src={galileoLogo} 
               alt="Galileo Galilei Udruga logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
             />
           </div>
 
@@ -48,6 +50,7 @@ export function SponsorsSection() {
               src={lcStudioLogo} 
               alt="LC Studio logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
             />
           </div>
 
@@ -57,6 +60,7 @@ export function SponsorsSection() {
               src={pentaLogo} 
               alt="Penta ID Systems logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
             />
           </div>
 
@@ -66,6 +70,7 @@ export function SponsorsSection() {
               src={istarskaLogo} 
               alt="Istarska Županija logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
             />
           </div>
 
@@ -75,6 +80,7 @@ export function SponsorsSection() {
               src={additionalLogo} 
               alt="Partner logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
             />
           </div>
 
@@ -84,6 +90,7 @@ export function SponsorsSection() {
               src={additionalLogo2} 
               alt="Partner logo" 
               className="w-16 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
             />
           </div>
 
@@ -93,6 +100,7 @@ export function SponsorsSection() {
               src={additionalLogo3} 
               alt="Partner logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
             />
           </div>
 
@@ -102,6 +110,7 @@ export function SponsorsSection() {
               src={ctkLogo} 
               alt="Centar Tehničke Kulture Rijeka logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
             />
           </div>
 
@@ -111,6 +120,7 @@ export function SponsorsSection() {
               src={buzetLogo} 
               alt="Pučko otvoreno učilište Augustin Vivoda Buzet logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
             />
           </div>
 
@@ -120,6 +130,7 @@ export function SponsorsSection() {
               src={ztkPulaLogo} 
               alt="Zajednica Tehničke Kulture Pula logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
             />
           </div>
 
@@ -129,6 +140,7 @@ export function SponsorsSection() {
               src={zuficLogo} 
               alt="Zufic Studio logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
             />
           </div>
         </div>

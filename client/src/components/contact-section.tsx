@@ -32,6 +32,7 @@ export function ContactSection() {
                     src={galileoLogo} 
                     alt="Galileo Galilei logo" 
                     className="w-full h-full object-contain"
+                    loading="lazy"
                   />
                 </div>
                 <p className="font-semibold text-card-foreground">
@@ -89,6 +90,7 @@ export function ContactSection() {
                     src={goetheLogo} 
                     alt="Goethe-Institut logo" 
                     className="w-full h-full object-contain"
+                    loading="lazy"
                   />
                 </div>
                 <div>

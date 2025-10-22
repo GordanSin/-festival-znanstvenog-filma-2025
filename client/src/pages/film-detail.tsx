@@ -99,6 +99,7 @@ export default function FilmDetail() {
                     src={`data:image/jpeg;base64,${film.imageData}`}
                     alt={film.title}
                     className="w-full h-96 md:h-full object-cover"
+                    loading="lazy"
                     data-testid="film-detail-image"
                   />
                 ) : (

@@ -29,6 +29,7 @@ export function AboutSection() {
               src={sustainabilityImage} 
               alt="Green jobs illustration showing renewable energy, solar panels, wind turbines and sustainable practices" 
               className="rounded-xl shadow-lg"
+              loading="lazy"
               data-testid="sustainability-image"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-xl"></div>
