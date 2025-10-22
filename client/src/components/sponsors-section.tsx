@@ -5,6 +5,7 @@ import pentaLogo from "@assets/Untitled design (3)_1761146781891.png";
 import istarskaLogo from "@assets/download (1)_1761146837960.png";
 import additionalLogo from "@assets/download_1761146883760.jpeg";
 import additionalLogo2 from "@assets/download (1)_1761146932857.jpeg";
+import additionalLogo3 from "@assets/download (2)_1761147020056.jpeg";
 
 export function SponsorsSection() {
   return (
@@ -77,6 +78,15 @@ export function SponsorsSection() {
               src={additionalLogo2} 
               alt="Partner logo" 
               className="w-16 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+            />
+          </div>
+
+          {/* Additional Partner 3 */}
+          <div className="flex items-center justify-center" data-testid="sponsor-additional3">
+            <img 
+              src={additionalLogo3} 
+              alt="Partner logo" 
+              className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
             />
           </div>
         </div>
