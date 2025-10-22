@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroBackground from "@assets/stock_images/green_ecology_sustai_16da9b97.jpg";
+import heroBackground from "@assets/stock_images/wind_turbines_solar__c9ef5c9b.jpg";
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -21,12 +21,12 @@ export function HeroSection() {
     >
       {/* Background Image */}
       <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        className="absolute inset-0 bg-cover bg-top md:bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroBackground})` }}
       ></div>
       
       {/* Dark Overlay for better text readability */}
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-black/50 via-black/40 to-black/60"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 md:py-20 min-h-screen flex flex-col justify-between">
         {/* Main Title - Near Menu */}
