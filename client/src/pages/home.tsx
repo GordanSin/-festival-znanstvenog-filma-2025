@@ -6,6 +6,7 @@ import { ScheduleSection } from "@/components/schedule-section";
 import { LocationsSection } from "@/components/locations-section";
 import { AboutSection } from "@/components/about-section";
 import { ContactSection } from "@/components/contact-section";
+import { SponsorsSection } from "@/components/sponsors-section";
 import { Footer } from "@/components/footer";
 import { Button } from "@/components/ui/button";
 import { ArrowUp } from "lucide-react";
@@ -38,6 +39,7 @@ export default function Home() {
       <LocationsSection />
       <AboutSection />
       <ContactSection />
+      <SponsorsSection />
       <Footer />
       
       {/* Back to Top Button */}
