@@ -45,7 +45,10 @@ async function importFilms() {
 
     for (const film of filmsData) {
       try {
-        await db.insert(films).values(film).onConflictDoNothing();
+        // Remove createdAt if it exists (let database generate it)
+        const { createdAt, ...filmWithoutTimestamp } = film;
+        
+        await db.insert(films).values(filmWithoutTimestamp).onConflictDoNothing();
         imported++;
         console.log(`✓ ${imported}. ${film.title}`);
       } catch (error: any) {
