@@ -50,6 +50,9 @@ export function ContactSection() {
                 <p className="text-sm font-semibold text-card-foreground" data-testid="contact-director">
                   {t("contact.directorTitle")} : {t("contact.director")}
                 </p>
+                <p className="text-sm text-muted-foreground mt-2">
+                  članovi organizacijskog odbora : Aleksandar Žibert dipl.račinž i Ina Venier dipl.uč.inf
+                </p>
               </div>
               <div className="pt-4">
                 <p className="text-sm text-muted-foreground mb-2">{t("contact.followUs")}</p>
