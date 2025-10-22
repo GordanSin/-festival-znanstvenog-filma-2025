@@ -76,7 +76,7 @@ export function SponsorsSection() {
             <img 
               src={additionalLogo2} 
               alt="Partner logo" 
-              className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              className="w-16 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
             />
           </div>
         </div>
