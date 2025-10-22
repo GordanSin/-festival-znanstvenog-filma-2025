@@ -16,11 +16,11 @@ export function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-16">
           <div>
             <h3 className="text-3xl font-bold text-card-foreground mb-6" data-testid="green-jobs-title">
-              Green Jobs - Zeleni poslovi budućnosti
+              Ekologija i zeleni poslovi budućnosti
             </h3>
             <p className="text-muted-foreground mb-6 text-lg leading-relaxed" data-testid="green-jobs-description-1">
               Ovogodišnji festival fokusira se na zanimanja i inovacije koje doprinose održivom razvoju i zaštiti okoliša. 
-              Kroz 21 pažljivo odabranih dokumentarnih filmova, istražujemo kako nova zelena radna mjesta mijenjaju našu budućnost.
+              Kroz 21 pažljivo odabranih dokumentarnih filmova, istražujemo kako nova ekologija i zelena radna mjesta mijenjaju našu budućnost.
             </p>
             <p className="text-muted-foreground mb-6 leading-relaxed" data-testid="green-jobs-description-2">
               Od obnovljivih izvora energije do održive poljoprivrede, od zelene tehnologije do ciklične ekonomije - 
@@ -154,7 +154,7 @@ export function AboutSection() {
         <div className="text-center bg-primary/5 rounded-2xl p-12 border border-primary/20" data-testid="mission-statement">
           <h3 className="text-2xl font-bold text-primary mb-4">Tema festivala 2025</h3>
           <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-            Festival znanstvenog filma u središte stavlja Zelena radna mjesta 2025. godine, ističući zanimanja koja su      ključna za promicanje i očuvanje okoliša. Zelena radna mjesta mladima pružaju priliku ne samo da ostave značajan trag u svijetu, već i da izgrade održivu karijeru. S obzirom na to da globalni fokus na održivost i ekološki prihvatljive prakse neprestano raste, važnost zelenih radnih mjesta nalazi se u samom središtu presudnog svjetskog prijelaza prema niskougljičnom gospodarstvu.
+            Festival znanstvenog filma u središte stavlja Ekologiju i zelena radna mjesta, ističući zanimanja koja su      ključna za promicanje i očuvanje okoliša. Zelena radna mjesta mladima pružaju priliku ne samo da ostave značajan trag u svijetu, već i da izgrade održivu karijeru. S obzirom na to da globalni fokus na održivost i ekološki prihvatljive prakse neprestano raste, važnost zelenih radnih mjesta nalazi se u samom središtu presudnog svjetskog prijelaza prema niskougljičnom gospodarstvu.
           </p>
         </div>
       </div>

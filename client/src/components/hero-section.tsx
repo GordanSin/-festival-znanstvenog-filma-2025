@@ -31,7 +31,7 @@ export function HeroSection() {
       
       <div className="relative z-10 max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 py-4 md:py-20 min-h-screen flex flex-col justify-between">
         {/* Festival Logo - Top */}
-        <div className="flex justify-center pt-20 md:pt-28">
+        <div className="flex justify-center pt-32 md:pt-28">
           <img 
             src={festivalLogo} 
             alt="Festival znanstvenog filma logo" 

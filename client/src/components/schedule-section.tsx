@@ -6,9 +6,9 @@ export function ScheduleSection() {
   ];
 
   const weekTwoEvents = [
-    { title: "Filmski maraton", details: "10.-11. studenog - Umag-Umago" },
-    { title: "Školske projekcije", details: "12.-13. studenog - Buzet, Pazin" },
-    { title: "Zatvaranje festivala", details: "16. studenog, 20:00 - Rijeka" },
+    { title: "Školske projekcije - osnovna škola", details: "01.-14. studenog" },
+    { title: "Školske projekcije - srednja škola", details: "01.-14. studenog" },
+    { title: "Građanke i građani", details: "01.-14. studenog" },
   ];
 
   return (
