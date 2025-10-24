@@ -65,6 +65,16 @@ export function SponsorsSection() {
             />
           </div>
 
+          {/* Pučko otvoreno učilište Rovinj */}
+          <div className="flex items-center justify-center" data-testid="sponsor-additional2">
+            <img 
+              src={additionalLogo2} 
+              alt="Pučko otvoreno učilište Rovinj logo" 
+              className="w-16 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
+            />
+          </div>
+
           {/* Pučko otvoreno učilište Poreč */}
           <div className="flex items-center justify-center" data-testid="sponsor-porec">
             <img 
@@ -81,16 +91,6 @@ export function SponsorsSection() {
               src={pentaLogo} 
               alt="Penta ID Systems logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
-              loading="lazy"
-            />
-          </div>
-
-          {/* Additional Partner 2 */}
-          <div className="flex items-center justify-center" data-testid="sponsor-additional2">
-            <img 
-              src={additionalLogo2} 
-              alt="Partner logo" 
-              className="w-16 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
               loading="lazy"
             />
           </div>
