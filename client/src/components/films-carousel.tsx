@@ -55,7 +55,7 @@ export function FilmsCarousel() {
   if (isLoading) {
     return (
       <div className="w-full max-w-6xl mx-auto px-4" data-testid="films-carousel-loading">
-        <h2 className="text-3xl font-bold text-center mb-8">Festival znanstvenog filma</h2>
+        <h2 className="text-3xl font-bold text-center mb-8">{t("films.title")}</h2>
         <div className="flex gap-4 overflow-hidden">
           {Array.from({ length: 3 }).map((_, i) => (
             <Card key={i} className="flex-shrink-0 w-80">
@@ -135,7 +135,7 @@ export function FilmsCarousel() {
                       >
                         <div className="text-center">
                           <div className="text-3xl mb-2">🎬</div>
-                          <div className="text-sm">Festival znanstvenog filma</div>
+                          <div className="text-sm">{t("films.title")}</div>
                         </div>
                       </div>
                     )}
@@ -148,7 +148,7 @@ export function FilmsCarousel() {
                       {film.title}
                     </h3>
                     <div className="flex items-center text-primary text-sm font-medium group-hover:text-primary/80 transition-colors">
-                      <span>Opširnije</span>
+                      <span>{t("films.learnMore")}</span>
                       <ArrowRight className="ml-1 h-4 w-4" />
                     </div>
                   </div>
@@ -199,7 +199,7 @@ export function FilmsCarousel() {
                   >
                     <div className="text-center">
                       <div className="text-6xl mb-4">🎬</div>
-                      <div className="text-lg">Croatian Scientific Film</div>
+                      <div className="text-lg">{t("films.title")}</div>
                     </div>
                   </div>
                 )}
