@@ -210,28 +210,28 @@ export function FilmsCarousel() {
                 {/* Film Details */}
                 {selectedFilm.category && (
                   <div>
-                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Kategorija</span>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">{t("films.modal.category")}</span>
                     <p className="text-gray-900">{selectedFilm.category}</p>
                   </div>
                 )}
                 
                 {selectedFilm.director && (
                   <div>
-                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Redatelj</span>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">{t("films.modal.director")}</span>
                     <p className="text-gray-900">{selectedFilm.director}</p>
                   </div>
                 )}
                 
                 {selectedFilm.producer && (
                   <div>
-                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Producent</span>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">{t("films.modal.producer")}</span>
                     <p className="text-gray-900">{selectedFilm.producer}</p>
                   </div>
                 )}
                 
                 {(selectedFilm.country || selectedFilm.year) && (
                   <div>
-                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Zemlja i godina</span>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">{t("films.modal.countryYear")}</span>
                     <p className="text-gray-900">
                       {selectedFilm.country && selectedFilm.year 
                         ? `${selectedFilm.country}, ${selectedFilm.year}`
@@ -242,15 +242,15 @@ export function FilmsCarousel() {
                 
                 {selectedFilm.duration && (
                   <div>
-                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">Trajanje</span>
-                    <p className="text-gray-900">{selectedFilm.duration} minuta</p>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide">{t("films.modal.duration")}</span>
+                    <p className="text-gray-900">{selectedFilm.duration} {t("films.modal.minutes")}</p>
                   </div>
                 )}
                 
                 {/* Description */}
                 {selectedFilm.description && (
                   <div>
-                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide block mb-2">Kratki opis</span>
+                    <span className="text-sm font-semibold text-gray-500 uppercase tracking-wide block mb-2">{t("films.modal.description")}</span>
                     <div 
                       className="max-h-64 overflow-y-auto border border-gray-200 rounded-md p-3 bg-gray-50"
                       data-testid="modal-film-description-container"

@@ -26,7 +26,16 @@ export const translations = {
       title: "Filmski program",
       description: "Otkrij 21 vrhunskih znanstvenih dokumentarnih filmova koji istražuju teme održivog razvoja, zelene energije i ekologije",
       learnMore: "Opširnije",
-      totalFilms: "21 film Festivala znanstvenog filma"
+      totalFilms: "21 film Festivala znanstvenog filma",
+      modal: {
+        category: "Kategorija",
+        director: "Redatelj",
+        producer: "Producent",
+        countryYear: "Zemlja i godina",
+        duration: "Trajanje",
+        minutes: "minuta",
+        description: "Kratki opis"
+      }
     },
     locations: {
       title: "Lokacije festivala",
@@ -134,7 +143,16 @@ export const translations = {
       title: "Film Program",
       description: "Discover 20 excellent scientific documentary films exploring topics of sustainable development, green energy and ecology",
       learnMore: "Learn More",
-      totalFilms: "21 films of the Science Film Festival"
+      totalFilms: "21 films of the Science Film Festival",
+      modal: {
+        category: "Category",
+        director: "Director",
+        producer: "Producer",
+        countryYear: "Country and Year",
+        duration: "Duration",
+        minutes: "minutes",
+        description: "Short Description"
+      }
     },
     locations: {
       title: "Festival Locations",
@@ -242,7 +260,16 @@ export const translations = {
       title: "Programma Cinematografico",
       description: "Scopri 20 eccellenti documentari scientifici che esplorano temi di sviluppo sostenibile, energia verde ed ecologia",
       learnMore: "Scopri di più",
-      totalFilms: "21 film del Festival del Cinema Scientifico"
+      totalFilms: "21 film del Festival del Cinema Scientifico",
+      modal: {
+        category: "Categoria",
+        director: "Regista",
+        producer: "Produttore",
+        countryYear: "Paese e Anno",
+        duration: "Durata",
+        minutes: "minuti",
+        description: "Breve Descrizione"
+      }
     },
     locations: {
       title: "Località del Festival",
