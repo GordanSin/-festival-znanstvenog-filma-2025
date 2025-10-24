@@ -45,21 +45,21 @@ export function SponsorsSection() {
             />
           </div>
 
-          {/* LC Studio */}
-          <div className="flex items-center justify-center" data-testid="sponsor-lcstudio">
+          {/* Istarska Županija */}
+          <div className="flex items-center justify-center" data-testid="sponsor-istarska">
             <img 
-              src={lcStudioLogo} 
-              alt="LC Studio logo" 
+              src={istarskaLogo} 
+              alt="Istarska Županija logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
               loading="lazy"
             />
           </div>
 
-          {/* Penta ID Systems */}
-          <div className="flex items-center justify-center" data-testid="sponsor-penta">
+          {/* Grad Rovinj */}
+          <div className="flex items-center justify-center" data-testid="sponsor-additional">
             <img 
-              src={pentaLogo} 
-              alt="Penta ID Systems logo" 
+              src={additionalLogo} 
+              alt="Grad Rovinj logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
               loading="lazy"
             />
@@ -75,21 +75,11 @@ export function SponsorsSection() {
             />
           </div>
 
-          {/* Istarska Županija */}
-          <div className="flex items-center justify-center" data-testid="sponsor-istarska">
+          {/* Penta ID Systems */}
+          <div className="flex items-center justify-center" data-testid="sponsor-penta">
             <img 
-              src={istarskaLogo} 
-              alt="Istarska Županija logo" 
-              className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
-              loading="lazy"
-            />
-          </div>
-
-          {/* Additional Partner */}
-          <div className="flex items-center justify-center" data-testid="sponsor-additional">
-            <img 
-              src={additionalLogo} 
-              alt="Partner logo" 
+              src={pentaLogo} 
+              alt="Penta ID Systems logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
               loading="lazy"
             />
@@ -150,6 +140,16 @@ export function SponsorsSection() {
             <img 
               src={zuficLogo} 
               alt="Zufic Studio logo" 
+              className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
+            />
+          </div>
+
+          {/* LC Studio */}
+          <div className="flex items-center justify-center" data-testid="sponsor-lcstudio">
+            <img 
+              src={lcStudioLogo} 
+              alt="LC Studio logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
               loading="lazy"
             />
