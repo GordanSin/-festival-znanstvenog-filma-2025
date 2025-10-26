@@ -12,7 +12,7 @@ import buzetLogo from "@assets/download (3)_1761147110558.png";
 import ztkPulaLogo from "@assets/logo-ztk-3 (1)_1761147214758.png";
 import zuficLogo from "@assets/download (4)_1761147255440.png";
 import porecLogo from "@assets/porec-logo.png";
-import kinoPazinLogo from "@assets/71F2D9E3-6474-4A53-A398-876AE9EEA4F8_1761323564181.png";
+import kinoPazinLogo from "@assets/pou-pazin_1761471919212.png";
 
 export function SponsorsSection() {
   const { t } = useLanguage();
