@@ -161,7 +161,7 @@ export function SponsorsSection() {
             <img 
               src={kinoPazinLogo} 
               alt="Kino Pazin logo" 
-              className="w-48 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              className="w-40 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
               loading="lazy"
             />
           </div>
