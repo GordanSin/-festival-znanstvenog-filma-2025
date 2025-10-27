@@ -41,8 +41,7 @@ const buzetProgram = {
       titleIt: "Il nostro futuro è sull'acqua?",
       director: "Xavier Marquis",
       country: "France",
-      duration: "52 min",
-      venue: "prizemlje kazališta / piano terra del teatro"
+      duration: "52 min"
     },
     {
       time: "18:00",
