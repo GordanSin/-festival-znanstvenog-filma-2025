@@ -373,7 +373,7 @@ export function LocationsSection() {
                               ) : (
                                 <>
                                   {event.audience && (
-                                    <div className="inline-block px-2 py-1 bg-accent/10 text-accent text-xs font-semibold rounded mb-2">
+                                    <div className="inline-block px-2 py-1 bg-green-900/20 text-green-900 dark:bg-green-800/30 dark:text-green-400 text-xs font-semibold rounded mb-2">
                                       {event.audience}
                                     </div>
                                   )}
