@@ -27,24 +27,6 @@ const umagProgram = {
       audience: "učenici srednje škole / studenti delle scuole superiori"
     }
   ],
-  "12.11.2025": [
-    {
-      time: "18:00",
-      title: "Genova Lab",
-      director: "Caroline Betram",
-      country: "Njemačka / Germania",
-      duration: "20 min",
-      description: "projekcija filma / proiezione del film"
-    },
-    {
-      time: "18:00",
-      title: "Dobrodošli u susjedstvo",
-      titleIt: "Benvenuti nel vicinato",
-      director: "Heiko De Groot",
-      country: "Austria",
-      duration: "47 min"
-    }
-  ],
   "13.11.2025": [
     {
       time: "12:30",
@@ -306,7 +288,7 @@ export function LocationsSection() {
       description: "Ustanova za protokol, odnose s javnošću i manifestacije FESTUM",
       imageUrl: umagImage,
       filmCount: 4,
-      dates: ["6., 12., 13., 14. studenog 2025"],
+      dates: ["6., 13., 14. studenog 2025"],
       createdAt: new Date(),
       hasProgram: true,
       program: umagProgram
