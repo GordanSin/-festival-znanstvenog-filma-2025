@@ -15,6 +15,64 @@ import rovinjImage from "@assets/rovinj-xx_1758910212100.jpg";
 import rijekaImage from "@assets/rijeka_1758910125510.webp";
 
 // Program schedule data extracted from the festival program images
+const buzetProgram = {
+  "5.11.2025": [
+    {
+      time: "18:00",
+      title: "Plan Z - od bijelih kuta do lisica",
+      titleIt: "Piano Z – dai camici bianchi alle manette",
+      director: "Louisa Jones, Vladimir Morozov",
+      country: "Velika Britanija / Regno Unito",
+      duration: "23 min"
+    },
+    {
+      time: "18:00",
+      title: "Znatiželjnje djevojke – žene budućnosti",
+      titleIt: "Ragazze curiose – donne del futuro",
+      director: "Déborah A. De Mari",
+      country: "Brazil",
+      duration: "43 min"
+    }
+  ],
+  "10.11.2025": [
+    {
+      time: "18:00",
+      title: "Je li naša budućnost na vodi?",
+      titleIt: "Il nostro futuro è sull'acqua?",
+      director: "Xavier Marquis",
+      country: "France",
+      duration: "52 min",
+      venue: "prizemlje kazališta / piano terra del teatro"
+    },
+    {
+      time: "18:00",
+      title: "Zaštiti i očuvaj",
+      titleIt: "Proteggi e conserva",
+      director: "Atzmon Dagan",
+      country: "Israel",
+      duration: "11 min"
+    }
+  ],
+  "12.11.2025": [
+    {
+      time: "18:00",
+      title: "Genova Lab",
+      director: "Caroline Betram",
+      country: "Njemačka / Germania",
+      duration: "20 min",
+      description: "projekcija filma / proiezione del film"
+    },
+    {
+      time: "18:00",
+      title: "Dobrodošli u susjedstvo",
+      titleIt: "Benvenuti nel vicinato",
+      director: "Heiko De Groot",
+      country: "Austria",
+      duration: "47 min"
+    }
+  ]
+};
+
 const rovinjProgram = {
   "4.11.2025": [
     {
@@ -204,8 +262,10 @@ export function LocationsSection() {
       description: "Pučko otvoreno učilište Augustin Vivoda",
       imageUrl: buzetImage,
       filmCount: 3,
-      dates: ["12.-13. studenog"],
+      dates: ["5., 10., 12. studenog 2025"],
       createdAt: new Date(),
+      hasProgram: true,
+      program: buzetProgram
     },
     {
       id: "6",
@@ -325,14 +385,22 @@ export function LocationsSection() {
               <p className="text-sm text-muted-foreground">{selectedLocation?.description}</p>
             </DialogHeader>
 
-            {selectedLocation?.program && (
-              <Tabs defaultValue="4.11.2025" className="flex-1 flex flex-col overflow-hidden">
-                <TabsList className="grid w-full grid-cols-4 mb-4">
-                  <TabsTrigger value="4.11.2025" data-testid="tab-4-11">4.11.2025</TabsTrigger>
-                  <TabsTrigger value="5.11.2025" data-testid="tab-5-11">5.11.2025</TabsTrigger>
-                  <TabsTrigger value="6.11.2025" data-testid="tab-6-11">6.11.2025</TabsTrigger>
-                  <TabsTrigger value="7.11.2025" data-testid="tab-7-11">7.11.2025</TabsTrigger>
-                </TabsList>
+            {selectedLocation?.program && (() => {
+              const dates = Object.keys(selectedLocation.program);
+              const gridCols = dates.length === 3 ? 'grid-cols-3' : dates.length === 4 ? 'grid-cols-4' : 'grid-cols-2';
+              return (
+                <Tabs defaultValue={dates[0]} className="flex-1 flex flex-col overflow-hidden">
+                  <TabsList className={`grid w-full ${gridCols} mb-4`}>
+                    {dates.map((date) => (
+                      <TabsTrigger 
+                        key={date} 
+                        value={date} 
+                        data-testid={`tab-${date.replace(/\./g, '-')}`}
+                      >
+                        {date}
+                      </TabsTrigger>
+                    ))}
+                  </TabsList>
 
                 {Object.entries(selectedLocation.program).map(([date, events]: [string, any]) => (
                   <TabsContent 
@@ -432,8 +500,9 @@ export function LocationsSection() {
                     </div>
                   </TabsContent>
                 ))}
-              </Tabs>
-            )}
+                </Tabs>
+              );
+            })()}
           </DialogContent>
         </Dialog>
       </div>
