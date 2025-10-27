@@ -141,7 +141,7 @@ export function AboutSection() {
             <div className="group relative bg-gradient-to-br from-white to-gray-50 dark:from-gray-900 dark:to-gray-800 p-4 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 hover:shadow-lg transition-all duration-300 hover:-translate-y-1 md:col-span-2 lg:col-span-1">
               <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-accent/10 rounded-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <div className="relative">
-                <h5 className="font-bold text-sm text-card-foreground mb-1">Eric Ušić</h5>
+                <h5 className="font-bold text-sm text-card-foreground mb-1">Eric Usich</h5>
                 <p className="text-xs text-muted-foreground leading-relaxed">dr. sc.</p>
               </div>
             </div>
