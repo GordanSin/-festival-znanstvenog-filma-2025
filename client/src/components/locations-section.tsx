@@ -81,7 +81,7 @@ const rovinjProgram = {
       director: "Xavier Marquis",
       country: "France",
       duration: "52 min",
-      venue: "piano terra del teatro Gandusio"
+      venue: "prizemlje kino Gandusio - piano terra del teatro Gandusio"
     }
   ],
   "6.11.2025": [
@@ -126,7 +126,7 @@ const rovinjProgram = {
       director: "Cecilia Paulsson, Anders Nilsson",
       country: "Švedska / Svezia",
       duration: "60 min",
-      venue: "piano terra del teatro Gandusio"
+      venue: "prizemlje kino Gandusio - piano terra del teatro Gandusio"
     }
   ],
   "7.11.2025": [
@@ -163,7 +163,7 @@ const rovinjProgram = {
       director: "Anja Krug-Metzinger",
       country: "Njemačka / Germania",
       duration: "60 min",
-      venue: "piano terra del teatro Gandusio"
+      venue: "prizemlje kino Gandusio - piano terra del teatro Gandusio"
     }
   ]
 };
