@@ -111,7 +111,7 @@ export function Footer() {
 
         <div className="border-t border-primary-foreground/20 pt-8 flex justify-center items-center">
           <div className="text-sm text-primary-foreground/80">
-            <p>&copy; 2025 {t("footer.copyright")}</p>
+            <p>@PLAVA TOČKA, obrt za savjetovanje i usluge, vl. Paolo Zenzerović, Gordan Sinđić</p>
           </div>
         </div>
       </div>
