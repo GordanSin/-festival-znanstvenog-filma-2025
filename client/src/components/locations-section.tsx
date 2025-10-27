@@ -15,6 +15,60 @@ import rovinjImage from "@assets/rovinj-xx_1758910212100.jpg";
 import rijekaImage from "@assets/rijeka_1758910125510.webp";
 
 // Program schedule data extracted from the festival program images
+const umagProgram = {
+  "6.11.2025": [
+    {
+      time: "12:30",
+      title: "Dobrodošli u susjedstvo",
+      titleIt: "Benvenuti nel vicinato",
+      director: "Heiko De Groot",
+      country: "Austria",
+      duration: "47 min",
+      audience: "učenici srednje škole / studenti delle scuole superiori"
+    }
+  ],
+  "12.11.2025": [
+    {
+      time: "18:00",
+      title: "Genova Lab",
+      director: "Caroline Betram",
+      country: "Njemačka / Germania",
+      duration: "20 min",
+      description: "projekcija filma / proiezione del film"
+    },
+    {
+      time: "18:00",
+      title: "Dobrodošli u susjedstvo",
+      titleIt: "Benvenuti nel vicinato",
+      director: "Heiko De Groot",
+      country: "Austria",
+      duration: "47 min"
+    }
+  ],
+  "13.11.2025": [
+    {
+      time: "12:30",
+      title: "Nina i hobotnice",
+      titleIt: "Nina e i polpi",
+      director: "Marcella Muller",
+      country: "Njemačka / Germania",
+      duration: "25 min",
+      audience: "učenici osnovne škole / alunni delle scuole elementari"
+    }
+  ],
+  "14.11.2025": [
+    {
+      time: "12:30",
+      title: "Nina i hobotnice",
+      titleIt: "Nina e i polpi",
+      director: "Marcella Muller",
+      country: "Njemačka / Germania",
+      duration: "25 min",
+      audience: "učenici osnovne škole / alunni delle scuole elementari"
+    }
+  ]
+};
+
 const buzetProgram = {
   "5.11.2025": [
     {
@@ -252,8 +306,10 @@ export function LocationsSection() {
       description: "Ustanova za protokol, odnose s javnošću i manifestacije FESTUM",
       imageUrl: umagImage,
       filmCount: 4,
-      dates: ["10.-11. studenog"],
+      dates: ["6., 12., 13., 14. studenog 2025"],
       createdAt: new Date(),
+      hasProgram: true,
+      program: umagProgram
     },
     {
       id: "5",
