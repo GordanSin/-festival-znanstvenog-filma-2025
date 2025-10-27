@@ -26,21 +26,21 @@ export function SponsorsSection() {
         </div>
 
         <div className="flex flex-wrap justify-center items-center gap-8 md:gap-12">
-          {/* Goethe Institut */}
-          <div className="flex items-center justify-center" data-testid="sponsor-goethe">
-            <img 
-              src={goetheLogo} 
-              alt="Goethe-Institut Kroatien logo" 
-              className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
-              loading="lazy"
-            />
-          </div>
-
           {/* Galileo Galilei */}
           <div className="flex items-center justify-center" data-testid="sponsor-galileo">
             <img 
               src={galileoLogo} 
               alt="Galileo Galilei Udruga logo" 
+              className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
+              loading="lazy"
+            />
+          </div>
+
+          {/* Goethe Institut */}
+          <div className="flex items-center justify-center" data-testid="sponsor-goethe">
+            <img 
+              src={goetheLogo} 
+              alt="Goethe-Institut Kroatien logo" 
               className="w-24 h-auto object-contain opacity-80 hover:opacity-100 transition-opacity"
               loading="lazy"
             />
