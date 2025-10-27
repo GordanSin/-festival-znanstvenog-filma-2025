@@ -52,7 +52,7 @@ export function ContactSection() {
                   {t("contact.directorTitle")} : {t("contact.director")}
                 </p>
                 <p className="text-sm font-semibold text-card-foreground mt-2" data-testid="contact-secretary">
-                  Tajnica festivala : Maja Babić Sinđić
+                  Tajnica festivala  : Maja Babić Sinđić
                 </p>
                 <p className="text-sm text-muted-foreground mt-2">
                   članovi organizacijskog odbora : Aleksandar Žibert dipl.račinž i Ina Venier dipl.uč.inf
