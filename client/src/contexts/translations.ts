@@ -49,7 +49,7 @@ export const translations = {
       openingDate: "4. studenog 2025. 18h",
       openingVenue: "Kino / Cinema Gandusio, Rovinj-Rovigno",
       secondPeriod: "01. - 15. studenog 2025.",
-      secondVenue: "Rovinj-Rovigno,Poreč-Parenzo,Pula-PolaUmag-Umago, Buzet, Pazin, Rijeka",
+      secondVenue: "Rovinj-Rovigno,Poreč-Parenzo,Pula-Pola,Umag-Umago, Buzet, Pazin, Rijeka",
       note: "* detaljan program, click na Grad program oznaku",
       events: {
         lecture: "Predavanje: Pametni gradovi, pametni planet",

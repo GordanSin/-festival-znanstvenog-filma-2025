@@ -34,6 +34,12 @@ const rovinjProgram = {
       description: "Predviđanje ekstremnih vremenskih pojava pomoću podataka građana",
       descriptionIt: "Previsione di eventi meteorologici estremi mediante i dati dei cittadini",
       venue: "kino Antonio Gandusio"
+    },
+    {
+      time: "19:00",
+      title: "Filmsko druženje",
+      titleIt: "Serata di cinema",
+      venue: "kino Antonio Gandusio"
     }
   ],
   "5.11.2025": [
