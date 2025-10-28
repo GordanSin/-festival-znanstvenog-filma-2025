@@ -6,13 +6,13 @@ import { Calendar, MapPin, ArrowRight, Clock } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
 import type { Location } from "@shared/schema";
 import { useState } from "react";
-import pulaImage from "@assets/pula_1758831240469.jpg";
+import pulaImage from "@assets/pula_1761654065278.webp";
 import umagImage from "@assets/umag_1758831379550.jfif";
-import buzetImage from "@assets/buzet_1758831685132.jfif";
-import pazinImage from "@assets/pazin_1758831958515.jfif";
-import porecImage from "@assets/porec_1758910010592.jfif";
-import rovinjImage from "@assets/rovinj-xx_1758910212100.jpg";
-import rijekaImage from "@assets/rijeka_1758910125510.webp";
+import buzetImage from "@assets/buzet_1761654065277.webp";
+import pazinImage from "@assets/pazin_1761654065279.webp";
+import porecImage from "@assets/porec_1761654065279.webp";
+import rovinjImage from "@assets/rovinj-xx_1761654065278.webp";
+import rijekaImage from "@assets/rijeka_1761654065278.webp";
 
 // Program schedule data extracted from the festival program images
 const umagProgram = {
