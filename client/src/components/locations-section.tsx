@@ -7,7 +7,7 @@ import { useLanguage } from "@/contexts/LanguageContext";
 import type { Location } from "@shared/schema";
 import { useState } from "react";
 import pulaImage from "@assets/pula_1761654065278.webp";
-import umagImage from "@assets/umag_1758831379550.jfif";
+import umagImage from "@assets/umag_1761654240069.webp";
 import buzetImage from "@assets/buzet_1761654065277.webp";
 import pazinImage from "@assets/pazin_1761654065279.webp";
 import porecImage from "@assets/porec_1761654065279.webp";
