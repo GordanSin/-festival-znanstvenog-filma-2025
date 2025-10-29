@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent } from "@/components/ui/card";
-import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription } from "@/components/ui/dialog";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Calendar, MapPin, ArrowRight, Clock } from "lucide-react";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -261,6 +261,37 @@ const rovinjProgram = {
   ]
 };
 
+const pazinProgram = {
+  "10.11.2025": [
+    {
+      time: "12:00",
+      title: "Znatiželjnje djevojke – žene budućnosti",
+      titleIt: "Ragazze curiose – donne del futuro",
+      director: "Déborah A. De Mari",
+      country: "Brazil",
+      duration: "43 min"
+    }
+  ],
+  "12.11.2025": [
+    {
+      time: "17:00",
+      title: "Nina i hobotnice",
+      titleIt: "Nina e i polpi",
+      director: "Marcella Muller",
+      country: "Njemačka / Germania",
+      duration: "25 min"
+    },
+    {
+      time: "17:00",
+      title: "Titli leptiri",
+      titleIt: "Titli farfalle",
+      director: "Akanksha Sood Singh",
+      country: "India",
+      duration: "37 min"
+    }
+  ]
+};
+
 export function LocationsSection() {
   const { t } = useLanguage();
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -310,8 +341,10 @@ export function LocationsSection() {
       description: "Centar za kulturu i obrazovanje", 
       imageUrl: pazinImage,
       filmCount: 3,
-      dates: ["13.-14. studenog"],
+      dates: ["10., 12. studenog 2025"],
       createdAt: new Date(),
+      hasProgram: true,
+      program: pazinProgram
     },
     {
       id: "7",
@@ -419,7 +452,7 @@ export function LocationsSection() {
                 <MapPin className="h-6 w-6 text-primary" />
                 {selectedLocation?.name}
               </DialogTitle>
-              <p className="text-sm text-muted-foreground">{selectedLocation?.description}</p>
+              <DialogDescription>{selectedLocation?.description}</DialogDescription>
             </DialogHeader>
 
             {selectedLocation?.program && (() => {
