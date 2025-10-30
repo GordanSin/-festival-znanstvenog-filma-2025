@@ -371,7 +371,9 @@ const pulaProgram = {
       country: "Njemačka / Germania",
       duration: "19 min",
       venue: "Zvjezdarnica Pula (ZTK Pula)"
-    },
+    }
+  ],
+  "11.11.2025": [
     {
       time: "19:00",
       title: "Plastična republika",
@@ -411,7 +413,7 @@ export function LocationsSection() {
       description: "Zajednica tehničke kulture Istarske županije",
       imageUrl: pulaImage,
       filmCount: 7,
-      dates: ["1., 2., 3., 5., 10. studenog 2025"],
+      dates: ["1., 2., 3., 5., 10., 11. studenog 2025"],
       createdAt: new Date(),
       hasProgram: true,
       program: pulaProgram
@@ -565,6 +567,7 @@ export function LocationsSection() {
                 dates.length === 3 ? 'grid-cols-3' :
                 dates.length === 4 ? 'grid-cols-4' :
                 dates.length === 5 ? 'grid-cols-5' :
+                dates.length === 6 ? 'grid-cols-6' :
                 'grid-cols-2';
               return (
                 <Tabs defaultValue={dates[0]} className="flex-1 flex flex-col overflow-hidden">
