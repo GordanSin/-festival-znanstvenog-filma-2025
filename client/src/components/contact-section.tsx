@@ -101,6 +101,20 @@ export function ContactSection() {
                   <p className="text-sm text-muted-foreground">{t("contact.mainPartner")}</p>
                 </div>
               </div>
+              <div className="pt-4 border-t border-border/50">
+                <p className="text-sm font-semibold text-card-foreground" data-testid="contact-goethe-coordinator">
+                  Jasmina Vukas
+                </p>
+                <p className="text-sm text-muted-foreground">
+                  Koordinatorica projekata
+                </p>
+                <div className="flex items-center space-x-2 text-card-foreground mt-2">
+                  <Mail className="text-primary h-4 w-4" />
+                  <a href="mailto:jasmina.vukas@goethe.de" className="text-sm hover:text-primary transition-colors" data-testid="contact-goethe-email">
+                    jasmina.vukas@goethe.de
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
