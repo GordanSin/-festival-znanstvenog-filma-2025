@@ -89,7 +89,7 @@ export const translations = {
     contact: {
       title: "Kontakt",
       description: "Za sve informacije o festivalu, medijskim partnerstvima i suradnji",
-      director: "Gordan Sinđić, prof.",
+      director: "Gordan Sinđić",
       directorTitle: "Direktor festivala",
       organizers: "Organizatori",
       supporters: "Partnerstvo",
@@ -206,7 +206,7 @@ export const translations = {
     contact: {
       title: "Contact",
       description: "For all information about the festival, media partnerships and collaboration",
-      director: "Gordan Sinđić, Prof.",
+      director: "Gordan Sinđić",
       directorTitle: "Festival Director",
       organizers: "Organizers",
       supporters: "Partnership",
@@ -323,7 +323,7 @@ export const translations = {
     contact: {
       title: "Contatto",
       description: "Per tutte le informazioni sul festival, partnership con i media e collaborazione",
-      director: "Gordan Sinđić, Prof.",
+      director: "Gordan Sinđić",
       directorTitle: "Direttore del Festival",
       organizers: "Organizzatori",
       supporters: "Partnership",
