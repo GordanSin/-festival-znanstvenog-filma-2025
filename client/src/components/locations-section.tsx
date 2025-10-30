@@ -395,6 +395,37 @@ const pulaProgram = {
   ]
 };
 
+const porecProgram = {
+  "12.11.2025": [
+    {
+      time: "12:30",
+      title: "Titli leptiri",
+      titleIt: "Titli farfalle",
+      director: "Akanksha Sood Singh",
+      country: "India",
+      duration: "37 min"
+    }
+  ],
+  "13.11.2025": [
+    {
+      time: "09:30",
+      title: "Plastično fantastično",
+      titleIt: "Plastico fantastico",
+      director: "Isa Willinger",
+      country: "Njemačka / Germania",
+      duration: "90 min"
+    },
+    {
+      time: "11:00",
+      title: "Je li naša budućnost na vodi?",
+      titleIt: "Il nostro futuro è sull'acqua?",
+      director: "Xavier Marquis",
+      country: "France",
+      duration: "52 min"
+    }
+  ]
+};
+
 export function LocationsSection() {
   const { t } = useLanguage();
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -465,9 +496,11 @@ export function LocationsSection() {
       name: "Poreč-Parenzo",
       description: "Pučko otvoreno učilište",
       imageUrl: porecImage,
-      filmCount: 5,
-      dates: ["17.-18. studenog"],
+      filmCount: 3,
+      dates: ["12., 13. studenog 2025"],
       createdAt: new Date(),
+      hasProgram: true,
+      program: porecProgram
     },
     {
       id: "9",
