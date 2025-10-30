@@ -292,6 +292,107 @@ const pazinProgram = {
   ]
 };
 
+const pulaProgram = {
+  "01.11.2025": [
+    {
+      time: "19:00",
+      title: "Svijet bez krava",
+      director: "Michelle Michael, Brandon Whitworth",
+      country: "USA",
+      duration: "83 min",
+      venue: "Zvjezdarnica Pula (ZTK Pula)"
+    }
+  ],
+  "02.11.2025": [
+    {
+      time: "19:00",
+      title: "Plan Z - od bijelih kuta do lisica",
+      titleIt: "Piano Z – dai camici bianchi alle manette",
+      director: "Louisa Jones, Vladimir Morozov",
+      country: "Velika Britanija / Regno Unito",
+      duration: "23 min",
+      venue: "Zvjezdarnica Pula (ZTK Pula)"
+    },
+    {
+      time: "19:00",
+      title: "Dobrodošli u fulldome",
+      titleIt: "Benvenuti nel fulldome",
+      director: "Jonáš Jirovský",
+      country: "Češka / Repubblica Ceca",
+      duration: "38 min",
+      venue: "Zvjezdarnica Pula (ZTK Pula)"
+    }
+  ],
+  "03.11.2025": [
+    {
+      time: "13:30",
+      title: "Nina i hobotnice",
+      titleIt: "Nina e i polpi",
+      director: "Marcella Muller",
+      country: "Njemačka / Germania",
+      duration: "25 min",
+      venue: "ZTK IŽ (Velika dvorana) Pula"
+    }
+  ],
+  "05.11.2025": [
+    {
+      time: "13:30",
+      title: "Znatiželjnje djevojke – žene budućnosti",
+      titleIt: "Ragazze curiose – donne del futuro",
+      director: "Déborah A. De Mari",
+      country: "Brazil",
+      duration: "43 min",
+      venue: "ZTK IŽ (Velika dvorana) Pula"
+    },
+    {
+      time: "19:00",
+      title: "Nema više povijesti bez nas",
+      titleIt: "Non c'è più storia senza di noi",
+      director: "Priscilla Regis Brasil",
+      country: "Brasil",
+      duration: "76 min",
+      venue: "Zvjezdarnica Pula (ZTK Pula)"
+    }
+  ],
+  "10.11.2025": [
+    {
+      time: "19:00",
+      title: "Znatiželjnje djevojke – žene budućnosti",
+      titleIt: "Ragazze curiose – donne del futuro",
+      director: "Déborah A. De Mari",
+      country: "Brazil",
+      duration: "43 min",
+      venue: "Zvjezdarnica Pula (ZTK Pula)"
+    },
+    {
+      time: "19:00",
+      title: "Genoa Lab",
+      director: "Caroline Bertram",
+      country: "Njemačka / Germania",
+      duration: "19 min",
+      venue: "Zvjezdarnica Pula (ZTK Pula)"
+    },
+    {
+      time: "19:00",
+      title: "Plastična republika",
+      titleIt: "Repubblica di plastica",
+      director: "Aaron Mendoza",
+      country: "Filipini",
+      duration: "47 min",
+      venue: "SŠ Mate Blažine Labin"
+    },
+    {
+      time: "19:00",
+      title: "Umjetnost promatranja",
+      titleIt: "L'arte dell'osservazione",
+      director: "Andris Gauja",
+      country: "Estonia",
+      duration: "17 min",
+      venue: "SŠ Mate Blažine Labin"
+    }
+  ]
+};
+
 export function LocationsSection() {
   const { t } = useLanguage();
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -310,8 +411,10 @@ export function LocationsSection() {
       description: "Zajednica tehničke kulture Istarske županije",
       imageUrl: pulaImage,
       filmCount: 7,
-      dates: ["6.-8. studenog"],
+      dates: ["1., 2., 3., 5., 10. studenog 2025"],
       createdAt: new Date(),
+      hasProgram: true,
+      program: pulaProgram
     },
     {
       id: "4", 
@@ -457,7 +560,12 @@ export function LocationsSection() {
 
             {selectedLocation?.program && (() => {
               const dates = Object.keys(selectedLocation.program);
-              const gridCols = dates.length === 3 ? 'grid-cols-3' : dates.length === 4 ? 'grid-cols-4' : 'grid-cols-2';
+              const gridCols = 
+                dates.length === 2 ? 'grid-cols-2' :
+                dates.length === 3 ? 'grid-cols-3' :
+                dates.length === 4 ? 'grid-cols-4' :
+                dates.length === 5 ? 'grid-cols-5' :
+                'grid-cols-2';
               return (
                 <Tabs defaultValue={dates[0]} className="flex-1 flex flex-col overflow-hidden">
                   <TabsList className={`grid w-full ${gridCols} mb-4`}>
