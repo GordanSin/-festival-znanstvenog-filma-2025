@@ -77,6 +77,20 @@ const buzetProgram = {
       director: "Anja Krug-Metzinger",
       country: "Njemačka",
       duration: "52 min"
+    },
+    {
+      time: "18:00",
+      title: "Plan Z",
+      director: "Louisa Jones, Vladimir Morozov",
+      country: "UK",
+      duration: "23 min"
+    },
+    {
+      time: "18:00",
+      title: "Znatiželjnje djevojke – žene budućnosti",
+      director: "Déborah A. De Mari",
+      country: "Brazil",
+      duration: "43 min"
     }
   ],
   "07.11.2025": [
@@ -102,6 +116,20 @@ const buzetProgram = {
       director: "Cecilia Paulsson",
       country: "Švedska",
       duration: "60 min"
+    },
+    {
+      time: "18:00",
+      title: "Je li naša budućnost na vodi",
+      director: "Xavier Marquis",
+      country: "Franscuska",
+      duration: "52 min"
+    },
+    {
+      time: "18:00",
+      title: "Genova Lab",
+      director: "Caroline Bertram",
+      country: "Njemačka",
+      duration: "19 min"
     }
   ],
   "12.11.2025": [
@@ -111,6 +139,20 @@ const buzetProgram = {
       director: "Aaron Mendoza",
       country: "Filipini",
       duration: "47 min"
+    },
+    {
+      time: "18:00",
+      title: "Dobrodošli u susjedstvo",
+      director: "Heiko De Groot",
+      country: "Austrija",
+      duration: "47 min"
+    },
+    {
+      time: "18:00",
+      title: "Genova Lab",
+      director: "Caroline Bertram",
+      country: "Njemačka",
+      duration: "19 min"
     }
   ]
 };
@@ -472,7 +514,7 @@ export function LocationsSection() {
       name: "Buzet", 
       description: "Pučko otvoreno učilište Augustin Vivoda",
       imageUrl: buzetImage,
-      filmCount: 7,
+      filmCount: 13,
       dates: ["3., 4., 5., 7., 10., 12. studenog 2025"],
       createdAt: new Date(),
       hasProgram: true,
