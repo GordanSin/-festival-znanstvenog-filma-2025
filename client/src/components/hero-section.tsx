@@ -19,12 +19,7 @@ export function HeroSection() {
   };
 
   const downloadCatalog = () => {
-    const link = document.createElement("a");
-    link.href = "/katalog-filmova-2025.pdf";
-    link.download = "Festival-znanstvenog-filma-katalog-2025.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    window.open("/katalog-filmova-2025.pdf", "_blank");
   };
 
   return (
