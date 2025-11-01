@@ -52,57 +52,64 @@ const umagProgram = {
 };
 
 const buzetProgram = {
-  "5.11.2025": [
+  "03.11.2025": [
     {
-      time: "18:00",
-      title: "Plan Z - od bijelih kuta do lisica",
-      titleIt: "Piano Z – dai camici bianchi alle manette",
-      director: "Louisa Jones, Vladimir Morozov",
-      country: "Velika Britanija / Regno Unito",
-      duration: "23 min"
-    },
+      time: "13:30",
+      title: "Izvan okvira sustava",
+      director: "Cecilia Paulsson",
+      country: "Švedska",
+      duration: "60 min"
+    }
+  ],
+  "04.11.2025": [
     {
-      time: "18:00",
-      title: "Znatiželjnje djevojke – žene budućnosti",
-      titleIt: "Ragazze curiose – donne del futuro",
-      director: "Déborah A. De Mari",
-      country: "Brazil",
-      duration: "43 min"
+      time: "11:00",
+      title: "Svijet bez krava",
+      director: "Michelle Michael, Brandon Whitworth",
+      country: "USA",
+      duration: "84 min"
+    }
+  ],
+  "05.11.2025": [
+    {
+      time: "12:40",
+      title: "Tajna majki iz prapovijesti",
+      director: "Anja Krug-Metzinger",
+      country: "Njemačka",
+      duration: "52 min"
+    }
+  ],
+  "07.11.2025": [
+    {
+      time: "08:00",
+      title: "Genova Lab",
+      director: "Caroline Bertram",
+      country: "Njemačka",
+      duration: "19 min"
     }
   ],
   "10.11.2025": [
     {
-      time: "18:00",
-      title: "Je li naša budućnost na vodi?",
-      titleIt: "Il nostro futuro è sull'acqua?",
-      director: "Xavier Marquis",
-      country: "France",
-      duration: "52 min"
+      time: "09:40",
+      title: "Znatiželjnje djevojke – žene budućnosti",
+      director: "Déborah A. De Mari",
+      country: "Brazil",
+      duration: "43 min"
     },
     {
-      time: "18:00",
-      title: "Zaštiti i očuvaj",
-      titleIt: "Proteggi e conserva",
-      director: "Atzmon Dagan",
-      country: "Israel",
-      duration: "11 min"
+      time: "11:50",
+      title: "Izvan okvira sustava",
+      director: "Cecilia Paulsson",
+      country: "Švedska",
+      duration: "60 min"
     }
   ],
   "12.11.2025": [
     {
-      time: "18:00",
-      title: "Genova Lab",
-      director: "Caroline Betram",
-      country: "Njemačka / Germania",
-      duration: "20 min",
-      description: "projekcija filma / proiezione del film"
-    },
-    {
-      time: "18:00",
-      title: "Dobrodošli u susjedstvo",
-      titleIt: "Benvenuti nel vicinato",
-      director: "Heiko De Groot",
-      country: "Austria",
+      time: "11:50",
+      title: "Plastična republika",
+      director: "Aaron Mendoza",
+      country: "Filipini",
       duration: "47 min"
     }
   ]
@@ -465,8 +472,8 @@ export function LocationsSection() {
       name: "Buzet", 
       description: "Pučko otvoreno učilište Augustin Vivoda",
       imageUrl: buzetImage,
-      filmCount: 3,
-      dates: ["5., 10., 12. studenog 2025"],
+      filmCount: 7,
+      dates: ["3., 4., 5., 7., 10., 12. studenog 2025"],
       createdAt: new Date(),
       hasProgram: true,
       program: buzetProgram
