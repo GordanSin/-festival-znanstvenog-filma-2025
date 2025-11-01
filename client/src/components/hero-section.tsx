@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { LanguageSwitcher } from "@/components/language-switcher";
 import { useLanguage } from "@/contexts/LanguageContext";
+import { Download } from "lucide-react";
 import heroBackground from "@assets/hero-page_1761153184395.webp";
 import festivalLogo from "@assets/FESTIVAL ZNANSTVENOG FILMA - dvojezicni logo-01_1761654510712.webp";
 
@@ -15,6 +16,15 @@ export function HeroSection() {
         behavior: "smooth"
       });
     }
+  };
+
+  const downloadCatalog = () => {
+    const link = document.createElement("a");
+    link.href = "/katalog-filmova-2025.pdf";
+    link.download = "Festival-znanstvenog-filma-katalog-2025.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
@@ -82,6 +92,15 @@ export function HeroSection() {
               data-testid="button-learn-more"
             >
               {t("hero.learnMore")}
+            </Button>
+            <Button 
+              size="lg"
+              className="bg-primary text-primary-foreground hover:bg-primary/90 shadow-2xl w-auto px-6 md:px-8 h-12 md:h-14 text-base md:text-lg font-semibold gap-2"
+              onClick={downloadCatalog}
+              data-testid="button-download-catalog"
+            >
+              <Download className="h-5 w-5" />
+              {t("hero.downloadCatalog")}
             </Button>
           </div>
         </div>

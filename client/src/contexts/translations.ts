@@ -14,6 +14,7 @@ export const translations = {
       location: "Istra & Rijeka",
       viewProgram: "Pogledaj program",
       learnMore: "Saznaj više",
+      downloadCatalog: "Preuzmi katalog filmova",
       stats: {
         films: "Film",
         cities: "Gradova",
@@ -131,6 +132,7 @@ export const translations = {
       location: "Istria & Rijeka",
       viewProgram: "View Program",
       learnMore: "Learn More",
+      downloadCatalog: "Download Film Catalog",
       stats: {
         films: "Films",
         cities: "Cities",
@@ -248,6 +250,7 @@ export const translations = {
       location: "Istria e Rijeka",
       viewProgram: "Vedi Programma",
       learnMore: "Scopri di più",
+      downloadCatalog: "Scarica il catalogo dei film",
       stats: {
         films: "Film",
         cities: "Città",
