@@ -10,7 +10,7 @@ export const translations = {
     },
     hero: {
       subtitle: "Ekologija i zeleni poslovi budućnosti",
-      dates: "Studeni 2025",
+      dates: "3- 14.11. 2025",
       location: "Istra & Rijeka",
       viewProgram: "Pogledaj program",
       learnMore: "Saznaj više",
