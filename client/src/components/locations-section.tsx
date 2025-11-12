@@ -475,6 +475,112 @@ const porecProgram = {
   ]
 };
 
+const rijekaProgram = {
+  "11.11.2025": [
+    {
+      time: "08:00",
+      title: "Banda: Odiseja na zaboravljene otoke Indonezije",
+      venue: "Prva hrvatska riječka gimnazija, Ulica Frana Kurelca 1, Rijeka"
+    },
+    {
+      time: "11:20",
+      title: "Umjetnost promatranja",
+      venue: "Prva hrvatska riječka gimnazija, Ulica Frana Kurelca 1, Rijeka"
+    },
+    {
+      time: "13:00",
+      title: "Nema više povijesti bez nas",
+      venue: "Prva hrvatska riječka gimnazija, Ulica Frana Kurelca 1, Rijeka"
+    },
+    {
+      time: "13:30",
+      title: "Plan Z – od bijelih kuta do lisica",
+      venue: "Fakultet za menadžment u turizmu i ugostiteljstvu Opatija"
+    },
+    {
+      time: "14:00",
+      title: "Genova Lab",
+      venue: "Fakultet za menadžment u turizmu i ugostiteljstvu Opatija"
+    }
+  ],
+  "12.11.2025": [
+    {
+      time: "08:00",
+      title: "Plan Z – od bijelih kuta do lisica",
+      venue: "CTK Rijeka, Školjić 6, Rijeka"
+    },
+    {
+      time: "08:50",
+      title: "Naši korijeni ostaju",
+      venue: "Prva hrvatska riječka gimnazija, Ulica Frana Kurelca 1, Rijeka"
+    },
+    {
+      time: "09:40",
+      title: "Tajna majki iz prapovijesti",
+      venue: "Prva hrvatska riječka gimnazija, Ulica Frana Kurelca 1, Rijeka"
+    },
+    {
+      time: "09:40",
+      title: "Dobrodošli u susjedstvo - gradska divljina",
+      venue: "Prva hrvatska riječka gimnazija, Ulica Frana Kurelca 1, Rijeka"
+    },
+    {
+      time: "11:20",
+      title: "Plan Z - od bijelih kuta do lisica",
+      venue: "Prva hrvatska riječka gimnazija, Ulica Frana Kurelca 1, Rijeka"
+    },
+    {
+      time: "11:30",
+      title: "Izvan okvira sustava",
+      venue: "Prva hrvatska riječka gimnazija, Ulica Frana Kurelca 1, Rijeka"
+    }
+  ],
+  "13.11.2025": [
+    {
+      time: "08:50",
+      title: "GENOVA LAB",
+      venue: "Prva hrvatska riječka gimnazija, Ulica Frana Kurelca 1, Rijeka"
+    },
+    {
+      time: "08:50",
+      title: "Posebni prilozi Atoma Arauolla",
+      venue: "Prva hrvatska riječka gimnazija, Ulica Frana Kurelca 1, Rijeka"
+    },
+    {
+      time: "09:40",
+      title: "Izvan okvira sustava",
+      venue: "Prometna škola Rijeka, Ulica Jože Vlahovića 10, Rijeka"
+    },
+    {
+      time: "10:30",
+      title: "Antropocen: nepobitna istina",
+      venue: "Prva hrvatska riječka gimnazija, Ulica Frana Kurelca 1, Rijeka"
+    }
+  ],
+  "14.11.2025": [
+    {
+      time: "08:00",
+      title: "Svijet bez krava",
+      venue: "Prva hrvatska riječka gimnazija, Ulica Frana Kurelca 1, Rijeka"
+    },
+    {
+      time: "08:50",
+      title: "Je li budućnost na vodi?",
+      venue: "Prva hrvatska sušačka gimnazija, Ulica Ljudevita Gaja 1, Rijeka"
+    },
+    {
+      time: "12:10",
+      title: "Znatiželjne djevojke žene budućnosti",
+      venue: "Prva hrvatska riječka gimnazija, Ulica Frana Kurelca 1, Rijeka"
+    },
+    {
+      time: "13:00",
+      title: "Naša budućnost na vodi",
+      venue: "CTK Rijeka, Školjić 6, Rijeka"
+    }
+  ]
+};
+
 export function LocationsSection() {
   const { t } = useLanguage();
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -536,9 +642,11 @@ export function LocationsSection() {
       name: "Rijeka",
       description: "Centar tehničke kulture",
       imageUrl: rijekaImage,
-      filmCount: 9,
-      dates: ["14.-16. studenog"],
+      filmCount: 19,
+      dates: ["11., 12., 13., 14. studenog 2025"],
       createdAt: new Date(),
+      hasProgram: true,
+      program: rijekaProgram
     },
     {
       id: "8",
