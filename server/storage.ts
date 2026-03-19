@@ -1,20 +1,20 @@
 import { type Film, type InsertFilm, type Location, type InsertLocation, type ScheduleEvent, type InsertScheduleEvent, films, locations, scheduleEvents } from "@shared/schema";
 import { db } from "./db";
-import { eq, like, or, ilike } from "drizzle-orm";
+import { eq, or, ilike, sql } from "drizzle-orm";
 
 export interface IStorage {
   // Films
-  getFilms(): Promise<Film[]>;
+  getFilms(limit?: number, offset?: number): Promise<{ data: Film[]; total: number }>;
   getFilmById(id: string): Promise<Film | undefined>;
-  getFilmsByCategory(category: string): Promise<Film[]>;
-  searchFilms(query: string): Promise<Film[]>;
+  getFilmsByCategory(category: string, limit?: number, offset?: number): Promise<{ data: Film[]; total: number }>;
+  searchFilms(query: string, limit?: number, offset?: number): Promise<{ data: Film[]; total: number }>;
   createFilm(film: InsertFilm): Promise<Film>;
-  
+
   // Locations
   getLocations(): Promise<Location[]>;
   getLocationById(id: string): Promise<Location | undefined>;
   createLocation(location: InsertLocation): Promise<Location>;
-  
+
   // Schedule
   getScheduleEvents(): Promise<ScheduleEvent[]>;
   getScheduleEventsByWeek(week: number): Promise<ScheduleEvent[]>;
@@ -23,9 +23,12 @@ export interface IStorage {
 
 export class DatabaseStorage implements IStorage {
   // Films
-  async getFilms(): Promise<Film[]> {
-    // Include all film data including images as requested by user
-    return await db.select().from(films);
+  async getFilms(limit = 50, offset = 0): Promise<{ data: Film[]; total: number }> {
+    const [data, countResult] = await Promise.all([
+      db.select().from(films).limit(limit).offset(offset),
+      db.select({ count: sql<number>`count(*)::int` }).from(films),
+    ]);
+    return { data, total: countResult[0].count };
   }
 
   async getFilmById(id: string): Promise<Film | undefined> {
@@ -33,19 +36,27 @@ export class DatabaseStorage implements IStorage {
     return film || undefined;
   }
 
-  async getFilmsByCategory(category: string): Promise<Film[]> {
-    return await db.select().from(films).where(eq(films.category, category));
+  async getFilmsByCategory(category: string, limit = 50, offset = 0): Promise<{ data: Film[]; total: number }> {
+    const condition = eq(films.category, category);
+    const [data, countResult] = await Promise.all([
+      db.select().from(films).where(condition).limit(limit).offset(offset),
+      db.select({ count: sql<number>`count(*)::int` }).from(films).where(condition),
+    ]);
+    return { data, total: countResult[0].count };
   }
 
-  async searchFilms(query: string): Promise<Film[]> {
+  async searchFilms(query: string, limit = 50, offset = 0): Promise<{ data: Film[]; total: number }> {
     const lowerQuery = `%${query.toLowerCase()}%`;
-    return await db.select().from(films).where(
-      or(
-        ilike(films.title, lowerQuery),
-        ilike(films.description, lowerQuery),
-        ilike(films.director, lowerQuery)
-      )
+    const condition = or(
+      ilike(films.title, lowerQuery),
+      ilike(films.description, lowerQuery),
+      ilike(films.director, lowerQuery)
     );
+    const [data, countResult] = await Promise.all([
+      db.select().from(films).where(condition).limit(limit).offset(offset),
+      db.select({ count: sql<number>`count(*)::int` }).from(films).where(condition),
+    ]);
+    return { data, total: countResult[0].count };
   }
 
   async createFilm(insertFilm: InsertFilm): Promise<Film> {

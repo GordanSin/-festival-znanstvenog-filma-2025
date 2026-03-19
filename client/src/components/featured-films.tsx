@@ -19,9 +19,10 @@ export function FeaturedFilms() {
     return `/api/films${params.toString() ? '?' + params.toString() : ''}`;
   };
 
-  const { data: films = [], isLoading } = useQuery<Film[]>({
+  const { data: filmsResponse, isLoading } = useQuery<{ data: Film[]; pagination: { total: number } }>({
     queryKey: [buildApiUrl()],
   });
+  const films = filmsResponse?.data ?? [];
 
   const categories = [
     "Sve kategorije",
@@ -168,7 +169,7 @@ export function FeaturedFilms() {
               {/* Film Counter */}
               <div className="text-center mt-6">
                 <p className="text-sm text-muted-foreground">
-                  Prikazuje se {films.length} od ukupno 21 filma
+                  Prikazuje se {films.length} od ukupno {filmsResponse?.pagination.total ?? films.length} filmova
                 </p>
               </div>
             </>

@@ -38,9 +38,10 @@ export function FilmsCarousel() {
   const [selectedFilm, setSelectedFilm] = useState<Film | null>(null);
   const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const { data: films, isLoading, error } = useQuery<Film[]>({
+  const { data: filmsResponse, isLoading, error } = useQuery<{ data: Film[]; pagination: { total: number; limit: number; offset: number; hasMore: boolean } }>({
     queryKey: ['/api/films'],
   });
+  const films = filmsResponse?.data;
 
   const handleFilmClick = (film: Film) => {
     setSelectedFilm(film);

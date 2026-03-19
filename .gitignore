@@ -4,3 +4,9 @@ dist
 server/public
 vite.config.ts.*
 *.tar.gz
+.env
+
+# Large data dumps — use seed scripts instead
+films-data.json
+films-dump.sql
+films-export.json
